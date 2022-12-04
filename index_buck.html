@@ -8,11 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!-- FONT AWASOME CDN JS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-/>
-   
     <!-- STYLEING CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>X-dora Online Ecommerce Shop</title>
@@ -157,44 +152,23 @@
     <!--  ================================= HERO SECTION START ==================================== -->
     <section class="hero_section">
         <div class="container hero_section_container">
-            <div class="banner_left"></div>
+            <div></div>
             <!-- Banner start code -->
-            <div class="banner_right">
-                <div class="banner_slider">
-                    <div class="swiper mySwiper swiper_height">
-                        <div class="swiper-wrapper">
-
-                            <!-- slider item start -->
-                            <div class="swiper-slide" style="background-image: url(./assets/image/slider/slider-1.png) ;">
-                                <div class="slider_part_left">
-                                    <h3 class="slider_sub_title">Sign up for your daile newsletter</h3>
-                                    <h2 class="slider_title">Dont missing amizing grower dealier</h2>
-                                    <a href="#" class="btn btn-primary">Shop Now</a>
-                                </div>
-                                <div class="slider_part_right"></div>
-                            </div>
-                            <!-- slider item end -->
-                           
-                            <!-- slider item start -->
-                            <div class="swiper-slide" style="background-image: url(./assets/image/slider/slider-2.png) ;">
-                                <div class="slider_part_left">
-                                    <h3 class="slider_sub_title">Sign up for your daile newsletter</h3>
-                                    <h2 class="slider_title">Dont missing amizing grower dealier</h2>
-                                    <a href="#" class="btn btn-primary">Shop Now</a>
-                                </div>
-                                <div class="slider_part_right"></div>
-                            </div>
-                            <!-- slider item end -->
-
-
+            <div class="banner_wrapper">
+                <div class="slider_wrapper">
+                    <div class="slider_item" style="background-image: url(./assets/image/slider/slider-1.png) ;">
+                        <div class="slider_left">
+                            <h3 class="slider_sub_title">Limite Offer 10% off </h3>
+                            <h2 class="slider_title">Don’t miss amazing Big Discount</h2>
+                            <a href="#" class="btn btn-primary">Shop Now</a>
                         </div>
-                        <div class="swiper-pagination"></div>
+                        <div class="slider_right"></div>
                     </div>
                 </div>
-                <div class="banner_fiture">
-                    <div><img src="./assets/image/slider/slider-1.png" alt=""></div>
-                    <div><img src="./assets/image/slider/slider-2.png" alt=""></div>
-                    <div><img src="./assets/image/slider/slider-1.png" alt=""></div>
+                <div class="fiture_slider">
+                    <div class="fiture_slider_item"><img class="fiture_slider_img" src="" alt=""></div>
+                    <div class="fiture_slider_item"><img class="fiture_slider_img" src="" alt=""></div>
+                    <div class="fiture_slider_item"><img class="fiture_slider_img" src="" alt=""></div>
                 </div>
             </div>
         </div> <!-- /.hero_section_container-->
@@ -203,17 +177,8 @@
 
 
 
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    
     <script src="./assets/js/app.js"></script>
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-          spaceBetween: 30,
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-        });
-      </script>
 </body>
 </html>
