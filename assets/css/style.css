@@ -385,7 +385,6 @@ a{
 }
 .nav_drop_down{
     position: relative;
-    
 }
 .nav_drop_group{
     border-top: 4px solid var(--color-primary) !important;
@@ -432,7 +431,6 @@ a{
     padding-left: 4px;
     font-weight: 500;
 }
-
 /*  ==================================== BANNER SECTION CSS ================================== */
 .hero_section{
     margin-top: 20px;
@@ -495,9 +493,7 @@ a{
     border-radius: 5px;
     overflow: hidden;
 }
-
 /* ================================ FITURE CATEGORY CSS ==================================== */
-
 .sectionHeader{
     margin-bottom: 1.2rem;
 }
@@ -551,9 +547,6 @@ a{
 .swiper-button-prev, .swiper-rtl .swiper-button-next{
     left: 0;
 }
-
-
-
 /*  ======================================= PRODUCT ITEM CSS ================================== */
 .product_container{
     display: grid;
@@ -623,14 +616,83 @@ a{
     color: var(--color-dark-muted);
     margin-left: 5px;
 }
-
-
-
-/*  ============================= Slider Product ================================= */
-.productSliderItem{
-    /* display: flex;
-    flex-direction: column;
+/* ================================= VERTICAL PRODUCT =============================== */
+.verticalProductSlider{
+    display: grid;
+    grid-template-columns: repeat(3,auto); 
+    column-gap: 2rem;
+}
+.verticalSlider{
+    display: grid;
+    column-gap: 2rem;
+    grid-template-columns: repeat(3,auto);
+}
+.verticalProductTop{
+    margin-bottom: 1.5rem;
+}
+.verticalHeading{
+    position: relative;
+    font-size: 1.2rem;
+}
+.verticalHeading::after{
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-light);
+}
+.verticalHeading::before{
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    z-index: 1;
+    left: 0;
+    width: 20%;
+    height: 3px;
+    background-color: var(--color-primary);
+}
+.verticalProductBottom{
+    display: grid;
+    grid-template-columns: 1/-1;
+    row-gap: 1rem;
+}
+.verticalProductBottom .verTicalProductItem{
+    display: grid;
+    grid-template-columns: 30% auto;
+    align-items: center;
+    column-gap: 1rem;
     border: 1px solid var(--color-light);
     border-radius: 5px;
-    overflow: hidden; */
+    height: 110px;
+
+}
+.verticalProductBottom .verTicalProductItem:hover{
+    border: 1px solid var(--color-primary);
+}
+.verticalProductBottom .verTicalProductItem .verticalLeft{
+    border-radius: 5px;
+    overflow: hidden;
+    height: 100%;
+}
+.verticalLeft a {
+    height: 100%;
+}
+.verticalLeft a img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+ .verticalRight .verticalContent a{
+    color: var(--color-dark);
+    font-size: 15px;
+    font-weight: 600;
+}
+.verticalRight{
+    display: grid;
+    grid-template-columns: 1/-1;
+}
+.priceVertical{
+    padding-bottom: 0;
 }

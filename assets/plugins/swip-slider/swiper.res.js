@@ -41,3 +41,14 @@ var swiper = new Swiper(".productSlider", {
         prevEl: ".swiper-button-prev",
     },
 });
+
+// VERTICAL PRODUCT SLIDER
+var swiper = new Swiper(".verticalProductSlider", {
+    slidesPerView: 1,
+    // autoplay: {
+    //   delay: 2500,
+    // },
+    slidesPerGroup: 1,
+    loop: true,
+    loopFillGroupWithBlank: true,
+});
