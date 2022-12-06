@@ -16,7 +16,7 @@
 
     --container-width-lg : 90%; 
     --container-width-md : 90%; 
-    --container-width-sm : 92%; 
+    --container-width-sm : 93%; 
 
     --font1 : 'Poppins', sans-serif;
 
@@ -135,16 +135,19 @@ a{
 /*  ==================================== HEADER MIDDLE CSS ============================================ */
 .header{
     background-color: var(--color-secondary);
+    z-index: 999999;
 }
 .header-middle{
     height: 5.8rem;
     /* background-color: var(--color-primary); */
 }
+
 .header_middle_container{
     height: 100%;
     display: grid;
     grid-template-columns: 25% 50% 25%;
     align-items: center;
+    gap: 1.2rem;
 }
 .brand_logo figure img{
     width: 180px;
@@ -176,7 +179,7 @@ a{
 }
 .header_icon_group{
     display: grid;
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: 25% 25% 25% 25%;
     justify-content: flex-end;
 }
 .header_icon_links{
@@ -188,6 +191,7 @@ a{
 }
 .header_icon_links span{
     display: block;
+    position: relative;
 }
 .header_icon_links span:first-child{
     position: relative;
@@ -204,11 +208,10 @@ a{
     font-weight: 500;
     line-height: 20px;
     top: -11px;
-    right: 21px;
+    right: 2px;
 }
-.header_cart_count{
-    right: 38px !important;
-    top: -13px !important;
+.header_icon_links span small.header_cart_count{
+    right: -8px !important;
 }
 .header_cart_prict{
     font-size: 13px;
@@ -219,11 +222,16 @@ a{
     color: var(--color-dark);
     transition: all 400ms ease;
     font-size: 15px;
+    display: block;
 }
 .header_icon_links .heade_text_naem:hover{
     margin-top: -5px;
     color: var(--color-dark-muted);
 }
+.menuIconWindow,.headerSearchIcon,.humberIcon{
+    display: none;
+}
+
 
 
 /*  ---------------- HEADER BOTTOM ------------------- */
@@ -238,6 +246,7 @@ a{
     align-items: center;
     gap: 3rem;
 }
+
 .header_category{
     display: flex;
     justify-content: space-between;
@@ -250,6 +259,7 @@ a{
     color: var(--color-dark);
     position: relative;
 }
+
 .header_category_group{
     position: absolute;
     top: 100%;
@@ -261,7 +271,9 @@ a{
     margin-top: 20px;
     border: 1px solid var(--color-light);
     border-top: 4px solid var(--color-primary);
+    display: block;
 }
+
 .header_category_group .header_category_item{
     /* position: relative; */
     padding: 6px 0 6px 10px;
@@ -437,7 +449,7 @@ a{
     background-color: var(--color-secondary);
 }
 .hero_section_container{
-    height: calc(100vh - 10rem);
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -461,7 +473,7 @@ a{
 .swiper_height{
     height: 100%;
 }
-.swiper-slide{
+.bannerSwiperSlider,.productSwiperSlider{
     padding: 15px;
     height: 100%;
     display: flex;
@@ -469,6 +481,10 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
 }
+.productSwiperSlider{
+    padding: 10px;
+}
+
 .slider_part_left{
     width: 55%;
 }
@@ -494,6 +510,9 @@ a{
     overflow: hidden;
 }
 /* ================================ FITURE CATEGORY CSS ==================================== */
+.fetureCatSection{
+    background-color: var(--color-secondary);
+}
 .sectionHeader{
     margin-bottom: 1.2rem;
 }
@@ -696,3 +715,455 @@ a{
 .priceVertical{
     padding-bottom: 0;
 }
+
+
+/* ======================= SHOP SECTION ================================= */
+.shop_section{
+    background-color: var(--color-secondary);
+}
+.shop_container{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    gap: 1.4rem;
+}
+.shopWrapper{
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px dashed var(--color-dark-muted);
+    display: grid;
+    grid-template-columns: 30% auto;
+    gap: 1.4rem;
+    height: 120px;
+}
+.shopLayer{
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    background-color:#040408c2;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    transition: all 400ms ease;
+    opacity: 0;
+}
+.shopWrapper:hover .shopLayer{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    z-index: 99;
+}
+
+.shopLayer a{
+   color: var(--color-secondary);
+   z-index: 99;
+}
+.shopImg{
+    width: 100%;
+    border-radius: 5px 0 0 5px;
+    background-color: var(--color-light);
+    position: relative;
+}
+.shopImg img{
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+    position: absolute;
+    right: -10px;
+}
+
+
+.vendorBtn{
+    background-color: var(--color-red);
+    padding: 3px 10px;
+    border-radius: 2px;
+    color: var(--color-secondary);
+    font-size: 12px;
+}
+.shopContent .shopName{
+    color: var(--color-dark);
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.3rem;
+    margin-top: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mobileMenuWrapper{
+    display: none;
+}
+
+/* ================================================================================ */
+/* =================================== RESPONSIVE CSS START ======================= */
+/* ================================================================================ */
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media screen and (max-width: 1400px) { 
+    body{
+        /* background-color: rebeccapurple; */
+    }
+ }
+@media screen and (max-width: 1200px) { 
+    body{
+        /* background-color: #ffc107; */
+    }
+    /*  ======================= HEADER CSS =================================== */
+    .header_icon_group{
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .heade_text_naem{
+        display: none !important;
+    }
+    .header_icon_group .header_icon_item{
+        text-align: center;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 50%;
+        color: white;
+    }
+    .header_icon_group .header_icon_links span small {
+        top: -9px;
+        right: -9px;
+    }
+    .browesCategory{
+        display: none;
+    }
+    .categoryBarsIcon{
+        display: block ;
+        color: var(--color-secondary);
+        font-size: 20px;
+    }
+    .header_bottom_container {
+        grid-template-columns: 5% 93%;
+        gap: 1rem;
+    }
+    .header_category {
+        background-color: transparent;
+        height: 100%;
+    }
+    .header_category_group {
+        width: 200px;
+        margin-top: 3px;
+        display: none;
+        z-index: 9999;
+        border-top: 4px solid var(--color-primary);
+    }
+    .header_category:hover .header_category_group{
+        display: block;
+    }
+
+    /* ============================== HOME PAGE MAIN SLIDER CSS ========================== */
+    .hero_section {
+        margin-top: 0px;
+    }
+    .hero_section_container {
+        flex-direction: column;
+    }
+    .banner_right {
+        width: 100%;
+    }
+    /* ============================== HOME PAGE FITURE CATEGORY CSS ========================== */
+    .fetureCatSection{
+        /* margin-top: 5rem; */
+    }
+    /* ============================== HOME VERTICAL PRODUCTCSS ========================== */
+    .product_container {
+        grid-template-columns: repeat(5, auto);
+    }
+    /* ============================== HOME VERTICAL PRODUCTCSS ========================== */
+    .verticalProductBottom .verTicalProductItem {
+        height: 112px;
+    }
+   
+ }
+@media screen and (max-width: 992px) { 
+    body{
+        background-color: aqua;
+    }
+    .container{
+        width: var(--container-width-sm);
+    }
+    .header_middle_container{
+        height: 100%;
+        display: grid;
+        grid-template-columns: 20% 43% 37%;
+        align-items: center;
+        gap: .8rem;
+    }
+    .brand_logo figure img {
+        width: 140px;
+    }
+    .banner_slider{
+        height: 250px;
+    }
+    .banner_right .banner_fiture div {
+        height: 100px !important;
+    }
+    .product_container{
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        gap: .7rem;
+    }
+    .verticalColumn:last-child{
+        display: none;
+    }
+    .shop_container {
+        display: grid;
+        grid-template-columns: repeat(3,auto);
+        gap: 1.4rem;
+    }
+   
+ }
+@media screen and (max-width: 768px) { 
+    body{
+        background-color: white;
+    }
+    .humberIcon a i{
+        font-size: 21px;
+        color: var(--color-dark);
+    }
+    .mobileMenuWrapper{
+        height: 3rem;
+        background-color: var(--color-secondary);
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 5px 4%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 99999;
+        box-shadow: 0 -1px 5px rgb(0 0 0 / 7%);
+    }
+    .appIcon{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .appIcon i{
+        font-size: 18px;
+        color: var(--color-dark);
+    }
+    .appIcon .appText{
+        font-size: 10px;
+        color: var(--color-dark-muted);
+    }
+    .appHomeIcon{
+        background: var(--color-primary);
+        transform: scale(1.3);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    .appHomeIcon i,.appHomeIcon .appText{
+       color: var(--color-secondary);
+    }
+    .appHomeIcon .appText{
+        font-size: 10px;
+    }
+    header{
+        box-shadow: 0 1px 5px rgb(0 0 0 / 7%);
+    }
+    .header-middle {
+        height: 4rem;
+        position: fixed;
+        width: 100%;
+        background-color: var(--color-secondary);
+        box-shadow: 0px 0px 10px var(--color-dark-muted);
+        z-index: 999999;
+        top: 0;
+    }
+    .mobileNone{
+        display: none;
+    }
+    
+    .header_middle_container{
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(3,auto);
+        align-items: center;
+        gap: 1.2rem;
+    }
+   
+    .header_middle_container{
+        /* position: relative; */
+        justify-content: space-between;
+    }
+    .header_search{
+        background-color: var(--color-secondary);
+        position: absolute;
+        top: 98%;
+        width: 100%;
+        z-index: 999999;
+        left: 0;
+        right: 0;
+        padding: 10px 20px;
+        box-shadow: 0 5px 5px rgb(0 0 0 / 7%);
+        display: none;
+    }
+    .header_icon_group {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .humberIcon,.headerSearchIcon{
+        display: block;
+    }
+    .theme1Container{
+        display: grid;
+        grid-template-columns: 100%;
+        align-items: center;
+    }
+    .searchDisplayBlock{
+        display: block;
+        position: sticky;
+        width: 100%;
+        z-index: 999999;
+        left: 0;
+        right: 0;
+        padding: 0;
+    }
+    .header_icon_group .header_icon_item {
+        text-align: center;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 50%;
+        color: white;
+        margin-right: 0.4rem;
+    }
+    .header_bottom,.wishlist,.menuIconHum{
+        display: none;
+    }
+    
+    .header-middle-1 {
+        position: absolute;
+        height: 0rem;
+    }
+    .searchDisplayBlock {
+        position: fixed;
+        width: 100%;
+        z-index: 999999;
+        left: 0;
+        top: 0;
+        right: 0;
+        padding: 0;
+        padding: 4px 10px;
+        display: none;
+    }
+   
+    .hero_section {
+        margin-top: 4rem;
+    }
+    .heroSectionThemeone {
+        margin-top: 0rem;
+    }
+ }
+@media screen and (max-width: 576px) { 
+    body{
+        background-color: red;
+    }
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* =============================================== JS STYLE ADDING START ==================================== */
+.fixedHeader{
+    /*  STICKI HEADER CSS   */
+    position: fixed;
+    width: 100%;
+    background-color: var(--color-secondary);
+    box-shadow: 0px 0px 10px var(--color-dark-muted);
+    z-index: 999999;
+    top: 0;
+}
+.headerBottomSticky{
+    /* WHEN WINDOW SCROLL THEN HEADER MENU SHOW & HIDE */
+    position: fixed;
+    width: 100%;
+    top: 5.8rem;
+    z-index: 99999;
+}
+.categoryActive{
+    /* HEADER LEFT CATEGORY LIST ACTIVE & DEACTIVE */
+    display: none;
+}
+.headerIconStyle{
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    background: var(--color-light);
+    line-height: 40px;
+    border-radius: 50%;
+    color: white;
+}
+.hiddenText{
+    display: none;
+}
+.active{
+    display: block;
+}
+
+/* =============================================== JS STYLE ADDING END ==================================== */

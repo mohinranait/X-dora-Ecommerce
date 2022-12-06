@@ -16,48 +16,60 @@
 
     <!-- STYLEING CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>X-dora Online Ecommerce Shop</title>
+    <title>X-dora Theme 1 Online Ecommerce Shop</title>
 </head>
 
 <body>
 
     <!-- =================================== HEADER PART START ================================ -->
     <header class="header">
-        <div class="header-middle">
-            <div class="container header_middle_container">
-                <div class="logo_left">
+        <div class="header-middle header-middle-1" id="header-middle">
+            <div class="container header_middle_container theme1Container">
+                <!-- MOBILE ICON  -->
+                <div class="humberIcon mobileNone">
+                    <i class="fa fa-bars mobileNone"></i>
+                </div>
+                <div class="logo_left mobileNone">
                     <a href="#" class="brand_logo">
                         <figure><img src="./assets/image/logo/logo.png" alt=""></figure>
                     </a>
                 </div>
-                <div class="header_search">
+               
+                <div class="header_search searchDisplayBlock">
                     <form action="">
                         <div class="header_search_group">
                             <input type="text" class="header_search_fild" placeholder="Search...">
-                            <button class="header_search_btn"><i
-                                    class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+                            <button class="header_search_btn"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
                         </div>
                     </form>
                 </div>
-                <div class="header_icons">
+               
+                <div class="header_icons mobileNone">
                     <ul class="header_icon_group">
-                        <li class="header_icon_item">
+                       
+                        <li class="header_icon_item menuIconHum">
+                            <a class="header_icon_links menuIconWindow" href="javascript:void(0)">
+                                <span class="headerIconSpan"><i class="fa fa-bars"></i></span>
+                            </a>
+                        </li>
+                        <li class="header_icon_item account">
                             <a class="header_icon_links" href="#">
-                                <span><i class="fa-solid fa-user"></i></span>
+                                <span class="headerIconSpan"><i class="fa-solid fa-user"></i></span>
                                 <span class="heade_text_naem">Account</span>
                             </a>
                         </li>
 
-                        <li class="header_icon_item">
+                        <li class="header_icon_item wishlist">
                             <a class="header_icon_links" href="#">
-                                <span><i class="fa-solid fa-heart"></i> <small>5</small></span>
+                                <span class="headerIconSpan"><i class="fa-solid fa-heart"></i> <small>5</small></span>
                                 <span class="heade_text_naem">Wishlist</span>
                             </a>
                         </li>
-                        <li class="header_icon_item">
+                      
+                        <li class="header_icon_item headerCart">
                             <a class="header_icon_links" href="#">
-                                <span class="header_cart_prict"><i class="fa-solid fa-cart-shopping"></i> <small
-                                        class="header_cart_count">55</small> 20.00$ </span>
+                                <span class="headerIconSpan header_cart_prict "><i class="fa-solid fa-cart-shopping"></i> <small
+                                        class="header_cart_count">55</small> <!--20.00$ --> </span>
                                 <span class="heade_text_naem">Cart</span>
                             </a>
                         </li>
@@ -69,9 +81,9 @@
         <div class="header_bottom">
             <div class="container header_bottom_container">
                 <!-- header browes category -->
-                <div class="header_category">
-                    <div><i class="fa-solid fa-bars"></i> Browes Category</div> <i class="fa-solid fa-angle-down"></i>
-                    <ul class="header_category_group">
+                <div class="header_category headercatButtonWrapper">
+                    <div class=""><i class="fa-solid fa-bars categoryBarsIcon"></i> <span class="browesCategory">Browes Category</span></div> <i class="fa-solid fa-angle-down browesCategory"></i>
+                    <ul class="header_category_group ">
                         <li class="header_category_item">
                             <a class="category_link" href="#">Electronics <i
                                     class="fa-solid fa-angle-right nextCateIcon"></i></a>
@@ -171,7 +183,7 @@
 
 
     <!--  ================================= HERO SECTION START ==================================== -->
-    <section class="hero_section">
+    <section class="hero_section heroSectionThemeone">
         <div class="container hero_section_container">
             <div class="banner_left"></div>
             <!-- Banner start code -->
@@ -181,24 +193,24 @@
                         <div class="swiper-wrapper">
 
                             <!-- slider item start -->
-                            <div class="swiper-slide"
+                            <div class="swiper-slide bannerSwiperSlider"
                                 style="background-image: url(./assets/image/slider/slider-1.png) ;">
                                 <div class="slider_part_left">
                                     <h3 class="slider_sub_title">Sign up for your daile newsletter</h3>
                                     <h2 class="slider_title">Dont missing amizing grower dealier</h2>
-                                    <a href="#" class="btn btn-primary">Shop Now</a>
+                                    <a href="#" class="btn btn-primary">BUY NOW</a>
                                 </div>
                                 <div class="slider_part_right"></div>
                             </div>
                             <!-- slider item end -->
 
                             <!-- slider item start -->
-                            <div class="swiper-slide"
+                            <div class="swiper-slide bannerSwiperSlider"
                                 style="background-image: url(./assets/image/slider/slider-2.png) ;">
                                 <div class="slider_part_left">
                                     <h3 class="slider_sub_title">Sign up for your daile newsletter</h3>
                                     <h2 class="slider_title">Dont missing amizing grower dealier</h2>
-                                    <a href="#" class="btn btn-primary">Shop Now</a>
+                                    <a href="#" class="btn btn-primary">BUY NOW</a>
                                 </div>
                                 <div class="slider_part_right"></div>
                             </div>
@@ -224,7 +236,7 @@
 
 
     <!--  ================================= FITURE CATEGORY START ==================================== -->
-    <section class="section">
+    <section class="section fetureCatSection">
         <div class="container sectionHeader">
             <h2 class="section_title">Featured Categories <a href="#" class="btn float-right btn-primary ">All Categorys
                     <i class="fa-solid fa-arrow-right"></i></a> </h2>
@@ -551,7 +563,7 @@
         <div class="container ">
             <div class="swiper productSlider">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide ">
+                    <div class="swiper-slide productSwiperSlider">
                         <div class="productItem">
                             <div class="productImg text-center">
                                 <div class="onSel hotSell">30% Offer</div>
@@ -583,7 +595,7 @@
 
                     </div>
 
-                    <div class="swiper-slide ">
+                    <div class="swiper-slide productSwiperSlider">
                         <div class="productItem">
                             <div class="productImg text-center">
                                 <div class="onSel hotSell">30% Offer</div>
@@ -615,7 +627,7 @@
 
                     </div>
 
-                    <div class="swiper-slide ">
+                    <div class="swiper-slide productSwiperSlider">
                         <div class="productItem">
                             <div class="productImg text-center">
                                 <div class="onSel hotSell">30% Offer</div>
@@ -647,7 +659,7 @@
 
                     </div>
 
-                    <div class="swiper-slide ">
+                    <div class="swiper-slide productSwiperSlider">
                         <div class="productItem">
                             <div class="productImg text-center">
                                 <div class="onSel hotSell">30% Offer</div>
@@ -679,7 +691,7 @@
 
                     </div>
 
-                    <div class="swiper-slide ">
+                    <div class="swiper-slide productSwiperSlider">
                         <div class="productItem">
                             <div class="productImg text-center">
                                 <div class="onSel hotSell">30% Offer</div>
@@ -711,7 +723,7 @@
 
                     </div>
 
-                    <div class="swiper-slide ">
+                    <div class="swiper-slide productSwiperSlider">
                         <div class="productItem">
                             <div class="productImg text-center">
                                 <div class="onSel hotSell">30% Offer</div>
@@ -743,7 +755,7 @@
 
                     </div>
 
-                    <div class="swiper-slide ">
+                    <div class="swiper-slide productSwiperSlider">
                         <div class="productItem">
                             <div class="productImg text-center">
                                 <div class="onSel hotSell">30% Offer</div>
@@ -786,8 +798,8 @@
     <!-- =============================== VERTICAL PORODUCT SECTION START ===================== -->
     <section class="verticalSection section">
         <div class="container verticalProductContainer">
-            <div class=" verticalProductSlider">
-                <div class="verticalColumn">
+            <ul class=" verticalProductSlider">
+                <li class="verticalColumn">
                     <div class="verticalProductTop">
                         <h4 class="verticalHeading section_title">Popular Product</h4>
                     </div>
@@ -889,8 +901,8 @@
 
                         </li>
                     </ul>
-                </div>
-                <div class="verticalColumn">
+                </li>
+                <li class="verticalColumn">
                     <div class="verticalProductTop">
                         <h4 class="verticalHeading section_title">Popular Product</h4>
                     </div>
@@ -992,8 +1004,8 @@
 
                         </li>
                     </ul>
-                </div>
-                <div class="verticalColumn">
+                </li>
+                <li class="verticalColumn">
                     <div class="verticalProductTop">
                         <h4 class="verticalHeading section_title">Popular Product</h4>
                     </div>
@@ -1095,11 +1107,204 @@
 
                         </li>
                     </ul>
-                </div>
-            </div>
+                </li>
+            </ul>
         </div>
     </section>
     <!-- =============================== VERTICAL PORODUCT SECTION END ======================= -->
+
+
+    <div class="shop_section section">
+        <div class="container sectionHeader">
+            <h2 class="section_title">Fiture Shop 
+                <a href="#" class="btn float-right btn-primary ">View All 
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a> 
+            </h2>
+        </div>
+        <div class="container shop_container">
+            <div class="shopWrapper">
+                <div class="shopLayer">
+                    <a href="#" class="btn btn-primary">Visite Shop</a>
+                </div>
+                <div class="shopImg">
+                    <img src="./assets/image/vendor/best-seller-1.png" alt="">
+                </div>
+                <div class="shopContent">
+                    <h5 class="shopName">Mohin Rana Supper Shop</h5>
+                    <ul class="productRate text-center">
+                        <li><i class="fa-solid fa-star"></i></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                        <li> <span class="rateingCountpItem">(12)</span></li>
+                    </ul>
+                    <a href="#" class=" vendorBtn">Visit Store</a>
+                </div>
+            </div>
+            <div class="shopWrapper">
+                <div class="shopLayer">
+                    <a href="#" class="btn btn-primary">Visite Shop</a>
+                </div>
+                <div class="shopImg">
+                    <img src="./assets/image/vendor/best-seller-2.png" alt="">
+                </div>
+                <div class="shopContent">
+                    <h5 class="shopName">Mohin Rana Supper Shop</h5>
+                    <ul class="productRate text-center">
+                        <li><i class="fa-solid fa-star"></i></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                        <li> <span class="rateingCountpItem">(12)</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="shopWrapper">
+                <div class="shopLayer">
+                    <a href="#" class="btn btn-primary">Visite Shop</a>
+                </div>
+                <div class="shopImg">
+                    <img src="./assets/image/vendor/best-seller-3.png" alt="">
+                </div>
+                <div class="shopContent">
+                    <h5 class="shopName">Mohin Rana Supper Shop</h5>
+                    <ul class="productRate text-center">
+                        <li><i class="fa-solid fa-star"></i></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                        <li> <span class="rateingCountpItem">(12)</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="shopWrapper">
+                <div class="shopLayer">
+                    <a href="#" class="btn btn-primary">Visite Shop</a>
+                </div>
+                <div class="shopImg">
+                    <img src="./assets/image/vendor/best-seller-1.png" alt="">
+                </div>
+                <div class="shopContent">
+                    <h5 class="shopName">Mohin Rana Supper Shop</h5>
+                    <ul class="productRate text-center">
+                        <li><i class="fa-solid fa-star"></i></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                        <li> <span class="rateingCountpItem">(12)</span></li>
+                    </ul>
+                    <a href="#" class=" vendorBtn">Visit Store</a>
+                </div>
+            </div>
+            <div class="shopWrapper">
+                <div class="shopLayer">
+                    <a href="#" class="btn btn-primary">Visite Shop</a>
+                </div>
+                <div class="shopImg">
+                    <img src="./assets/image/vendor/best-seller-2.png" alt="">
+                </div>
+                <div class="shopContent">
+                    <h5 class="shopName">Mohin Rana Supper Shop</h5>
+                    <ul class="productRate text-center">
+                        <li><i class="fa-solid fa-star"></i></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                        <li> <span class="rateingCountpItem">(12)</span></li>
+                    </ul>
+                </div>
+            </div> <div class="shopWrapper">
+                <div class="shopLayer">
+                    <a href="#" class="btn btn-primary">Visite Shop</a>
+                </div>
+                <div class="shopImg">
+                    <img src="./assets/image/vendor/best-seller-1.png" alt="">
+                </div>
+                <div class="shopContent">
+                    <h5 class="shopName">Mohin Rana Supper Shop</h5>
+                    <ul class="productRate text-center">
+                        <li><i class="fa-solid fa-star"></i></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                        <li> <span class="rateingCountpItem">(12)</span></li>
+                    </ul>
+                    <a href="#" class=" vendorBtn">Visit Store</a>
+                </div>
+            </div>
+            <div class="shopWrapper">
+                <div class="shopLayer">
+                    <a href="#" class="btn btn-primary">Visite Shop</a>
+                </div>
+                <div class="shopImg">
+                    <img src="./assets/image/vendor/best-seller-2.png" alt="">
+                </div>
+                <div class="shopContent">
+                    <h5 class="shopName">Mohin Rana Supper Shop</h5>
+                    <ul class="productRate text-center">
+                        <li><i class="fa-solid fa-star"></i></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                        <li> <span class="rateingCountpItem">(12)</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="shopWrapper">
+                <div class="shopLayer">
+                    <a href="#" class="btn btn-primary">Visite Shop</a>
+                </div>
+                <div class="shopImg">
+                    <img src="./assets/image//vendor/best-seller-4.png" alt="">
+                </div>
+                <div class="shopContent">
+                    <h5 class="shopName">Mohin Rana Supper Shop</h5>
+                    <ul class="productRate text-center">
+                        <li><i class="fa-solid fa-star"></i></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                        <li> <span class="rateingCountpItem">(12)</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <div class="mobileMenuWrapper">
+        <a href="javascript:void(0)" class="appIcon appSearchIcon searchDisplay ">
+            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+            <span class="appText">Search</span>
+        </a>
+      
+        <a href="javascript:void(0)" class="appIcon appCategoryIcon ">
+            <i class="fa fa-bars"></i>
+            <span class="appText">Category</span>
+        </a>
+        <a href="javascript:void(0)" class="appIcon appHomeIcon ">
+            <i class="fa-sharp fa-solid fa-house"></i>
+            <span class="appText">Home</span>
+        </a>
+        <a href="javascript:void(0)" class="appIcon appCartIcon ">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="appText">Cart</span>
+        </a>
+        <a href="javascript:void(0)" class="appIcon appAccountIcon ">
+            <i class="fa-solid fa-user"></i>
+            <span class="appText">Account</span>
+        </a>
+    </div>
 
 
 
