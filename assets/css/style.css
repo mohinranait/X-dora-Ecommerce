@@ -509,6 +509,9 @@ a{
     border-radius: 5px;
     overflow: hidden;
 }
+.banner_right .banner_fiture div img{
+    object-fit: cover;
+}
 /* ================================ FITURE CATEGORY CSS ==================================== */
 .fetureCatSection{
     background-color: var(--color-secondary);
@@ -897,10 +900,7 @@ a{
     .banner_right {
         width: 100%;
     }
-    /* ============================== HOME PAGE FITURE CATEGORY CSS ========================== */
-    .fetureCatSection{
-        /* margin-top: 5rem; */
-    }
+
     /* ============================== HOME VERTICAL PRODUCTCSS ========================== */
     .product_container {
         grid-template-columns: repeat(5, auto);
@@ -952,6 +952,16 @@ a{
 @media screen and (max-width: 768px) { 
     body{
         background-color: white;
+    }
+    .btn {
+        padding: 0.2rem 1rem;
+        font-size: .9rem;
+    }
+    .slider_part_left {
+        width: 90%;
+    }
+    .slider_part_right {
+        width: 10%;
     }
     .humberIcon a i{
         font-size: 21px;
@@ -1088,19 +1098,107 @@ a{
         padding: 4px 10px;
         display: none;
     }
-   
+    .section_title {
+        font-size: 1rem;
+    }
     .hero_section {
         margin-top: 4rem;
     }
     .heroSectionThemeone {
         margin-top: 0rem;
     }
+    .product_container {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        gap: 0.7rem;
+    }
+    .shop_container {
+        grid-template-columns: repeat(2, auto);
+    }
+
  }
 @media screen and (max-width: 576px) { 
     body{
         background-color: red;
     }
+    .brand_logo figure img {
+        width: 100px;
+    }
+    .slider_part_left {
+        width: 100%;
+    }
+    .slider_part_right {
+        width: 0%;
+    }
+    .slider_part_left .slider_title{
+        font-size: 1rem;
+    }
+    .slider_part_left .slider_title {
+        line-height: 1.5rem;
+        margin: 0.3rem 0;
+    }
+    .banner_slider{
+        border-radius: 5px;
+        height: 145px;
+        overflow: hidden;
+    }
+    .banner_right .banner_fiture div {
+        height: 60px !important;
+    }
+    .product_container {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 1rem;
+    }
+    .verticalProductSlider {
+        display: grid;
+        grid-template-columns: 100%;
+        column-gap: 0rem;
+        row-gap: 2rem;
+    }
+    .verticalColumn:last-child{
+        display: block;
+    }
  }
+
+ @media screen and (max-width: 400px) { 
+    body{
+        background-color: #29A56C;
+    }
+    .shop_container {
+        grid-template-columns: repeat(1, auto);
+    }
+}
+ @media screen and (max-width: 350px) { 
+    body{
+        background-color: chartreuse;
+    }
+    .slider_part_left .slider_sub_title {
+        font-size: .5rem;
+        color: var(--color-primary);
+    }
+    .slider_part_left .slider_title {
+        font-size: .7rem;
+    }
+    .mainSliderBtn{
+        padding: 0;
+        background: transparent;
+        font-size: .6rem;
+        color: var(--color-primary);
+    }
+    .banner_right .banner_fiture div {
+        height: 50px !important;
+    }
+    .product_container {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        gap: 1rem;
+    }
+    .catSecBtn{
+        display: none;
+    }
+    
+}
 
 
 
