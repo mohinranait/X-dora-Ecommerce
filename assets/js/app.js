@@ -2,6 +2,7 @@
 // GLOBAL VARIABLES
 let headerMenuIcon  = document.querySelectorAll('.headerIconSpan');
 let header_bottom = document.querySelector('.header_bottom');
+let overly = document.querySelector('.overly');
 
 // STICKI HEADER 
 document.addEventListener('scroll', () =>{
@@ -58,5 +59,33 @@ let searchDisplay = document.querySelector('.searchDisplay');
 searchDisplay.addEventListener('click', () => {
     let header_search  = document.querySelector('.header_search');
     header_search.classList.toggle('active')
+})
+
+
+
+
+// SHOPPING CARD SHOW & HIDE
+let headerCart = document.querySelector('.headerCart');
+let shoppingCartWrapper = document.querySelector('.shoppingCartWrapper');
+headerCart.addEventListener('click', function(){
+    shoppingCartWrapper.classList.add('shoppingCartBlock');
+    overly.classList.add('active');
+})
+let closeCartWrapper  = document.querySelector('.closeCartWrapper');
+closeCartWrapper.addEventListener('click', () => {
+    shoppingCartWrapper.classList.remove('shoppingCartBlock')
+    overly.classList.remove('active');
+})
+overly.addEventListener('click', () => {
+    shoppingCartWrapper.classList.remove('shoppingCartBlock')
+    overly.classList.remove('active');
+})
+
+
+
+let appCartIcon = document.querySelector('.appCartIcon');
+appCartIcon.addEventListener('click', () => {
+    shoppingCartWrapper.classList.add('shoppingCartBlock');
+    overly.classList.add('active');
 })
 

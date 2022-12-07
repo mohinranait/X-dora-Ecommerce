@@ -132,6 +132,154 @@ a{
 }
 
 
+
+/* =========================== SHOPPING CART DESIGN CSS ======================= */
+.shoppingCartWrapper{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0px;
+    height: 100vh;
+    background-color: var(--color-secondary);
+    display: grid;
+    grid-template-columns: 1/-1;
+    grid-template-rows: 10% auto 20%;
+    z-index: 99999999;
+    
+}
+.closeCartWrapper{
+    cursor: pointer;
+}
+.shoppingCartHeader div{
+    display: grid;
+    grid-template-columns: 80% auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px 10px 30px;
+    border-bottom: 1px solid var(--color-light);
+}
+.shoppingCartBody{
+    overflow-y: scroll;
+    padding: 20px 30px 10px 30px;
+}
+.shoppingCartGroup{
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 0.6rem;
+}
+/* Scrollbar css start */
+.shoppingCartBody::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+}
+.shoppingCartBody::-webkit-scrollbar
+{
+	width: 5px;
+}
+.shoppingCartBody::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: var(--color-primary);
+}
+/* Scrollbar css end */
+.shoppingCartGroup .shoppingCartItem{
+    position: relative;
+    padding: 3px;
+    border-radius: 5px;
+    transition: all 400ms ease;
+}
+.shoppingCartGroup .shoppingCartItem:hover{
+    background-color: var(--color-light);
+    
+}
+.shoppingCartGroup .shoppingCartItem .shoppingCartItemRemove{
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 25px;
+    background-color: var(--color-secondary);
+    box-shadow: 0px 0px 2px var(--color-dark-muted);
+}
+.shoppingCartGroup .shoppingCartItem .shoppingCartLink{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: center;
+    gap: .8rem;
+}
+.shoppingCartGroup .shoppingCartItem .shoppingCartLink div p{
+    line-height: 17px;
+    font-size: 13px;
+    font-weight: 500;
+}
+.shoppingCartGroup .shoppingCartItem .shoppingCartLink img{
+    border: 1px solid var(--color-light);
+    border-radius: 5px;
+}
+.shoppingCartWrapper .shoppingCartFooter{
+    display: grid;
+    grid-template-columns: 100%;
+    padding: 20px 30px 20px 30px;
+    border-top: 1px solid var(--color-light);
+}
+.shoppingCartFooterPrice{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    justify-content: space-between;
+}
+.shoppingCartFooterPrice div{
+    color: var(--color-dark);
+    font-size: 20px;
+    font-weight: 600;
+}
+.shoppingCartBtnWrapper{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: space-between;
+}
+.shoppingCartBtnWrapper .checkoutBtn,.shoppingCartBtnWrapper .cartBtn{
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 500ms ease;
+    border: 1px solid transparent;
+}
+.shoppingCartBtnWrapper .checkoutBtn{
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
+.shoppingCartBtnWrapper .cartBtn{
+    background-color: var(--color-dark);
+    color: var(--color-secondary);
+}
+.shoppingCartBtnWrapper .checkoutBtn:hover{
+    background-color: var(--color-dark);
+    color: var(--color-secondary);
+}
+.shoppingCartBtnWrapper .cartBtn:hover{
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
+
+/* ============= WINDOW OVERLY ================= */
+.overly{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(4, 4, 8, 0.767);
+    z-index: 9999999;
+    display: none;
+}
+
 /*  ==================================== HEADER MIDDLE CSS ============================================ */
 .header{
     background-color: var(--color-secondary);
@@ -795,10 +943,131 @@ a{
 }
 
 
+/* ==================================== NEWS LETTER SECTION ============================= */
+.newsletterSection{
+    background-color: var(--color-light);
+}
+.newsletterContainer{
+    display: grid;
+    grid-template-columns: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.newsletterContainer h5{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--color-dark);
+}
+.newsletterContainer p{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-dark);
+}
+.newsLetterForm {
+    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+}
+.newsLetterInput {
+    padding: 10px;
+    border: 2px solid var(--color-dark-muted);
+    outline: none;
+}
+.newsletterBtn{
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 0px !important;
+    border: 1px solid transparent;
+    cursor: pointer;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
 
 
+/* ================================== FOOTER SECTION CSS START ================================== */
+footer{
+    background-color: var(--color-light);
+}
+.footerContainer{
+    padding: 3rem 0;
+    display: grid;
+    grid-template-columns: 30% auto auto auto;
+    gap: 3rem;
+}
+.footer1 .footer_logo img{
+    width: 180px;
+}
+.footer1 .footerText{
+    font-size: 14px;
+    font-weight: 500;
+}
+.appInstallTitle{
+    font-size: 20px;
+    font-weight: 500;
+    margin: .7rem 0 0.4rem 0;
+}
+.footer1 .downloadApp{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    justify-content: flex-start;
+    gap: 1rem;
+}
+.footer1 .downloadApp img{
+    width: 100px;
+}
+.footer_title{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--color-dark);
+}
+.footerLinkGroup{
+    display: grid;
+    grid-template-columns: 100%;
+    row-gap: .6rem;
+}
+.footerLinkGroup .footerLinkItem .footerLink{
+    position: relative;
+   color: var(--color-dark);
+   font-size: 15px;
+   transition: all 500ms ease;
+   width: 100%;
+   border-bottom: 1px solid transparent;
+}
+.footerLinkGroup .footerLinkItem .footerLink::after{
+    content: "";
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    right: 0;
+    background: var(--color-primary);
+    position: absolute;
+    transition: all 400ms ease;
+}
+.footerLinkGroup .footerLinkItem .footerLink:hover::after{
+    width: 100%;
+    left: 0;
+}
+.footerLink:hover{
+    color: var(--color-primary) !important;
+}
+.footerBottomLeft p{
+    font-size: 14px;
+}
+.footerBottom{
+    border-top: 1px solid var(--color-dark-muted);
+    padding: 1rem 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+}
 
 
+/* ================================== FOOTER SECTION CSS END ================================== */
 
 
 
@@ -909,6 +1178,9 @@ a{
     .verticalProductBottom .verTicalProductItem {
         height: 112px;
     }
+    .newsLetterForm {
+        grid-template-columns: 75% 25%;
+    }
    
  }
 @media screen and (max-width: 992px) { 
@@ -946,6 +1218,17 @@ a{
         display: grid;
         grid-template-columns: repeat(3,auto);
         gap: 1.4rem;
+    }
+    .newsletterContainer{
+        grid-template-columns: 60%;
+    }
+    .newsLetterForm {
+        grid-template-columns: 75% 25%;
+    }
+    /* ===== FOOTER ======= */
+    .footerContainer {
+        grid-template-columns: 30% auto auto auto;
+        gap: 1.5rem;
     }
    
  }
@@ -1115,11 +1398,28 @@ a{
     .shop_container {
         grid-template-columns: repeat(2, auto);
     }
+    .newsletterContainer{
+        grid-template-columns: 100%;
+    }
+    /* ===== FOOTER ======= */
+    .footerTheme1{
+        margin-bottom: 3rem;
+    }
+    .footerContainer {
+        grid-template-columns: 100%;
+        row-gap: 2rem;
+    }
+    .newsletterContainer h5 {
+        font-size: 18px;
+    }
 
  }
 @media screen and (max-width: 576px) { 
     body{
         background-color: red;
+    }
+    button.btn.btn-sm.btn-primary-muted.d-block {
+        padding: 10px 0;
     }
     .brand_logo figure img {
         width: 100px;
@@ -1158,6 +1458,16 @@ a{
     }
     .verticalColumn:last-child{
         display: block;
+    }
+    .newsLetterForm {
+        grid-template-columns: 70% 30%;
+    }
+    .footerBottom {
+        row-gap: 1.2rem;
+        grid-template-columns: 100%;
+    }
+    .paymentImg img{
+        width: 45%;
     }
  }
 
@@ -1263,5 +1573,18 @@ a{
 .active{
     display: block;
 }
+.shoppingCartBlock{
+    width: 350px;
+    animation: cartWidth 150ms linear;
+}
+@keyframes cartWidth {
+    0%{
+       width: 0;
+    }
+    100%{
+        width: 350px;
+    }
+}
+
 
 /* =============================================== JS STYLE ADDING END ==================================== */
