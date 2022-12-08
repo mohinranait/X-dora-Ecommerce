@@ -2,7 +2,8 @@
 
 // Banner Selider js code
 var swiper = new Swiper(".bannerSlider", {
-    spaceBetween: 30,
+    spaceBetween: 10,
+    loop: true,
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
