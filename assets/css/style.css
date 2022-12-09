@@ -547,7 +547,7 @@ a{
     display: inline-block;
     color: var(--color-secondary);
     font-weight: 500;
-    font-size: 15px;
+    font-size: 16px;
 }
 .nav_drop_down{
     position: relative;
@@ -786,6 +786,7 @@ a{
     text-decoration: line-through;
     color: var(--color-dark-muted);
     font-weight: 400;
+    margin-left: 4px;
 }
 .onSel{
     background-color: var(--color-primary);
@@ -916,7 +917,7 @@ a{
     position: absolute;
     width: 0%;
     height: 0%;
-    background-color:#040408c2;
+    background-color:#04040845;
     top: 0;
     left: 0;
     display: flex;
@@ -965,6 +966,9 @@ a{
     font-weight: 600;
     line-height: 1.3rem;
     margin-top: 8px;
+}
+.shopRating{
+    justify-content: flex-start;
 }
 
 
@@ -1282,8 +1286,257 @@ input[type="checkbox"]:checked + span:before {
     border-color: var(--color-light);
 }
 
+/* ==================================================== LOGIN / REGISTER PAGE CSS =-==================== */
+.authenticate_page{
+    display: grid;
+    grid-template-columns:  34% 34% ;
+    justify-content: center;
+    margin: 150px 0 ;
+    gap: 3rem;
+}
+.authenticate_left img{
+    border-radius: 5px;
+}
+.authenticate_header {
+    margin-bottom: 2.3rem;
+}
+.authenticate_header h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+}
+.authenticate_header p{
+    font-size: 13px;
+    color: var(--color-dark);
+}
+.authenticate_header p .crateAccountLink{
+    color: var(--color-primary);
+}
 
 
+
+.form-group{
+    width: 100%;
+    margin-bottom: 15px;
+}
+.form-control{
+    width: 100%;
+    padding: 1rem .8rem;
+    border: 1px solid var(--color-light);
+    border-radius: 5px;
+    outline: none;
+    transition: all 500ms ease;
+}
+.form-control:focus-visible{
+    border: 1px solid var(--color-primary);
+}
+
+.chek-form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.authenticate_buton{
+    background-color: var(--color-dark);
+    color: var(--color-secondary);
+    padding: 0.8rem 1.8rem;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 1.6rem;
+    transition: all 400ms ease;
+}
+.authenticate_buton:hover{
+    transform: translateY(-6px);
+}
+
+.chek-form div a{
+    color: var(--color-dark-muted);
+    font-size: 13px;
+}
+.custom_checkbox{
+    display: none;
+}
+.custom_checkbox_label{
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+.custom_checkbox_label::before{
+    content: "";
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    border: 1px solid var(--color-dark-muted);
+    border-radius: 3px;
+    margin: 0px 10px 0 0;
+}
+.custome-checkbox input[type='checkbox']:checked + .custom_checkbox_label::before {
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+}
+.custom_checkbox_label::after{
+    position: absolute;
+    content: "";
+    width: 11px;
+    height: 6px;
+    border-radius: 3px;
+    left: 4px;
+    top: 45%;
+    border-left: 2px solid var(--color-secondary);
+    border-bottom: 2px solid var(--color-secondary);
+    transform: translateY(-65%) rotate(-45deg);
+    display: none;
+   
+}
+.custome-checkbox input[type='checkbox']:checked + .custom_checkbox_label::after{
+    display: block;
+}
+
+/* Register page */
+.register_page_header{
+    padding: 70px 0;
+    background-color: var(--color-primary-muted);
+}
+.register_page{
+    margin: 100px 0;
+}
+/* Tabs */
+.tabs {
+    width: 100%;
+    border-radius: 5px 5px 5px 5px;
+}
+ul#tabs-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul#tabs-nav li {
+    padding: 7px 20px;
+    cursor: pointer;
+    border: 1px solid var(--color-light);
+    border-radius: 5px;
+    margin: 0 1rem;
+    transition: all 500ms ease;
+}
+ul#tabs-nav li a{
+    width: 110px;
+    display: flex;
+    justify-content: space-between;
+    color: var(--color-dark);
+    text-decoration: none;   
+}
+ul#tabs-nav li a .userTabTitle,ul#tabs-nav li a .userTabIcon{
+    font-size: 23px;
+    font-weight: 500;
+}
+ul#tabs-nav li a .userTabIcon{
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    text-align: center;
+    line-height: 27px;
+    border-radius: 50%;
+    border: 7px solid var(--color-light);
+    color: var(--color-primary);
+}
+ul#tabs-nav li:hover,
+ul#tabs-nav li.active {
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    position: relative;
+}
+ul#tabs-nav li:hover a{
+    color: var(--color-secondary);
+}
+ul#tabs-nav li:hover a .userTabIcon{
+    background-color:var(--color-secondary);
+    color: var(--color-dark);
+    border: 7px solid var(--color-secondary);
+    color: var(--color-primary);
+}
+ul#tabs-nav li.active a{
+    color: var(--color-secondary);
+}
+ul#tabs-nav li.active a .userTabIcon{
+    background-color: var(--color-secondary);
+    color: var(--color-dark);
+    border: 7px solid var(--color-secondary);
+    color: var(--color-primary);
+}
+ul#tabs-nav li.active::after{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid var(--color-secondary);
+    background-color: var(--color-primary);
+    top: -12px;
+    right: -12px;
+    font-weight: 900;
+}
+ul#tabs-nav li.active::before{
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 7px;
+    top: -4px;
+    right: -4px;
+    z-index: 1;
+    transform: rotate(-45deg);
+    border-left: 2px solid var(--color-secondary);
+    border-bottom: 2px solid var(--color-secondary);
+}
+.tab-content {
+    padding: 10px;
+}
+.authenticate_register {
+    margin: 100px 0 0 0;
+}
+.social_media_login{
+    margin-top: 115px;
+    border: 1px solid var(--color-light);
+    padding: 2.4rem;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 1.2rem;
+}
+.social_media_item a.social_media_link {
+    border: 1px solid var(--color-light);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 12px 2rem;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color-secondary);
+}
+.social_media_item.facebook a.social_media_link {
+    background-color: #1877F2;
+}
+.social_media_item.apple a.social_media_link {
+    background-color: #000000;
+}
+.social_media_item.google a.social_media_link {
+    background-color: transparent;
+    color: var(--color-dark);
+}
+.social_media_item.google a.social_media_link img{
+    width: 25px;
+    margin-right: 10px;
+}
+.social_media_item a.social_media_link i {
+    margin-right: 10px;
+    font-size: 25px;
+}
 
 
 
@@ -1634,6 +1887,21 @@ footer{
         grid-template-columns: repeat(2, auto);
         gap: 1.2rem;
     }
+    .authenticate_page {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 3rem;
+    }
+    .social_media_login {
+        margin-top: 115px;
+        border: 1px solid var(--color-light);
+        padding: 1rem;
+        gap: 1.2rem;
+    }
+    .social_media_item a.social_media_link {
+        padding: 10px 1rem;
+        font-size: 13px;
+    }
    
  }
 @media screen and (max-width: 768px) { 
@@ -1832,6 +2100,23 @@ footer{
         grid-template-columns: repeat(3, auto);
         gap: 1rem;
     }
+    /* register page */
+    .authenticate_page {
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: center;
+        margin: 30px 0;
+        gap: 3rem;
+    }
+    .social_media_login {
+        margin-top: 30px;
+    }
+    .authenticate_login .authenticate_right{
+        order: 1;
+    }
+    .authenticate_login .authenticate_left{
+        order: 2;
+    }
 
  }
 @media screen and (max-width: 576px) { 
@@ -1888,6 +2173,31 @@ footer{
     }
     .paymentImg img{
         width: 45%;
+    }
+    /* Login / Register page */
+    .authenticate_header h1 {
+        font-size: 1.5rem;
+    }
+    ul#tabs-nav li {
+        padding: 0px 7px;
+        margin: 0 0.2rem;
+    }
+    ul#tabs-nav li a .userTabIcon {
+        font-size: 15px;
+        font-weight: 500;
+        width: 30px;
+        height: 30px;
+        line-height: 16px;
+        border-radius: 50%;
+    }
+    ul#tabs-nav li a .userTabTitle{
+        font-size: 15px;
+    }
+    ul#tabs-nav li a {
+        width: 80px;
+        display: flex;
+        align-items: center;
+        padding: 5px ;
     }
  }
 
