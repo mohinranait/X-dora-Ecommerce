@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- POPPINS FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- FONT AWASOME CDN JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <link rel="stylesheet" href="./assets/plugins/swip-slider/swip.css">
+    <!-- STYLEING CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Product page </title>
+</head>
+
+<body>
+
+    <!-- =================================== HEADER PART START ================================ -->
+    <header class="header">
+        <div class="header-middle header-middle-1" id="header-middle">
+            <div class="container header_middle_container theme1Container">
+                <!-- MOBILE ICON  -->
+                <div class="humberIcon mobileNone">
+                    <i class="fa fa-bars mobileNone"></i>
+                </div>
+                <div class="logo_left mobileNone">
+                    <a href="#" class="brand_logo">
+                        <figure><img src="./assets/image/logo/logo.png" alt=""></figure>
+                    </a>
+                </div>
+                <div class="header_search searchDisplayBlock">
+                    <form action="">
+                        <div class="header_search_group">
+                            <input type="text" class="header_search_fild" placeholder="Search...">
+                            <button class="header_search_btn"><i
+                                    class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="header_icons mobileNone">
+                    <ul class="header_icon_group">
+
+                        <li class="header_icon_item menuIconHum">
+                            <a class="header_icon_links menuIconWindow" href="javascript:void(0)">
+                                <span class="headerIconSpan"><i class="fa fa-bars"></i></span>
+                            </a>
+                        </li>
+                        <li class="header_icon_item account">
+                            <a class="header_icon_links" href="#">
+                                <span class="headerIconSpan"><i class="fa-solid fa-user"></i></span>
+                                <span class="heade_text_naem">Account</span>
+                            </a>
+                        </li>
+
+                        <li class="header_icon_item wishlist">
+                            <a class="header_icon_links" href="#">
+                                <span class="headerIconSpan"><i class="fa-solid fa-heart"></i> <small>5</small></span>
+                                <span class="heade_text_naem">Wishlist</span>
+                            </a>
+                        </li>
+
+                        <li class="header_icon_item headerCart">
+                            <a class="header_icon_links" href="javascript:void(0)">
+                                <span class="headerIconSpan header_cart_prict "><i
+                                        class="fa-solid fa-cart-shopping"></i> <small
+                                        class="header_cart_count">55</small>
+                                    <!--20.00$ -->
+                                </span>
+                                <span class="heade_text_naem">Cart</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header_bottom">
+            <div class="container header_bottom_container">
+                <!-- header browes category -->
+                <div class="header_category headercatButtonWrapper">
+                    <div class=""><i class="fa-solid fa-bars categoryBarsIcon"></i> <span class="browesCategory">Browes
+                            Category</span></div> <i class="fa-solid fa-angle-down browesCategory"></i>
+                    <ul class="header_category_group ">
+                        <li class="header_category_item">
+                            <a class="category_link" href="#">Electronics <i
+                                    class="fa-solid fa-angle-right nextCateIcon"></i></a>
+                            <ul class="next_cat_group">
+                                <li class="next_cat_item"><a href="#" class="next_cat_link ">Mobile</a></li>
+                                <li class="next_cat_item">
+                                    <a href="#" class="next_cat_link ">Laptop <i
+                                            class="fa-solid fa-angle-right nextCateIcon"></i> </a>
+                                    <ul class="sub_sub_cat_group">
+                                        <li class="next_cat_item"><a href="#" class="next_cat_link">Lenovo </a></li>
+                                        <li class="next_cat_item"><a href="#" class="next_cat_link">Samsung</a></li>
+                                        <li class="next_cat_item"><a href="#" class="next_cat_link">Walton</a></li>
+                                        <li class="next_cat_item"><a href="#" class="next_cat_link">HP Laptopn</a></li>
+                                        <li class="next_cat_item"><a href="#" class="next_cat_link">Dell Laptop</a></li>
+                                    </ul>
+                                    <!--/.sub_sub_cat_group-->
+                                </li>
+                                <li class="next_cat_item">
+                                    <a href="#" class="next_cat_link ">Speekers <i
+                                            class="fa-solid fa-angle-right nextCateIcon"></i> </a>
+                                    <ul class="sub_sub_cat_group">
+                                        <li class="next_cat_item"><a href="#" class="next_cat_link">Speker 1</a></li>
+                                        <li class="next_cat_item"><a href="#" class="next_cat_link">Speker 2</a></li>
+                                        <li class="next_cat_item"><a href="#" class="next_cat_link">Speker 3</a></li>
+                                        <li class="next_cat_item"><a href="#" class="next_cat_link">Speker 4</a></li>
+                                    </ul>
+                                    <!--/.sub_sub_cat_group-->
+                                </li>
+                                <li class="next_cat_item"><a href="#" class="next_cat_link ">T-shart</a></li>
+                                <li class="next_cat_item"><a href="#" class="next_cat_link ">Full Shart</a></li>
+                            </ul>
+                            <!--/.next_cat_group-->
+                        </li>
+                        <li class="header_category_item">
+                            <a class="category_link" href="#">Fashion <i
+                                    class="fa-solid fa-angle-right nextCateIcon"></i></a>
+                            <ul class="next_cat_group">
+                                <li class="next_cat_item"><a href="#" class="next_cat_link ">Mean</a></li>
+                                <li class="next_cat_item">
+                                    <a href="#" class="next_cat_link ">Wemone <i
+                                            class="fa-solid fa-angle-right nextCateIcon"></i></a>
+                                </li>
+                                <li class="next_cat_item"><a href="#" class="next_cat_link ">T-shart</a></li>
+                                <li class="next_cat_item"><a href="#" class="next_cat_link ">Full Shart</a></li>
+                            </ul>
+                        </li>
+                        <li class="header_category_item"><a class="category_link" href="#">Firniture</a></li>
+                        <li class="header_category_item"><a class="category_link" href="#">Kitchin</a></li>
+                        <li class="header_category_item"><a class="category_link" href="#">Shopping</a></li>
+                        <li class="header_category_item"><a class="category_link" href="#">Childrin</a></li>
+                        <li class="header_category_item"><a class="category_link" href="#">Cosmatics</a></li>
+                        <li class="header_category_item"><a class="category_link" href="#">Mobile</a></li>
+
+                    </ul>
+                    <!--/.header_category_group-->
+                </div>
+                <!--/.header_category-->
+
+                <!-- header nav menu start -->
+                <div class="header_menu">
+                    <ul class="nav_gruop">
+                        <li class="nav_item"><a class="nav_link" href="#">Home</a></li>
+                        <li class="nav_item"><a class="nav_link" href="#">Shop</a></li>
+                        <li class="nav_item nav_drop_down">
+                            <a class="nav_link" href="#">Brands
+                                <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                            <ul class="nav_drop_group">
+                                <li class="nav_drop_item"><a href="#" class="nav_drop_link">Samsung</a></li>
+                                <li class="nav_drop_item"><a href="#" class="nav_drop_link">Oppo </a></li>
+                                <li class="nav_drop_item"><a href="#" class="nav_drop_link">Vivo</a></li>
+                                <li class="nav_drop_item"><a href="#" class="nav_drop_link">Singer</a></li>
+                                <li class="nav_drop_item"><a href="#" class="nav_drop_link">Walton</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav_item nav_drop_down">
+                            <a class="nav_link" href="#">Pages
+                                <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                            <ul class="nav_drop_group">
+                                <li class="nav_drop_item"><a href="#" class="nav_drop_link">Dashboard</a></li>
+                                <li class="nav_drop_item"><a href="category.html" class="nav_drop_link">Shop </a></li>
+                                <li class="nav_drop_item"><a href="#" class="nav_drop_link">Blog</a></li>
+                                <li class="nav_drop_item"><a href="login.html" class="nav_drop_link">Login</a></li>
+                                <li class="nav_drop_item"><a href="register.html" class="nav_drop_link">Register</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav_item"><a class="nav_link" href="#">All Sellers</a></li>
+                        <li class="nav_item"><a class="nav_link" href="#">Seller Zone</a></li>
+                        <li class="nav_item"><a class="nav_link" href="#">Contact US</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- =================================== HEADER PART END ================================== -->
+
+
+
+    <section class="single_productSection">
+        <div class="container product_page_header">
+            <ul class="page_header_link_group">
+                <li class="page_header_link_item">  <a href="javascript:void(0)" class="page_header_link"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li class="page_header_link_item"><a href="javascript:void(0)" class="page_header_link">Shop</a></li>
+                <li class="page_header_link_item"><a href="javascript:void(0)" class="page_header_link">Electronic</a></li>
+            </ul>
+ 
+        </div>
+        <div class="container product_details_container">
+            <div class="product_area_left">
+                <div class="image_gallery_wrapper">
+                    <div class="Posi_big_image" >
+                        <div class="big_image" >
+                            <img id="bigImg" src='./assets/image/product/product-11-1.jpg' data-zoom-image="./assets/image/product/product-11-1.jpg"/>
+                        </div>
+                        <div thumbsSlider="" class="swiper mySwiper single_slider_responese">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img class="smallImg" src="./assets/image/product/product-11-1.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="smallImg" src="./assets/image/product/product-4-1.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="smallImg" src="./assets/image/product/product-6-1.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="smallImg" src="./assets/image/product/product-7-1.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="smallImg" src="./assets/image/product/product-8-2.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="smallImg" src="./assets/image/product/product-9-1.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="smallImg" src="./assets/image/product/product-9-2.jpg" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product_content">
+                    <div class="product_variant">
+                        <span class="hotOffer"> 30% Offer</span>
+                    </div>
+                    <h1 class="single_product_title">Nukia Smartphone, RAM 4G</h1>
+                    <ul class="productRate single_product_rate">
+                        <li><i class="fa-solid fa-star"></i></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                        <li> <span class="rateingCountpItem ">(12) Reviews</span></li>
+                    </ul>
+                    <p class="single_product_sort_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores inventore nostrum dolorem impedit similique.</p>
+                    
+                    <div class="product_variant">
+                        <ul class="single_product_price">
+                            <li class="sell_price">1000$</li>
+                            <li class="Offer_price"><del>800$</del></li>
+                        </ul>
+                        <!-- <span class="hotOffer"> 30% Offer</span> -->
+                    </div>
+                    <div class="product_variant">
+                        <span>Color : </span>
+                        <ul class="color_group">
+                            <li class="color_item active"><img class="color_image" src="./assets/image/category/cat-1.png" alt=""></li>
+                            <li class="color_item"><img class="color_image" src="./assets/image/category/cat-1.png" alt=""></li>
+                            <li class="color_item"><img class="color_image" src="./assets/image/category/cat-1.png" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="product_variant">
+                        <span>Size : </span>
+                        <ul class="size_group">
+                            <li class="size_item active">S</li>
+                            <li class="size_item">L</li>
+                            <li class="size_item">M</li>
+                            <li class="size_item">XXL</li>
+                        </ul>
+                    </div>
+                    <div class="single_product_add_to_cart_group">
+                        <div class="single_quintity_group">
+                            <a href="#" class=" arrow quintity_minus"></a>
+                            <input type="text" class="single_quintity" readonly step="1" value="10" inputmode="numeric" max="99" min="1" size="4" autocomplete="off">
+                            <a href="#" class=" arrow maximum_plus"></a>
+                        </div>
+                        <button type="submit" class="single_add_cart_btn">ADD TO CART</button>
+                        <div class="wishlist wishlist_single">
+                            <button class="wishlist_btn"><i class="fa-solid fa-heart"></i></button>
+                        </div>
+                        <div class="compare">
+                            <button class="compare_btn"><i class="fa-solid fa-repeat"></i></button>
+                        </div>
+                    </div>
+                    <ul class="product_info_list">
+                        <li>Brand : <a href="javascript:void(0)">Apple</a></li>
+                        <li>SKU : <a href="javascript:void(0)">#124TD2</a></li>
+                        <li>Stock : <a href="javascript:void(0)">Available</a></li>
+                        <li>Tags : <a href="javascript:void(0)"><span>Tag1, Tag2</span></a></li>
+                    </ul>
+                </div>
+            </div>
+           
+            <div class="product_area_right">
+                <div class="Posi_big_image">
+                    <div class="vendor_info_wrapper">
+                        <a href="javascript:void(0)" class="vendor_brand">
+                            <div class="vendor_log">
+                                <img src="./assets/image/vendor/vendor.png" alt="">
+                            </div>
+                            <div class="vendor_name_rate">
+                                <h5 class="vendor_name">Mohin Rana</h5>
+                                <ul class="productRate single_product_rate">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                    <li> <span class="rateingCountpItem ">(12) Reviews</span></li>
+                                </ul>
+                            </div>
+                        </a>
+                        <p class="vendor_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, facere. Distinctio officiis error quaerat laudantium!</p>
+                        <ul class="vendor_address_contact">
+                            <li class="vendor_basic"><i class="fa-solid fa-location-dot"></i> <span>Address : </span> <a href="#">Barguna, Barguna Sadar, Dhaka</a> </li>
+                            <li class="vendor_basic"><i class="fa-solid fa-headphones"></i> <span>Contact Seller : </span><a href="tel:01728068200"> 01728068200</a></li>
+                        </ul>
+                    </div>
+                    <ul class="service_sitebar">
+                        <li>
+                            <div><i class="fa-solid fa-truck-moving"></i></div>
+                            <p>Free Shipping & Return</p>
+                        </li>
+                        <li>
+                            <div><i class="fa-solid fa-retweet"></i></div>
+                            <p>Mony Back Grantatee</p>
+                        </li>
+                    
+                        <li>
+                            <div><i class="fa-solid fa-headphones"></i></div>
+                            <p>Online Support 24/7</p>
+                        </li>
+                    
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section>
+        <div class="container">
+            <div class="single_product_info_wrapper">
+                <div class="product_info_left">
+                    <!-- JQUERY TAbS START -->
+                    <div class="tabs_wrapper">
+                        <div class="tab_nav_wrapper">
+                            <ul class="tabs">
+                                <li class="tab-link active" data-tab="1">Description</li>
+                                <li class="tab-link" data-tab="2">Additional info</li>
+                                <li class="tab-link" data-tab="3">Vendor</li>
+                                <li class="tab-link" data-tab="4">Reviews (3)</li>
+                            </ul>
+                        </div>
+                        <div class="content-wrapper">
+                            <div id="tab-1" class="tab-content active">
+                                <div class="desctiption">
+                                    Uninhibited carnally hired played in whimpered dear gorilla koala depending and much yikes off far quetzal goodness and from for grimaced goodness unaccountably and meadowlark near unblushingly crucial scallop tightly neurotic hungrily some and dear furiously this apart. <br> <br>
+                                    Spluttered narrowly yikes left moth in yikes bowed this that grizzly much hello on spoon-fed that alas rethought much decently richly and wow against the frequent fluidly at formidable acceptably flapped besides and much circa far over the bucolically hey precarious goldfinch mastodon goodness gnashed a jellyfish and one however because <br>
+                                    <h5 style="margin-top:15px;margin-bottom:10px">Packaging & Delivery</h5>
+                                    <ul class="desList">
+                                        <li><span>Type Of Packing  </span>Bottle</li>
+                                        <li><span>Color</span> Green, Pink, Powder Blue, Purple</li>
+                                        <li><span>Quantity Per Case</span> 100ml</li>
+                                        <li><span>Ethyl Alcohol</span> 70%</li>
+                                    </ul>
+                                    <br>
+                                    <br>
+                                    Spluttered narrowly yikes left moth in yikes bowed this that grizzly much hello on spoon-fed that alas rethought much decently richly and wow against the frequent fluidly at formidable acceptably flapped besides and much circa far over the bucolically hey precarious goldfinch mastodon goodness gnashed a jellyfish and one however because <br>
+                                </div>
+                            </div>
+                            <div id="tab-2" class="tab-content">
+                                <div class="single_product_attribute_list">
+                                    <table class="product_table">
+                                        <thead>
+                                            <tr>
+                                                <th>Type</th>
+                                                <th>Description</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Brand</td>
+                                                <td>Apple</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Weight Capacity</td>
+                                                <td>60 LBS</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Width</td>
+                                                <td>24"</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Height</td>
+                                                <td>20"</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Head room (inside canopy)</td>
+                                                <td>25"</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Color</td>
+                                                <td>Black, Red, Blue</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Size</td>
+                                                <td>S, M, XXL</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div id="tab-3"class="tab-content">
+                                <div class="vendor_tab_content">
+                                    <a href="javascript:void(0)" class="vendor_brand">
+                                        <div class="vendor_logo">
+                                            <img src="./assets/image/vendor/vendor.png" alt="">
+                                            <span class="vendor_active"></span>
+                                        </div>
+                                        <div class="vendor_name_rate">
+                                            <h5 class="vendor_name">Mohin Rana</h5>
+                                            <ul class="productRate single_product_rate">
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-regular fa-star"></i></li>
+                                                <li><i class="fa-regular fa-star"></i></li>
+                                                <li> <span class="rateingCountpItem ">(12 Reviews )</span></li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                    <ul class="vendor_address_contact">
+                                        <li class="vendor_basic"><i class="fa-solid fa-location-dot"></i> <span>Address : </span> <a href="#">Barguna, Barguna Sadar, Dhaka</a> </li>
+                                        <li class="vendor_basic"><i class="fa-solid fa-headphones"></i> <span>Contact Seller : </span><a href="tel:01728068200"> 01728068200</a></li>
+                                    </ul>
+                                    <div class="vendor_transted">
+                                        <div>
+                                            <span>Rating</span>
+                                            <p>92%</p>
+                                        </div>
+                                        <div>
+                                            <span>Shop On Time</span>
+                                            <p>100%</p>
+                                        </div>
+                                        <div>
+                                            <span>Chat response</span>
+                                            <p>89%</p>
+                                        </div>
+                                    </div>
+                                    <p class="vendor_desc">
+                                        Noodles & Company is an American fast-casual restaurant that offers international and American noodle dishes and pasta in addition to soups and salads. Noodles & Company was founded in 1995 by Aaron Kennedy and is headquartered in Broomfield, Colorado. The company went public in 2013 and recorded a $457 million revenue in 2017.In late 2018, there were 460 Noodles & Company locations across 29 states and Washington, D.C.
+                                    </p>
+                                </div>
+                            </div>
+                            <div id="tab-4"class="tab-content">
+                                <div class="product_review_wrapper">
+                                    <div class="rating_wrapper">
+                                        <h5 class="title_review">Customer reviews </h5>
+                                        <ul class="productRate single_product_rate mt-2 mb-2">
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-regular fa-star"></i></li>
+                                            <li><i class="fa-regular fa-star"></i></li>
+                                            <li> <span class="rateingCountpItem ">( 4.8 out of 5 )</span></li>
+                                        </ul>
+                                        <ul class="progress_group mt-2">
+                                            <li class="progress_item">
+                                                <span>5 Star</span>  <div class="prograss_bar"><span style="width:90%">90%</span></div> 
+                                            </li>
+                                            <li class="progress_item">
+                                                <span>4 Star</span>  <div class="prograss_bar"><span style="width:89%">89%</span></div> 
+                                            </li>
+                                            <li class="progress_item">
+                                                <span>3 Star</span>  <div class="prograss_bar"><span style="width:70%">70%</span></div> 
+                                            </li>
+                                            <li class="progress_item">
+                                                <span>2 Star</span>  <div class="prograss_bar"><span style="width:80%">80%</span></div> 
+                                            </li>
+                                            <li class="progress_item">
+                                                <span>1 Star</span>  <div class="prograss_bar"><span style="width:10%">0%</span></div> 
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="review_form_wrapper">
+                                        <h5 class="title_review">Customer reviews </h5>
+                                        <form action="">
+                                            <div class="form-group">
+                                                <div class="star-rating">
+                                                    <input type="radio" id="5-stars" name="rating" value="5" />
+                                                    <label for="5-stars" class="star">&#9733;</label>
+                                                    <input type="radio" id="4-stars" name="rating" value="4" />
+                                                    <label for="4-stars" class="star">&#9733;</label>
+                                                    <input type="radio" id="3-stars" name="rating" value="3" />
+                                                    <label for="3-stars" class="star">&#9733;</label>
+                                                    <input type="radio" id="2-stars" name="rating" value="2" />
+                                                    <label for="2-stars" class="star">&#9733;</label>
+                                                    <input type="radio" id="1-star" name="rating" value="1" />
+                                                    <label for="1-star" class="star">&#9733;</label>
+                                                  </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="Full Name">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="Email">
+                                            </div>
+                                            <div class="form-group">
+                                                <textarea name="" class="form-control" id="" cols="30" rows="3" placeholder="Write Comment" ></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                               <button class="single_add_cart_btn">Submit Review</button>
+                                            </div>
+
+                                        </form>
+                                    </div>
+                                    <div class="comments_wrapper">
+                                        <ul class="comments_group">
+                                            <li class="comment_item">
+                                                <div class="comment_author">
+                                                    <div>
+                                                        <img src="./assets/image/author/author-2.png" alt="">
+                                                    </div>
+                                                    <ul class="productRate single_product_rate">
+                                                        <li><i class="fa-solid fa-star"></i></li>
+                                                        <li><i class="fa-solid fa-star"></i></li>
+                                                        <li><i class="fa-solid fa-star"></i></li>
+                                                        <li><i class="fa-regular fa-star"></i></li>
+                                                        <li><i class="fa-regular fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="comment_content">
+                                                    <p class="mb-2"><span class="comment_author_name">Alisa Rahman</span> <span class="comment_date">December 4, 2022 at 3:12 pm</span></p>
+                                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime magnam sunt optio laudantium id! Deleniti voluptas cumque molestiae. Voluptas, atque!</p>
+                                                </div>
+                                            </li>
+                                            <li class="comment_item">
+                                                <div class="comment_author">
+                                                    <div>
+                                                        <img src="./assets/image/author/img_avatar2.png" alt="">
+                                                    </div>
+                                                    <ul class="productRate single_product_rate mt-2 mb-2">
+                                                        <li><i class="fa-solid fa-star"></i></li>
+                                                        <li><i class="fa-solid fa-star"></i></li>
+                                                        <li><i class="fa-solid fa-star"></i></li>
+                                                        <li><i class="fa-regular fa-star"></i></li>
+                                                        <li><i class="fa-regular fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="comment_content">
+                                                    <p class="mb-2"><span class="comment_author_name">Jhon Don</span> <span class="comment_date">December 4, 2022 at 3:12 pm</span></p>
+                                                   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut tempore nostrum dicta exercitationem aliquam officia, nisi vero ullam voluptatum eum.</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- JQUERY TABS END -->
+
+
+
+                    <h4 class="my-2">Related Products</h4>
+                    <div class="product_container">
+                        
+                        <div class="productItem">
+                            <div class="productImg text-center">
+                                <div class="onSel">New</div>
+                                <a href="#">
+                                    <img src="./assets/image/product/product-9-2.jpg" alt="">
+                                </a>
+                            </div>
+                            <p class="productTitle"><a href="#">Seeds of Change Organic Quinoe</a></p>
+                            <ul class="productRate">
+                                <li><i class="fa-solid fa-star"></i></i></li>
+                                <li><i class="fa-regular fa-star"></i></li>
+                                <li><i class="fa-regular fa-star"></i></li>
+                                <li><i class="fa-regular fa-star"></i></li>
+                                <li><i class="fa-regular fa-star"></i></li>
+                                <li> <span class="rateingCountpItem">(12)</span></li>
+                            </ul>
+                            <div class="price">
+                                <span class="sell_price">9990$</span>
+                                <span class="old_price"><del>1050$</del></span>
+        
+                            </div>
+                            <div class="productCart">
+                                <form action="">
+                                    <button type="submit" class="btn btn-sm btn-primary-muted d-block"><i
+                                            class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
+                                </form>
+                            </div>
+                        </div>
+        
+        
+                        <div class="productItem">
+                            <div class="productImg text-center">
+                                <div class="onSel hotSell">30% Offer</div>
+                                <a href="#">
+                                    <img src="./assets/image/product/product-11-1.jpg" alt="">
+                                </a>
+                            </div>
+                            <p class="productTitle"><a href="#">All Natural Italian-Style Chicken Meatballs</a></p>
+                            <ul class="productRate">
+                                <li><i class="fa-solid fa-star"></i></i></li>
+                                <li><i class="fa-regular fa-star"></i></li>
+                                <li><i class="fa-regular fa-star"></i></li>
+                                <li><i class="fa-regular fa-star"></i></li>
+                                <li><i class="fa-regular fa-star"></i></li>
+                                <li> <span class="rateingCountpItem">(12)</span></li>
+                            </ul>
+                            <div class="price">
+                                <span class="sell_price">9990$</span>
+                                <span class="old_price"><del>1050$</del></span>
+        
+                            </div>
+                            <div class="productCart">
+                                <form action="">
+                                    <button type="submit" class="btn btn-sm btn-primary-muted d-block"><i
+                                            class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
+                                </form>
+                            </div>
+                        </div>
+        
+        
+                        <div class="productItem">
+                            <div class="productImg text-center">
+                                <div class="onSel">New</div>
+                                <a href="#">
+                                    <img src="./assets/image/product/product-6-1.jpg" alt="">
+                                </a>
+                            </div>
+                            <p class="productTitle"><a href="#">Angie’s Boomchickapop Sweet & Salty</a></p>
+                            <ul class="productRate">
+                                <li><i class="fa-solid fa-star"></i></i></li>
+                                <li><i class="fa-regular fa-star"></i></li>
+                                <li><i class="fa-regular fa-star"></i></li>
+                                <li><i class="fa-regular fa-star"></i></li>
+                                <li><i class="fa-regular fa-star"></i></li>
+                                <li> <span class="rateingCountpItem">(12)</span></li>
+                            </ul>
+                            <div class="price">
+                                <span class="sell_price">9990$</span>
+                                <span class="old_price"><del>1050$</del></span>
+        
+                            </div>
+                            <div class="productCart">
+                                <form action="">
+                                    <button type="submit" class="btn btn-sm btn-primary-muted d-block"><i
+                                            class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
+                                </form>
+                            </div>
+                        </div>
+        
+        
+                        <div class="productItem">
+                            <div class="productImg text-center">
+                                <div class="onSel hotSell">30% Offer</div>
+                                <a href="#">
+                                    <img src="./assets/image/product/product-8-2.jpg" alt="">
+                                </a>
+                            </div>
+                            <p class="productTitle"><a href="#">Foster Farms Takeout Crispy Classic</a></p>
+                            <ul class="productRate">
+                                <li><i class="fa-solid fa-star"></i></i></li>
+                                <li><i class="fa-regular fa-star"></i></li>
+                                <li><i class="fa-regular fa-star"></i></li>
+                                <li><i class="fa-regular fa-star"></i></li>
+                                <li><i class="fa-regular fa-star"></i></li>
+                                <li> <span class="rateingCountpItem">(12)</span></li>
+                            </ul>
+                            <div class="price">
+                                <span class="sell_price">9990$</span>
+                                <span class="old_price"><del>1050$</del></span>
+        
+                            </div>
+                            <div class="productCart">
+                                <form action="">
+                                    <button type="submit" class="btn btn-sm btn-primary-muted d-block"><i
+                                            class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
+                                </form>
+                            </div>
+                        </div>
+        
+        
+        
+        
+                    </div>
+
+
+
+                </div>
+                <div class="product_info_right_sedebar">
+                    
+                    <ul class="verticalProductBottom">
+                        <h5>Top Rating Products</h5>
+                        <li class="verTicalProductItem">
+                            <div class="verticalLeft">
+                                <a href="#"><img src="./assets/image/product/product-4-1.jpg" alt=""></a>
+                            </div>
+                            <div class="verticalRight">
+                                <p class="verticalContent">
+                                    <a href="#">Chobani Complete Vanilla Greek</a>
+                                </p>
+                                <ul class="productRate">
+                                    <li><i class="fa-solid fa-star"></i></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                    <li> <span class="rateingCountpItem">(12)</span></li>
+                                </ul>
+                                <div class="price priceVertical">
+                                    <span class="sell_price">9990$</span>
+                                    <span class="old_price"><del>1050$</del></span>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="verTicalProductItem">
+
+                            <div class="verticalLeft">
+                                <a href="#"><img src="./assets/image/product/product-4-1.jpg" alt=""></a>
+                            </div>
+                            <div class="verticalRight">
+                                <p class="verticalContent">
+                                    <a href="#">Canada Dry Ginger Ale – 2 L Bottle</a>
+                                </p>
+                                <ul class="productRate">
+                                    <li><i class="fa-solid fa-star"></i></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                    <li> <span class="rateingCountpItem">(12)</span></li>
+                                </ul>
+                                <div class="price priceVertical">
+                                    <span class="sell_price">9990$</span>
+                                    <span class="old_price"><del>1050$</del></span>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="verTicalProductItem">
+
+                            <div class="verticalLeft">
+                                <a href="#"><img src="./assets/image/product/product-4-1.jpg" alt=""></a>
+                            </div>
+                            <div class="verticalRight">
+                                <p class="verticalContent">
+                                    <a href="#">Encore Seafoods Stuffed Alaskan</a>
+                                </p>
+                                <ul class="productRate">
+                                    <li><i class="fa-solid fa-star"></i></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                    <li> <span class="rateingCountpItem">(12)</span></li>
+                                </ul>
+                                <div class="price priceVertical">
+                                    <span class="sell_price">9990$</span>
+                                    <span class="old_price"><del>1050$</del></span>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="verTicalProductItem">
+
+                            <div class="verticalLeft">
+                                <a href="#"><img src="./assets/image/product/product-4-1.jpg" alt=""></a>
+                            </div>
+                            <div class="verticalRight">
+                                <p class="verticalContent">
+                                    <a href="#">Gorton’s Beer Battered Fish Fillets</a>
+                                </p>
+                                <ul class="productRate">
+                                    <li><i class="fa-solid fa-star"></i></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                    <li> <span class="rateingCountpItem">(12)</span></li>
+                                </ul>
+                                <div class="price priceVertical">
+                                    <span class="sell_price">9990$</span>
+                                    <span class="old_price"><del>1050$</del></span>
+                                </div>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+
+
+
+    <section class="section newsletterSection">
+        <div class="container newsletterContainer">
+
+            <h5 class="text-center">Join Your Newsletter Now</h5>
+            <form action="" class="text-center ">
+                <div class="form-group newsLetterForm">
+                    <input type="text" class="form-control newsLetterInput" placeholder="Your Email Address...">
+                    <button type="submit" class="newsletterBtn">SIGN UP</button>
+                </div>
+            </form>
+            <p class="text-center">Will be used in accordance with our <a href="#">Privacy Policy</a></p>
+
+        </div>
+    </section>
+
+
+    <footer class="footer footerTheme1">
+        <div class="container footerContainer">
+            <div class="footer1">
+                <div class="footer_logo"><img src="./assets/image/logo/logo.png" alt=""></div>
+                <p class="footerText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed obcaecati laborum
+                    eius?</p>
+                <h6 class="appInstallTitle">Install App</h6>
+                <div class="downloadApp">
+                    <a href="javascript:void(0)">
+                        <img class="appleStore" src="./assets/image/app-store.jpg" alt="">
+                    </a>
+                    <a href="javascript:void(0)">
+                        <img class="googlePly" src="./assets/image/google-play.jpg" alt="">
+                    </a>
+
+                </div>
+            </div>
+            <div class="footer2">
+                <h4 class="footer_title">Company</h4>
+                <ul class="footerLinkGroup">
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">About Us</a></li>
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">Privacy</a></li>
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">Policy</a></li>
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">Terms </a></li>
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">Contact Us</a></li>
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">Support Center</a></li>
+                </ul>
+            </div>
+            <div class="footer3">
+                <h4 class="footer_title">Corporate</h4>
+                <ul class="footerLinkGroup">
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">About Us</a></li>
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">Privacy</a></li>
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">Policy</a></li>
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">Terms & Conditions</a>
+                    </li>
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">Contact Us</a></li>
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">Support Center</a></li>
+                </ul>
+            </div>
+            <div class="footer4">
+                <h4 class="footer_title">Account</h4>
+                <ul class="footerLinkGroup">
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">About Us</a></li>
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">Privacy</a></li>
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">Policy</a></li>
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">Terms & Conditions</a>
+                    </li>
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">Contact Us</a></li>
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">Support Center</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footerBottom">
+            <div class="footerBottomLeft">
+                <p>X-DORA <i class="fa fa-copyright"></i> 2022 Created By <a href="javascript:void(0)">MOHINRANA</a></p>
+            </div>
+            <div class="footerBottomRight">
+                <div class="paymentImg"><img src="./assets/image/payments.png" alt=""></div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Window Overlay -->
+    <div class="overly"></div>
+    <!-- SHOPPING CART START  -->
+    <div class="shoppingCartWrapper">
+        <div class="shoppingCartHeader">
+            <div><strong>Shopping Cart</strong> <span class="closeCartWrapper"><i class="fa-solid fa-xmark"></i></span>
+            </div>
+        </div>
+        <div class="shoppingCartBody">
+            <ul class="shoppingCartGroup">
+                <li class="shoppingCartItem">
+                    <a class="shoppingCartLink" href="javascript:void(0)">
+                        <img src="./assets/image/product/product-8-2.jpg" alt="">
+                        <div>
+                            <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit..</p>
+                            <div class="price">
+                                <span class="sell_price">9990$</span>
+                                <span class="shoppingCartQty">(2)</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" class="shoppingCartItemRemove"><i class="fa-solid fa-xmark"></i></a>
+                </li>
+                <li class="shoppingCartItem">
+                    <a class="shoppingCartLink" href="javascript:void(0)">
+                        <img src="./assets/image/product/product-8-2.jpg" alt="">
+                        <div>
+                            <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit..</p>
+                            <div class="price">
+                                <span class="sell_price">9990$</span>
+                                <span class="shoppingCartQty">(2)</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" class="shoppingCartItemRemove"><i class="fa-solid fa-xmark"></i></a>
+                </li>
+                <li class="shoppingCartItem">
+                    <a class="shoppingCartLink" href="javascript:void(0)">
+                        <img src="./assets/image/product/product-8-2.jpg" alt="">
+                        <div>
+                            <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit..</p>
+                            <div class="price">
+                                <span class="sell_price">9990$</span>
+                                <span class="shoppingCartQty">(2)</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" class="shoppingCartItemRemove"><i class="fa-solid fa-xmark"></i></a>
+                </li>
+                <li class="shoppingCartItem">
+                    <a class="shoppingCartLink" href="javascript:void(0)">
+                        <img src="./assets/image/product/product-8-2.jpg" alt="">
+                        <div>
+                            <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit..</p>
+                            <div class="price">
+                                <span class="sell_price">9990$</span>
+                                <span class="shoppingCartQty">(2)</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" class="shoppingCartItemRemove"><i class="fa-solid fa-xmark"></i></a>
+                </li>
+                <li class="shoppingCartItem">
+                    <a class="shoppingCartLink" href="javascript:void(0)">
+                        <img src="./assets/image/product/product-8-2.jpg" alt="">
+                        <div>
+                            <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit..</p>
+                            <div class="price">
+                                <span class="sell_price">9990$</span>
+                                <span class="shoppingCartQty">(2)</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" class="shoppingCartItemRemove"><i class="fa-solid fa-xmark"></i></a>
+                </li>
+                <li class="shoppingCartItem">
+                    <a class="shoppingCartLink" href="javascript:void(0)">
+                        <img src="./assets/image/product/product-8-2.jpg" alt="">
+                        <div>
+                            <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit..</p>
+                            <div class="price">
+                                <span class="sell_price">9990$</span>
+                                <span class="shoppingCartQty">(2)</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" class="shoppingCartItemRemove"><i class="fa-solid fa-xmark"></i></a>
+                </li>
+                <li class="shoppingCartItem">
+                    <a class="shoppingCartLink" href="javascript:void(0)">
+                        <img src="./assets/image/product/product-8-2.jpg" alt="">
+                        <div>
+                            <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit..</p>
+                            <div class="price">
+                                <span class="sell_price">9990$</span>
+                                <span class="shoppingCartQty">(2)</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" class="shoppingCartItemRemove"><i class="fa-solid fa-xmark"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div class="shoppingCartFooter">
+            <div class="shoppingCartFooterPrice">
+                <div>Total Price </div>
+                <div>100 $</div>
+            </div>
+            <div class="shoppingCartBtnWrapper">
+                <a href="javascript:void(0)" class="cartBtn">Cart</a>
+                <a href="javascript:void(0)" class="checkoutBtn">Checkout</a>
+            </div>
+        </div>
+    </div>
+    <!-- SHOPPING CART END  -->
+
+
+    <!-- MOBILE BOTTOM FIXED MENU START -->
+    <div class="mobileMenuWrapper">
+        <a href="javascript:void(0)" class="appIcon appSearchIcon searchDisplay ">
+            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+            <span class="appText">Search</span>
+        </a>
+
+        <a href="javascript:void(0)" class="appIcon appCategoryIcon ">
+            <i class="fa fa-bars"></i>
+            <span class="appText">Category</span>
+        </a>
+        <a href="javascript:void(0)" class="appIcon appHomeIcon ">
+            <i class="fa-sharp fa-solid fa-house"></i>
+            <span class="appText">Home</span>
+        </a>
+        <a href="javascript:void(0)" class="appIcon appCartIcon ">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="appText">Cart</span>
+        </a>
+        <a href="javascript:void(0)" class="appIcon appAccountIcon ">
+            <i class="fa-solid fa-user"></i>
+            <span class="appText">Account</span>
+        </a>
+    </div>
+    <!-- MOBILE BOTTOM FIXED MENU END -->
+
+
+
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/plugins/swip-slider/swip.js"></script>
+    <script src="./assets/plugins/swip-slider/swiper.res.js"></script>
+    <script src="./assets/plugins/elevetzoom/jquery.elevatezoom.js"></script>
+    <script src="./assets/plugins/elevetzoom/zoom-filter.js"></script>
+    
+    <script src="./assets/js/app.js"></script>
+
+    <script>
+        // TAB JQUERY
+        $('.tab-link').click( function() {
+	
+            var tabID = $(this).attr('data-tab');
+            
+            $(this).addClass('active').siblings().removeClass('active');
+            
+            $('#tab-'+tabID).addClass('active').siblings().removeClass('active');
+        });
+    </script>
+   
+</body>
+
+</html>

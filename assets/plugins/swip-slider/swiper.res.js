@@ -95,3 +95,11 @@ var swiper = new Swiper(".productSlider", {
     },
 });
 
+
+
+// PRODUCT DETAILS PAGE SLIDER FOR MAIN PRODUCT IMAGE
+var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+});
