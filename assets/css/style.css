@@ -128,10 +128,10 @@ a{
 .btn-primary {
     background-color: var(--color-primary);
     color: var(--color-secondary);
+    border: none;
 }
 .btn-primary:hover {
     background-color: var(--color-primary-dark);
-    border: 1px solid var(--color-primary-dark);
     color: var(--color-secondary);
 }
 .btn-primary-muted {
@@ -144,9 +144,10 @@ a{
     color: var(--color-secondary);
 }
 .btn-lg {
-    padding: 1.1rem 2rem;
+    padding: 1rem 2rem;
     font-size: 1.2rem;
     display: inline-block;
+    border: none;
 }
 .btn-sm {
     padding: 0.5rem 1rem;
@@ -954,31 +955,11 @@ a{
     grid-template-columns: 30% auto;
     gap: 1.4rem;
     height: 120px;
-}
-.shopLayer{
-    position: absolute;
-    width: 0%;
-    height: 0%;
-    background-color:#04040845;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
     transition: all 400ms ease;
-    opacity: 0;
 }
-.shopWrapper:hover .shopLayer{
-    width: 100%;
-    height: 100%;
-    opacity: 1;
-    z-index: 99;
-}
-
-.shopLayer a{
-   color: var(--color-secondary);
-   z-index: 99;
+.shopWrapper:hover{
+    box-shadow: 0 4px 6px -1px var(--color-dark-muted), 0 2px 4px -1px var(--color-light);
+    transform: translateY(-3px);
 }
 .shopImg{
     width: 100%;
@@ -2436,6 +2417,33 @@ ul.nacc li.active {
     font-weight: normal;
     transition: all .2s ease-in-out;
 }
+/* ============================================================================================================== */
+/* ============================================ ALL SELLERS PAGE =============================================== */
+/* ============================================================================================================== */
+.vendor_top_filter{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0 30px 0;
+    align-items: center;
+}
+.vendor_search_form{
+    width: 600px;
+}
+.vendor_search_group{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.5rem;
+}
+.mapIcon {
+    padding: 13px;
+    border-radius: 3px;
+}
+.mapIcon i{
+    font-size: 25px;
+    color: var(--color-dark);
+}
+
 
 
 
@@ -2835,11 +2843,17 @@ footer{
         padding: 10px 1rem;
         font-size: 13px;
     }
-   
+    /* =============================================== ALL SELLER PAGE =================================== */
+    .vendor_search_form {
+        width: 550px;
+    }
  }
 @media screen and (max-width: 768px) { 
     body{
         background-color: white;
+    }
+    .form-control {
+        padding: 0.5rem 0.8rem;
     }
     .btn {
         padding: 0.5rem 1rem;
@@ -3074,6 +3088,14 @@ footer{
     .grid_column_one,.grid_column_two,.traking_form {
         width: 100%;
     }
+    /* ========================================== ALL SELLER PAGE  ================================= */
+    .vendor_top_filter {
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+    .vendor_search_form {
+        width: 100%;
+    }
 
  }
 @media screen and (max-width: 576px) { 
@@ -3157,13 +3179,11 @@ footer{
         padding: 5px ;
     }
 
-    /* responsive table */
+    /* user dashboard order table responsive */
     table.order_table_history {
         border: 0;
         table-layout: fixed;
-    }
-
-    
+    }    
     table.order_table_history thead {
         border: none;
         clip: rect(0 0 0 0 0);
@@ -3174,19 +3194,16 @@ footer{
         position: absolute;
         width: 1px;
     }
-    
     table.order_table_history tbody tr {
         border-bottom: 12px solid var(--color-light);
         margin-bottom: 1.2rem !important;
     }
-    
     table.order_table_history td {
         border-bottom: 1px solid var(--color-light);
         display: block;
         font-size: .8em;
         text-align: right;
     }
-    
     table.order_table_history td::before {
         /*
         * aria-label has no advantage, it won't be read inside a table
@@ -3198,7 +3215,6 @@ footer{
         text-transform: uppercase;
         color: var(--color-dark);
     }
-    
     table.order_table_history td:last-child {
         border-bottom: 0;
     }
@@ -3227,6 +3243,15 @@ footer{
     .product_review_wrapper {
         gap: 0;
         row-gap: 1rem;
+    }
+    .mapIcon {
+       display: none;
+    }
+    .vendor_search_group {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 0.2rem;
     }
 }
  @media screen and (max-width: 350px) { 
@@ -3257,7 +3282,11 @@ footer{
     .catSecBtn{
         display: none;
     }
-    /* =================================== SINGLE PRODUCT ======================= */
+    /* =================================== ALL SELLERs PAGES ======================= */
+    .vendor_search_group {
+        row-gap: 1rem;
+        flex-wrap: wrap;
+    }
   
     
 }
