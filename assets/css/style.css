@@ -2,7 +2,7 @@
     margin: 0; padding: 0; list-style: none; box-sizing: border-box;text-decoration: none;
 }
 :root{
-    --color-primary : #e5534c;
+    --color-primary : #0079c1;
     --color-primary-dark : #e62e04;
     --color-primary-muted : rgba(255,79,79,0.1);
     --color-red : #eb5e28 ;
@@ -146,6 +146,7 @@ a{
 .btn-lg {
     padding: 1.1rem 2rem;
     font-size: 1.2rem;
+    display: inline-block;
 }
 .btn-sm {
     padding: 0.5rem 1rem;
@@ -1360,6 +1361,16 @@ input[type="checkbox"]:checked + span:before {
     width: 100%;
     margin-bottom: 15px;
 }
+.grup_item_2{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap: 1rem;
+}
+.form-group label{
+   font-size: 14px;
+   margin-bottom: 3px;
+   display: inline-block;
+}
 .form-control{
     width: 100%;
     padding: 1rem .8rem;
@@ -2235,10 +2246,196 @@ h5.title_review {
     color: var(--color-dark-light);
 }
 
+/* ======================================== DASHBOARD ============================== */
 
+.grid_wrapper {
+    list-style: none;
+    margin-left: -40px;
+    display: flex;
+}
+   
+.grid_clumn {
+    box-sizing: border-box;
+    display: inline-block;
+    margin-right: -.25em;
+    min-height: 1px;
+    padding-left: 40px;
+    vertical-align: top;
+}
+.grid_column_one {
+    width: 30%;
+}
+.dashboard_profile{
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid var(--color-light);
+    margin-bottom: 20px;
+    text-align: center;
+}
+.dashboard_profile h5{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: var(--font1);
+    color: var(--color-dark);
+}
+.dashboard_profile p{
+    font-size: 13px;
+    font-weight: 500;
+    font-family: var(--font1);
+    color: var(--color-dark-light);
+}
+.profileImg{
+    text-align: center;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+   
+    margin: auto;
+}
+.dashboard_profile .profileImg img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: contain; 
+    padding: 3px;
+    border: 1px solid var(--color-dark-muted);  
 
+}
+   
+.grid_column_two {
+    width: 70%;
+}
+.naccs {
+    margin: 100px 0 60px;
+    position: relative;
+}
+.vertical_menu{
+    border: 1px solid var(--color-light);
+}
+.naccs .vertical_menu .vertical_menu_item {
+    padding: 12px 20px 12px 40px;
+    /* margin-bottom: 10px; */
+    color: var(--color-dark-light);
+    background: transparent;
+    border-bottom: 1px solid var(--color-light);
+    /* border-radius: 5px; */
+    cursor: pointer;
+    position: relative;
+    vertical-align: middle;
+    font-weight: 700;
+    transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+   
+.naccs .vertical_menu .vertical_menu_item span.light {
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: 21px;
+    left: 15px;
+    background-color: transparent;
+    border-radius: 100%;
+    transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+   
+.naccs .vertical_menu .vertical_menu_item.active span.light {
+    background-color: var(--color-primary);
+    left: 0;
+    height: 100%;
+    width: 3px;
+    top: 0;
+    border-radius: 0;
+}
+   
+.naccs .vertical_menu .vertical_menu_item.active {
+    color: var(--color-primary);
+    padding: 15px 20px 15px 20px;
+}
 
+.vertical_menu_item .vertical_tab_title{
+    font-weight: 400;
+    font-family: var(--font1);
+}
+ul.nacc {
+    position: relative;
+    height: 0px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    transition: .5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+ul.nacc li {
+    opacity: 0;
+    position: absolute;
+    list-style: none;
+    transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+    margin-bottom: 100px;
+    overflow-x: hidden;
+}
+   
+ul.nacc li.active {
+    transition-delay: .3s;
+    z-index: 2;
+    opacity: 1;
+    width: 100%;
+}
+ 
+.dashboard_content .tab_content_title{
+    font-weight: 500;
+    color: var(--color-dark);
+}
 
+.dashboard_content p {
+    font-size: 13px;
+    line-height: 19px;
+    color: var(--color-dark-light);
+}
+
+.order_table_history thead tr th {
+    padding: 0px 10px;
+    color: var(--color-dark);
+    font-size: 14px;
+}
+.order_table_history tbody tr td {
+    padding: 0px 10px;
+    color: var(--color-dark);
+    font-size: 13px;
+}
+.order_table_history thead tr th:first-child,.order_table_history tbody tr td:first-child {
+    border-right: none;
+}
+.traking_form {
+    width: 50%;
+}
+
+/* Avataer iamge preview */
+.avatar-edit{
+    position: absolute;
+    right: -9px;
+    bottom: -15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.uploadAvater{
+    display: none;
+}
+.avatar-edit label i{
+    font-size: 13px;
+}
+.uploadAvater + label {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 0;
+    border-radius: 100%;
+    background: var(--color-secondary);
+    border: 1px solid transparent;
+    box-shadow: 0px 2px 4px 0px var(--color-light);
+    cursor: pointer;
+    font-weight: normal;
+    transition: all .2s ease-in-out;
+}
 
 
 
@@ -2459,7 +2656,7 @@ footer{
         height: 40px;
         line-height: 40px;
         border-radius: 50%;
-        color: white;
+        color: var(--color-secondary);
     }
     .header_icon_group .header_icon_links span small {
         top: -9px;
@@ -2549,7 +2746,9 @@ footer{
         margin: 5px 1%;
         padding: 5px 12px;
     }
- 
+    .dashboard_section{
+        /* overflow-x: hidden; */
+    }
   
    
    
@@ -2865,7 +3064,16 @@ footer{
     .wishlist_single{
         display: block;
     }
-
+    /* ==================================== USER DASHBOARD PAGE ============================== */
+    .grid_wrapper {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+    .grid_column_one,.grid_column_two,.traking_form {
+        width: 100%;
+    }
 
  }
 @media screen and (max-width: 576px) { 
@@ -2947,6 +3155,52 @@ footer{
         display: flex;
         align-items: center;
         padding: 5px ;
+    }
+
+    /* responsive table */
+    table.order_table_history {
+        border: 0;
+        table-layout: fixed;
+    }
+
+    
+    table.order_table_history thead {
+        border: none;
+        clip: rect(0 0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+    
+    table.order_table_history tbody tr {
+        border-bottom: 12px solid var(--color-light);
+        margin-bottom: 1.2rem !important;
+    }
+    
+    table.order_table_history td {
+        border-bottom: 1px solid var(--color-light);
+        display: block;
+        font-size: .8em;
+        text-align: right;
+    }
+    
+    table.order_table_history td::before {
+        /*
+        * aria-label has no advantage, it won't be read inside a table
+        content: attr(aria-label);
+        */
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: var(--color-dark);
+    }
+    
+    table.order_table_history td:last-child {
+        border-bottom: 0;
     }
  }
 

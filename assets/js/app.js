@@ -89,3 +89,55 @@ appCartIcon.addEventListener('click', () => {
     overly.classList.add('active');
 })
 
+
+
+/*====================================================================================================
+                                USER DASHBOARD PAGE JQUERY START
+=======================================================================================================*/
+// DASHBOARD VERTICAL TAB
+$(document).on("click", ".naccs .vertical_menu .vertical_menu_item", function() {
+    var numberIndex = $(this).index();
+    if (!$(this).is("active")) {
+        $(".naccs .vertical_menu .vertical_menu_item").removeClass("active");
+        $(".naccs ul li").removeClass("active");
+        $(this).addClass("active");
+        $(".naccs ul").find("li:eq(" + numberIndex + ")").addClass("active");
+        var listItemHeight = $(".naccs ul")
+            .find("li:eq(" + numberIndex + ")")
+            .innerHeight();
+        $(".naccs ul").height(listItemHeight + "px");
+    }
+});
+
+// USER DASHBOARD AVATER IMAGE UPLOAD AND PREVIEW 
+function readURL(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        reader.onload = function(e) {
+            $('#imagePreview').attr('src', e.target.result );
+            $('#imagePreview').hide();
+            $('#imagePreview').fadeIn(650);
+        }
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+$("#imageUpload").change(function() {
+    readURL(this);
+});
+/*====================================================================================================
+                                USER DASHBOARD PAGE JQUERY END
+=======================================================================================================*/
+
+
+/*====================================================================================================
+                                SINGLE PRODUCT PAGE  END
+=======================================================================================================*/
+$('.tab-link').click( function() {
+    var tabID = $(this).attr('data-tab');
+    $(this).addClass('active').siblings().removeClass('active');
+    $('#tab-'+tabID).addClass('active').siblings().removeClass('active');
+});
+/*====================================================================================================
+                                SINGLE PRODUCT PAGE  END
+=======================================================================================================*/
+

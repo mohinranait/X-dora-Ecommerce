@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- POPPINS FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- FONT AWASOME CDN JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <!-- STYLEING CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>User Dashboard</title>
+</head>
+
+<body>
+
+    <!-- =================================== HEADER PART START ================================ -->
+    <header class="header">
+        <div class="header-middle header-middle-1" id="header-middle">
+            <div class="container header_middle_container theme1Container">
+                <!-- MOBILE ICON  -->
+                <div class="humberIcon mobileNone">
+                    <i class="fa fa-bars mobileNone"></i>
+                </div>
+                <div class="logo_left mobileNone">
+                    <a href="#" class="brand_logo">
+                        <figure><img src="./assets/image/logo/logo.png" alt=""></figure>
+                    </a>
+                </div>
+                <div class="header_search searchDisplayBlock">
+                    <form action="">
+                        <div class="header_search_group">
+                            <input type="text" class="header_search_fild" placeholder="Search...">
+                            <button class="header_search_btn"><i
+                                    class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="header_icons mobileNone">
+                    <ul class="header_icon_group">
+
+                        <li class="header_icon_item menuIconHum">
+                            <a class="header_icon_links menuIconWindow" href="javascript:void(0)">
+                                <span class="headerIconSpan"><i class="fa fa-bars"></i></span>
+                            </a>
+                        </li>
+                        <li class="header_icon_item account">
+                            <a class="header_icon_links" href="#">
+                                <span class="headerIconSpan"><i class="fa-solid fa-user"></i></span>
+                                <span class="heade_text_naem">Account</span>
+                            </a>
+                        </li>
+
+                        <li class="header_icon_item wishlist">
+                            <a class="header_icon_links" href="#">
+                                <span class="headerIconSpan"><i class="fa-solid fa-heart"></i> <small>5</small></span>
+                                <span class="heade_text_naem">Wishlist</span>
+                            </a>
+                        </li>
+
+                        <li class="header_icon_item headerCart">
+                            <a class="header_icon_links" href="javascript:void(0)">
+                                <span class="headerIconSpan header_cart_prict "><i
+                                        class="fa-solid fa-cart-shopping"></i> <small
+                                        class="header_cart_count">55</small>
+                                    <!--20.00$ -->
+                                </span>
+                                <span class="heade_text_naem">Cart</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header_bottom">
+            <div class="container header_bottom_container">
+                <!-- header browes category -->
+                <div class="header_category headercatButtonWrapper">
+                    <div class=""><i class="fa-solid fa-bars categoryBarsIcon"></i> <span class="browesCategory">Browes
+                            Category</span></div> <i class="fa-solid fa-angle-down browesCategory"></i>
+                    <ul class="header_category_group ">
+                        <li class="header_category_item">
+                            <a class="category_link" href="#">Electronics <i
+                                    class="fa-solid fa-angle-right nextCateIcon"></i></a>
+                            <ul class="next_cat_group">
+                                <li class="next_cat_item"><a href="#" class="next_cat_link ">Mobile</a></li>
+                                <li class="next_cat_item">
+                                    <a href="#" class="next_cat_link ">Laptop <i
+                                            class="fa-solid fa-angle-right nextCateIcon"></i> </a>
+                                    <ul class="sub_sub_cat_group">
+                                        <li class="next_cat_item"><a href="#" class="next_cat_link">Lenovo </a></li>
+                                        <li class="next_cat_item"><a href="#" class="next_cat_link">Samsung</a></li>
+                                        <li class="next_cat_item"><a href="#" class="next_cat_link">Walton</a></li>
+                                        <li class="next_cat_item"><a href="#" class="next_cat_link">HP Laptopn</a></li>
+                                        <li class="next_cat_item"><a href="#" class="next_cat_link">Dell Laptop</a></li>
+                                    </ul>
+                                    <!--/.sub_sub_cat_group-->
+                                </li>
+                                <li class="next_cat_item">
+                                    <a href="#" class="next_cat_link ">Speekers <i
+                                            class="fa-solid fa-angle-right nextCateIcon"></i> </a>
+                                    <ul class="sub_sub_cat_group">
+                                        <li class="next_cat_item"><a href="#" class="next_cat_link">Speker 1</a></li>
+                                        <li class="next_cat_item"><a href="#" class="next_cat_link">Speker 2</a></li>
+                                        <li class="next_cat_item"><a href="#" class="next_cat_link">Speker 3</a></li>
+                                        <li class="next_cat_item"><a href="#" class="next_cat_link">Speker 4</a></li>
+                                    </ul>
+                                    <!--/.sub_sub_cat_group-->
+                                </li>
+                                <li class="next_cat_item"><a href="#" class="next_cat_link ">T-shart</a></li>
+                                <li class="next_cat_item"><a href="#" class="next_cat_link ">Full Shart</a></li>
+                            </ul>
+                            <!--/.next_cat_group-->
+                        </li>
+                        <li class="header_category_item">
+                            <a class="category_link" href="#">Fashion <i
+                                    class="fa-solid fa-angle-right nextCateIcon"></i></a>
+                            <ul class="next_cat_group">
+                                <li class="next_cat_item"><a href="#" class="next_cat_link ">Mean</a></li>
+                                <li class="next_cat_item">
+                                    <a href="#" class="next_cat_link ">Wemone <i
+                                            class="fa-solid fa-angle-right nextCateIcon"></i></a>
+                                </li>
+                                <li class="next_cat_item"><a href="#" class="next_cat_link ">T-shart</a></li>
+                                <li class="next_cat_item"><a href="#" class="next_cat_link ">Full Shart</a></li>
+                            </ul>
+                        </li>
+                        <li class="header_category_item"><a class="category_link" href="#">Firniture</a></li>
+                        <li class="header_category_item"><a class="category_link" href="#">Kitchin</a></li>
+                        <li class="header_category_item"><a class="category_link" href="#">Shopping</a></li>
+                        <li class="header_category_item"><a class="category_link" href="#">Childrin</a></li>
+                        <li class="header_category_item"><a class="category_link" href="#">Cosmatics</a></li>
+                        <li class="header_category_item"><a class="category_link" href="#">Mobile</a></li>
+
+                    </ul>
+                    <!--/.header_category_group-->
+                </div>
+                <!--/.header_category-->
+
+                <!-- header nav menu start -->
+                <div class="header_menu">
+                    <ul class="nav_gruop">
+                        <li class="nav_item"><a class="nav_link" href="#">Home</a></li>
+                        <li class="nav_item"><a class="nav_link" href="#">Shop</a></li>
+                        <li class="nav_item nav_drop_down">
+                            <a class="nav_link" href="#">Brands
+                                <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                            <ul class="nav_drop_group">
+                                <li class="nav_drop_item"><a href="#" class="nav_drop_link">Samsung</a></li>
+                                <li class="nav_drop_item"><a href="#" class="nav_drop_link">Oppo </a></li>
+                                <li class="nav_drop_item"><a href="#" class="nav_drop_link">Vivo</a></li>
+                                <li class="nav_drop_item"><a href="#" class="nav_drop_link">Singer</a></li>
+                                <li class="nav_drop_item"><a href="#" class="nav_drop_link">Walton</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav_item nav_drop_down">
+                            <a class="nav_link" href="#">Pages
+                                <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                            <ul class="nav_drop_group">
+                                <li class="nav_drop_item"><a href="#" class="nav_drop_link">Dashboard</a></li>
+                                <li class="nav_drop_item"><a href="category.html" class="nav_drop_link">Shop </a></li>
+                                <li class="nav_drop_item"><a href="#" class="nav_drop_link">Blog</a></li>
+                                <li class="nav_drop_item"><a href="login.html" class="nav_drop_link">Login</a></li>
+                                <li class="nav_drop_item"><a href="register.html" class="nav_drop_link">Register</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav_item"><a class="nav_link" href="#">All Sellers</a></li>
+                        <li class="nav_item"><a class="nav_link" href="#">Seller Zone</a></li>
+                        <li class="nav_item"><a class="nav_link" href="#">Contact US</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- =================================== HEADER PART END ================================== -->
+
+
+    <section class="dashboard_section">
+        <div class="container dashboard_container">
+            <div class="naccs">
+                <div class="grid_wrapper">
+                    <div class="grid_clumn grid_column_one">
+                        <div class="dashboard_profile">
+                            <div class="profileImg text-center">
+                                <img id="imagePreview" src="./assets/image/author/author-2.png" alt="">
+                                <div class="avatar-edit">
+                                    <input type='file' class="uploadAvater" id="imageUpload" accept=".png, .jpg" />
+                                    <label for="imageUpload"><i class="fa-solid fa-pen"></i></label>
+                                </div>
+                            </div>
+                            <h5 class="text-center">Mohin Rana</h5>
+                            <p class="text-center">mohinrana@gmail.com</p>
+                        </div>
+                        <div class="vertical_menu">
+
+                            <div class="vertical_menu_item active">
+                                <span class="light"></span>
+                                <span class="vertical_tab_title">
+                                    <i class="fa-solid fa-gauge"></i> Dashboard
+                                </span>
+                            </div>
+                            <div class="vertical_menu_item">
+                                <span class="light"></span>
+                                <span class="vertical_tab_title">
+                                    <i class="fa-solid fa-cart-plus"></i> Orders
+                                </span>
+                            </div>
+                            <div class="vertical_menu_item">
+                                <span class="light"></span>
+                                <span class="vertical_tab_title">
+                                    <i class="fa-solid fa-cart-flatbed"></i> Track Your Order
+                                </span>
+                            </div>
+                            <div class="vertical_menu_item">
+                                <span class="light"></span>
+                                <span class="vertical_tab_title">
+                                    <i class="fa-solid fa-download"></i> Download
+                                </span>
+                            </div>
+
+                            <div class="vertical_menu_item">
+                                <span class="light"></span>
+                                <span class="vertical_tab_title">
+                                    <i class="fa-regular fa-user"></i> Account
+                                </span>
+                            </div>
+                            <a href="" class="vertical_menu_item">
+                                <span class="light"></span>
+                                <span class="vertical_tab_title">
+                                    <i class="fa-solid fa-arrow-right-from-bracket"></i> Logout
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="grid_clumn grid_column_two">
+                        <ul class="nacc">
+                            <li class="active">
+                                <div class="dashboard_content">
+                                    <h4 class="tab_content_title mb-4">Hello Mohin !</h4>
+                                    <p>From your account dashboard. you can easily check & view your recent orders,
+                                        manage your shipping and billing addresses and edit your password and account
+                                        details.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dashboard_content">
+                                    <h4 class="tab_content_title mb-4">My Orders History</h4>
+                                    <div class="single_product_attribute_list ">
+                                        <table class="product_table order_table_history table-responsive">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Order</th>
+                                                    <th scope="col">Date</th>
+                                                    <th scope="col">Status</th>
+                                                    <th scope="col">Total</th>
+                                                    <th scope="col">Actions</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td  data-label="order">#12345</td>
+                                                    <td  data-label="date">12 May, 1999</td>
+                                                    <td  data-label="status">Procesing</td>
+                                                    <td  data-label="total">$125.00 for 2 item</td>
+                                                    <td  data-label="action"><a href="javascript:void(0)">View</a></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td data-label="order" >#DT214</td>
+                                                    <td data-label="date">11 Jun, 2000</td>
+                                                    <td data-label="status">Completed</td>
+                                                    <td data-label="total">$100.00 for 1 item</td>
+                                                    <td data-label="action"><a href="javascript:void(0)">View</a></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td data-label="order" >#ST245</td>
+                                                    <td data-label="date">12 Jan, 2010</td>
+                                                    <td data-label="status">Cancel</td>
+                                                    <td data-label="total">$1200.00 for 5 item</td>
+                                                    <td data-label="action"><a href="javascript:void(0)">View</a></td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dashboard_content">
+                                    <h4 class="tab_content_title mb-4">Orders tracking</h4>
+                                    <p>To track your order please enter your OrderID in the box below and press "Track"
+                                        button. This was given to you on your receipt and in the confirmation email you
+                                        should have received.</p>
+                                    <form action="" class="traking_form mt-4">
+                                        <div class="form-group">
+                                            <label for="">Order ID</label>
+                                            <input type="text" class="form-control"
+                                                placeholder="Found in your order confirmation email">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Billing email</label>
+                                            <input type="text" class="form-control"
+                                                placeholder="Email you used during checkout">
+                                        </div>
+                                        <div class="form-group">
+                                            <button class="btn btn-primary btn-lg">Order Track</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dashboard_content">
+                                    <p>No downloads available yet.</p>
+                                    <div class="mt-4">
+                                        <a class="single_add_cart_btn" href="javascript:void(0)">GO SHOP <i
+                                                class="fa-solid fa-arrow-right"></i> </a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="dashboard_content">
+                                    <h4 class="tab_content_title mb-4"> Account Details</h4>
+                                    <div class="account_form">
+                                        <form action="">
+                                            <div class="grup_item_2">
+                                                <div class="form-group">
+                                                    <label for="">First Name</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="">Last Name</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">Email</label>
+                                                <input type="email" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">Phone</label>
+                                                <input type="number" class="form-control">
+                                            </div>
+                                            <div class="grup_item_2">
+                                                <div class="form-group">
+                                                    <label for="">Country</label>
+                                                    <select name="" class="form-control" id="">
+                                                        <option value="">Afghanistan</option>
+                                                        <option value="">Albania</option>
+                                                        <option value="">Algeria</option>
+                                                        <option value="">Andorra</option>
+                                                        <option value="">Argentina</option>
+                                                        <option value="" selected>United States</option>
+                                                        <option value="">Australia</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="">City</label>
+                                                    <select name="" class="form-control" id="">
+                                                        <option value="">New York</option>
+                                                        <option value="">Los Angeles</option>
+                                                        <option value="">Chicago</option>
+                                                        <option value="">Boston</option>
+                                                        <option value="">San Diego</option>
+                                                        <option value="" selected>Philadelphia</option>
+                                                        <option value="">San Jose</option>
+                                                    </select>
+                                                </div>
+
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">Current Password </label>
+                                                <input type="password" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">New Password </label>
+                                                <input type="password" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <button class="btn btn-primary btn-lg">Save & Change</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="section newsletterSection">
+        <div class="container newsletterContainer">
+
+            <h5 class="text-center">Join Your Newsletter Now</h5>
+            <form action="" class="text-center ">
+                <div class="form-group newsLetterForm">
+                    <input type="text" class="form-control newsLetterInput" placeholder="Your Email Address...">
+                    <button type="submit" class="newsletterBtn">SIGN UP</button>
+                </div>
+            </form>
+            <p class="text-center">Will be used in accordance with our <a href="#">Privacy Policy</a></p>
+
+        </div>
+    </section>
+
+
+    <footer class="footer footerTheme1">
+        <div class="container footerContainer">
+            <div class="footer1">
+                <div class="footer_logo"><img src="./assets/image/logo/logo.png" alt=""></div>
+                <p class="footerText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed obcaecati laborum
+                    eius?</p>
+                <h6 class="appInstallTitle">Install App</h6>
+                <div class="downloadApp">
+                    <a href="javascript:void(0)">
+                        <img class="appleStore" src="./assets/image/app-store.jpg" alt="">
+                    </a>
+                    <a href="javascript:void(0)">
+                        <img class="googlePly" src="./assets/image/google-play.jpg" alt="">
+                    </a>
+
+                </div>
+            </div>
+            <div class="footer2">
+                <h4 class="footer_title">Company</h4>
+                <ul class="footerLinkGroup">
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">About Us</a></li>
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">Privacy</a></li>
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">Policy</a></li>
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">Terms </a></li>
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">Contact Us</a></li>
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">Support Center</a></li>
+                </ul>
+            </div>
+            <div class="footer3">
+                <h4 class="footer_title">Corporate</h4>
+                <ul class="footerLinkGroup">
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">About Us</a></li>
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">Privacy</a></li>
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">Policy</a></li>
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">Terms & Conditions</a>
+                    </li>
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">Contact Us</a></li>
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">Support Center</a></li>
+                </ul>
+            </div>
+            <div class="footer4">
+                <h4 class="footer_title">Account</h4>
+                <ul class="footerLinkGroup">
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">About Us</a></li>
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">Privacy</a></li>
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">Policy</a></li>
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">Terms & Conditions</a>
+                    </li>
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">Contact Us</a></li>
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">Support Center</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footerBottom">
+            <div class="footerBottomLeft">
+                <p>X-DORA <i class="fa fa-copyright"></i> 2022 Created By <a href="javascript:void(0)">MOHINRANA</a></p>
+            </div>
+            <div class="footerBottomRight">
+                <div class="paymentImg"><img src="./assets/image/payments.png" alt=""></div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Window Overlay -->
+    <div class="overly"></div>
+    <!-- SHOPPING CART START  -->
+    <div class="shoppingCartWrapper">
+        <div class="shoppingCartHeader">
+            <div><strong>Shopping Cart</strong> <span class="closeCartWrapper"><i class="fa-solid fa-xmark"></i></span>
+            </div>
+        </div>
+        <div class="shoppingCartBody">
+            <ul class="shoppingCartGroup">
+                <li class="shoppingCartItem">
+                    <a class="shoppingCartLink" href="javascript:void(0)">
+                        <img src="./assets/image/product/product-8-2.jpg" alt="">
+                        <div>
+                            <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit..</p>
+                            <div class="price">
+                                <span class="sell_price">9990$</span>
+                                <span class="shoppingCartQty">(2)</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" class="shoppingCartItemRemove"><i class="fa-solid fa-xmark"></i></a>
+                </li>
+                <li class="shoppingCartItem">
+                    <a class="shoppingCartLink" href="javascript:void(0)">
+                        <img src="./assets/image/product/product-8-2.jpg" alt="">
+                        <div>
+                            <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit..</p>
+                            <div class="price">
+                                <span class="sell_price">9990$</span>
+                                <span class="shoppingCartQty">(2)</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" class="shoppingCartItemRemove"><i class="fa-solid fa-xmark"></i></a>
+                </li>
+                <li class="shoppingCartItem">
+                    <a class="shoppingCartLink" href="javascript:void(0)">
+                        <img src="./assets/image/product/product-8-2.jpg" alt="">
+                        <div>
+                            <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit..</p>
+                            <div class="price">
+                                <span class="sell_price">9990$</span>
+                                <span class="shoppingCartQty">(2)</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" class="shoppingCartItemRemove"><i class="fa-solid fa-xmark"></i></a>
+                </li>
+                <li class="shoppingCartItem">
+                    <a class="shoppingCartLink" href="javascript:void(0)">
+                        <img src="./assets/image/product/product-8-2.jpg" alt="">
+                        <div>
+                            <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit..</p>
+                            <div class="price">
+                                <span class="sell_price">9990$</span>
+                                <span class="shoppingCartQty">(2)</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" class="shoppingCartItemRemove"><i class="fa-solid fa-xmark"></i></a>
+                </li>
+                <li class="shoppingCartItem">
+                    <a class="shoppingCartLink" href="javascript:void(0)">
+                        <img src="./assets/image/product/product-8-2.jpg" alt="">
+                        <div>
+                            <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit..</p>
+                            <div class="price">
+                                <span class="sell_price">9990$</span>
+                                <span class="shoppingCartQty">(2)</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" class="shoppingCartItemRemove"><i class="fa-solid fa-xmark"></i></a>
+                </li>
+                <li class="shoppingCartItem">
+                    <a class="shoppingCartLink" href="javascript:void(0)">
+                        <img src="./assets/image/product/product-8-2.jpg" alt="">
+                        <div>
+                            <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit..</p>
+                            <div class="price">
+                                <span class="sell_price">9990$</span>
+                                <span class="shoppingCartQty">(2)</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" class="shoppingCartItemRemove"><i class="fa-solid fa-xmark"></i></a>
+                </li>
+                <li class="shoppingCartItem">
+                    <a class="shoppingCartLink" href="javascript:void(0)">
+                        <img src="./assets/image/product/product-8-2.jpg" alt="">
+                        <div>
+                            <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit..</p>
+                            <div class="price">
+                                <span class="sell_price">9990$</span>
+                                <span class="shoppingCartQty">(2)</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" class="shoppingCartItemRemove"><i class="fa-solid fa-xmark"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div class="shoppingCartFooter">
+            <div class="shoppingCartFooterPrice">
+                <div>Total Price </div>
+                <div>100 $</div>
+            </div>
+            <div class="shoppingCartBtnWrapper">
+                <a href="javascript:void(0)" class="cartBtn">Cart</a>
+                <a href="javascript:void(0)" class="checkoutBtn">Checkout</a>
+            </div>
+        </div>
+    </div>
+    <!-- SHOPPING CART END  -->
+
+
+    <!-- MOBILE BOTTOM FIXED MENU START -->
+    <div class="mobileMenuWrapper">
+        <a href="javascript:void(0)" class="appIcon appSearchIcon searchDisplay ">
+            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+            <span class="appText">Search</span>
+        </a>
+
+        <a href="javascript:void(0)" class="appIcon appCategoryIcon ">
+            <i class="fa fa-bars"></i>
+            <span class="appText">Category</span>
+        </a>
+        <a href="javascript:void(0)" class="appIcon appHomeIcon ">
+            <i class="fa-sharp fa-solid fa-house"></i>
+            <span class="appText">Home</span>
+        </a>
+        <a href="javascript:void(0)" class="appIcon appCartIcon ">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="appText">Cart</span>
+        </a>
+        <a href="javascript:void(0)" class="appIcon appAccountIcon ">
+            <i class="fa-solid fa-user"></i>
+            <span class="appText">Account</span>
+        </a>
+    </div>
+    <!-- MOBILE BOTTOM FIXED MENU END -->
+
+
+
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/app.js"></script>
+
+
+
+</body>
+
+</html>
