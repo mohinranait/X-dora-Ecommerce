@@ -1078,7 +1078,7 @@ a{
 .page_header_link_group .page_header_link_item::after{
     content: "\f105";
     position: absolute;
-    color: var(--color-primary);
+    color: var(--color-dark-light);
     top: 5px;
     right: -15px;
     font-family: "Font Awesome 5 free";
@@ -1402,7 +1402,7 @@ input[type="checkbox"]:checked + span:before {
 .form-control{
     width: 100%;
     padding: 1rem .8rem;
-    border: 1px solid var(--color-light);
+    border: 1px solid var(--color-dark-muted);
     border-radius: 5px;
     outline: none;
     transition: all 500ms ease;
@@ -1454,10 +1454,12 @@ input[type="checkbox"]:checked + span:before {
     border: 1px solid var(--color-dark-muted);
     border-radius: 3px;
     margin: 0px 10px 0 0;
+    vertical-align: middle;
 }
 .custome-checkbox input[type='checkbox']:checked + .custom_checkbox_label::before {
     background-color: var(--color-primary);
     border: 1px solid var(--color-primary);
+    vertical-align: middle;
 }
 .custom_checkbox_label::after{
     position: absolute;
@@ -1466,7 +1468,7 @@ input[type="checkbox"]:checked + span:before {
     height: 5px;
     border-radius: 3px;
     left: 3px;
-    top: 31%;
+    top: 44%;
     border-left: 2px solid var(--color-secondary);
     border-bottom: 2px solid var(--color-secondary);
     transform: translateY(-65%) rotate(-45deg);
@@ -2755,6 +2757,119 @@ tr.cart_item td{
 .cart_returnShp:hover{
     background-color: var(--color-primary);
 }
+/* ===================================================== CHECKOUT PAGE DESIGN ===================================== */
+.checkout_section{
+    margin-bottom: 100px;
+}
+.checkout_login .checkout_aditional_text ,.checkout_discount .checkout_aditional_text{
+    font-size: 13px;
+    color: var(--color-dark-light);
+    margin-bottom: 10px;
+}
+.checkout_discount{
+    margin-bottom: 30px;
+}
+.checkout_login .checkout_aditional_text .checkout_login_btn ,.checkout_discount .checkout_aditional_text .checkout_discount_btn{
+    background-color: transparent;
+    border: none;
+    font-weight: 700;
+    color: var(--color-dark);
+    cursor: pointer;
+}
+.checkout_login .checkout_aditional_text .checkout_login_btn:hover ,.checkout_discount .checkout_aditional_text .checkout_discount_btn:hover{
+   text-decoration: underline;
+   color: var(--color-primary);
+}
+.login_page_losPassword{
+    margin-left: 20px;
+}
+.collaps_box{
+    border-top: 4px solid var(--color-dark-muted);
+    padding: 20px;
+    box-shadow: 0px 0px 5px var(--color-dark-muted);
+    border-radius: 0 0 5px 5px ;
+    margin-bottom: 15px;
+}
+.collaps_box p{
+    font-size: 14px;
+    color: var(--color-dark-light);
+}
+.checkout_coupon_form{
+    width: 100%;
+}
+#loginCollops,#couponCollops{
+    display: none;
+}
+
+.checkout_container{
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+.checkout_layout_left{
+    width: 65%;
+}
+.different_shipping_check_gorup{
+    padding: 15px 0;
+}
+.different_address_wrapper{
+    width: 100%;
+    display: none;
+}
+
+
+
+.checkout_layout_right{
+    width: 35%;
+}
+.cart_total_title button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.cart_total_title button:hover{
+    text-decoration: underline;
+}
+.checkout_product_cart{
+    display: none;
+}
+.product_item_checkout{
+    padding: 5px 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.product_item_checkout .imag_name{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.product_item_checkout .imag_name img{
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--color-dark-muted);
+    margin-right: 6px;
+    border-radius: 5px;
+}
+.product_item_checkout .imag_name p{
+    font-size: 13px;
+    color: var(--color-dark);
+    font-weight: 400;
+    transition: all 400ms ease;
+
+}
+.checkout_product_price span,.checkout_product_price i {
+    color: var(--color-dark);
+    font-weight: 600;
+    font-size: 13px;
+}
+.product_item_checkout .imag_name p:hover{
+    color: var(--color-primary);
+}
+
+
+
 
 
 
@@ -3162,6 +3277,15 @@ footer{
         display: grid;
         grid-template-columns: 100%;
         row-gap: 1.5rem;
+    }
+    /* ============================================= CHECKOUT PAGE ======================================= */
+    .checkout_container {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .checkout_container .checkout_layout_left,.checkout_container .checkout_layout_right {
+        width: 100%;
     }
  }
 @media screen and (max-width: 768px) { 
@@ -3605,6 +3729,11 @@ footer{
         align-items: center;
         gap: 0.2rem;
     }
+    .grup_item_2 {
+        display: grid;
+        grid-template-columns: 100%;
+        row-gap: 0rem;
+    }
 }
  @media screen and (max-width: 350px) { 
     body{
@@ -3671,6 +3800,9 @@ footer{
         grid-template-columns: 100%;
         justify-content: flex-start;
         row-gap: 0.5rem;
+    }
+    .product_item_checkout .imag_name img {
+        display: none;
     }
     
 }
