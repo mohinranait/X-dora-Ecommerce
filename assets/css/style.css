@@ -2897,6 +2897,156 @@ tr.cart_item td{
 .product_item_checkout .imag_name p:hover{
     color: var(--color-primary);
 }
+/* =========================================== Order Traking =========================================== */
+.order_traking_section{
+    margin: 100px 0;
+}
+.order_tracking_wrapper{
+    width: 70%;
+    margin: 0 auto;
+}
+.progtrckrs{
+    display: flex;
+    justify-content: space-between;
+}
+.progtrckrs .progtrckr_done p,
+.progtrckrs .progtrckr_todo p,
+.progtrckrs .progtrckr_done h5,
+.progtrckrs .progtrckr_todo h5
+{
+    text-align: center;
+}
+.progtrckrs .progtrckr_done h5,
+.progtrckrs .progtrckr_todo h5
+{
+    margin-top: 20px;
+    font-size: 14px;
+    color: var(--color-dark);
+    font-weight: 500;
+}
+.progtrckrs .progtrckr_done p,
+.progtrckrs .progtrckr_todo p{
+    font-size: 14px;
+    color: var(--color-dark-light);
+}
+.progtrckrs .progtrckr_done ,
+.progtrckrs .progtrckr_todo {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.progtrckrs .progtrckr_done {
+    border-top: 4px solid var(--color-primary);
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.progtrckrs .progtrckr_todo {
+    border-top: 4px solid var(--color-dark-muted);
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.progtrckrs .progtrckr_done::before,.progtrckrs .progtrckr_todo::before{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    top: -2px;
+    left: 50%;
+    position: absolute;
+    background-color: var(--color-primary);
+    transform: translate(-50%, -50%);
+}
+.progtrckrs .progtrckr_done::before {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    color: var(--color-secondary);
+}
+.progtrckrs .progtrckr_todo::before {
+    content: "";
+}
+.order_details_items{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.5rem;
+
+}
+.order_details_items .order_details_item_box{
+    padding: 15px;
+    border-radius: 5px;
+    background-color: var(--color-light);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.7rem;
+
+}
+.order_details_items .order_details_item_box .order_tracking_icon i{
+    font-size: 22px;
+    color: var(--color-dark-light);
+}
+.order_details_items .order_details_item_box .order_tracking_names h5{
+    font-size: 15px;
+    font-weight: 400;
+}
+.order_details_items .order_details_item_box .order_tracking_names h5{
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--color-dark-light);
+}
+.order_details_items .order_details_item_box .order_tracking_names p{
+    font-size: 15px;
+    color: var(--color-dark);
+    font-weight: 500;
+}   
+.order_details_items .order_details_item_box .order_tracking_names .Tracking_id_number{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--color-primary);
+}
+.order_tracking_table{
+    margin: 50px 0px 100px;
+}
+table.tracking_table {
+    border: 1px solid var(--color-light);
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+}
+table.tracking_table thead tr{
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
+  
+table.tracking_table tr {
+    border: 1px solid var(--color-light);
+    padding: .35em;
+}
+  
+table.tracking_table th,
+table.tracking_table td {
+    padding: .625em;
+    font-size: 14px;
+    text-align: left;
+}
+  
+table.tracking_table th {
+    font-size: 13px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+  
 
 
 
@@ -3317,6 +3467,14 @@ footer{
     .checkout_container .checkout_layout_left,.checkout_container .checkout_layout_right {
         width: 100%;
     }
+    /* ========================================= ORDER TRACKING PAGE ======================================= */
+    .order_tracking_wrapper{
+        width: 100%;
+    }
+    .order_details_items {
+        grid-template-columns: repeat(2,1fr);
+        gap: 1.5rem;
+    }
  }
 @media screen and (max-width: 768px) { 
     body{
@@ -3585,6 +3743,11 @@ footer{
     .authenticate_buton {
         padding: 0.5rem 1rem;
     }
+    /* ============================================= ORDER TRACKING PAGE ================================== */
+    .order_details_items {
+        grid-template-columns: repeat(1,1fr);
+        gap: 1.5rem;
+    }
 
  }
 @media screen and (max-width: 576px) { 
@@ -3726,6 +3889,80 @@ footer{
     }
     .apply_cupon input {
         width: 65%;
+    }
+
+    /* ========================================= ORDER TRACKING PAGE =-================================= */
+    .progtrckrs {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-left: 30px;
+    }
+    .progtrckrs .progtrckr_done, .progtrckrs .progtrckr_todo {
+        border-top: none !important;
+        border-left: 4px solid var(--color-primary) !important;
+        width: 100%;
+        position: relative;
+        display: inline-block;
+        text-align: left;
+        padding: 1px 0 15px 25px;
+    }
+    .progtrckrs .progtrckr_done p,
+    .progtrckrs .progtrckr_todo p, 
+    .progtrckrs .progtrckr_done h5, 
+    .progtrckrs .progtrckr_todo h5 {
+        text-align: left;
+    }
+    .progtrckrs .progtrckr_done::before, .progtrckrs .progtrckr_todo::before {
+        top: 14px;
+        left: -3px;
+    }
+    .progtrckrs .progtrckr_done h5, .progtrckrs .progtrckr_todo h5 {
+        margin-top: 0px;
+    }
+    table.tracking_table {
+        border: 0;
+        padding: 0;
+    }
+    table.tracking_table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+      
+    table.tracking_table tr {
+        border-bottom: 3px solid var(--color-dark-muted);
+        display: block;
+        margin-bottom: .625em;
+        padding: 0;
+    }
+      
+    table.tracking_table td {
+        border-bottom: 1px solid var(--color-dark-muted);
+        display: block;
+        font-size: .8em;
+        text-align: right;
+    }
+      
+    table.tracking_table td::before {
+        /*
+        * aria-label has no advantage, it won't be read inside a table
+        content: attr(aria-label);
+        */
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+      
+    table.tracking_table td:last-child {
+        border-bottom: 0;
     }
 
  }

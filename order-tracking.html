@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- POPPINS FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- FONT AWASOME CDN JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <!-- STYLEING CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Order Tracking</title>
+</head>
+
+<body>
+
+    <!-- =================================== HEADER PART START ================================ -->
+    <header class="header">
+        <div class="header-middle header-middle-1" id="header-middle">
+            <div class="container header_middle_container theme1Container">
+                <!-- MOBILE ICON  -->
+                <div class="humberIcon mobileNone">
+                    <i class="fa fa-bars mobileNone"></i>
+                </div>
+                <div class="logo_left mobileNone">
+                    <a href="#" class="brand_logo">
+                        <figure><img src="./assets/image/logo/logo.png" alt=""></figure>
+                    </a>
+                </div>
+
+                <div class="header_search searchDisplayBlock">
+                    <form action="">
+                        <div class="header_search_group">
+                            <input type="text" class="header_search_fild" placeholder="Search...">
+                            <button class="header_search_btn"><i
+                                    class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="header_icons mobileNone">
+                    <ul class="header_icon_group">
+
+                        <li class="header_icon_item menuIconHum">
+                            <a class="header_icon_links menuIconWindow" href="javascript:void(0)">
+                                <span class="headerIconSpan"><i class="fa fa-bars"></i></span>
+                            </a>
+                        </li>
+                        <li class="header_icon_item account">
+                            <a class="header_icon_links" href="#">
+                                <span class="headerIconSpan"><i class="fa-solid fa-user"></i></span>
+                                <span class="heade_text_naem">Account</span>
+                            </a>
+                        </li>
+
+                        <li class="header_icon_item wishlist">
+                            <a class="header_icon_links" href="#">
+                                <span class="headerIconSpan"><i class="fa-solid fa-heart"></i> <small>5</small></span>
+                                <span class="heade_text_naem">Wishlist</span>
+                            </a>
+                        </li>
+
+                        <li class="header_icon_item headerCart">
+                            <a class="header_icon_links" href="javascript:void(0)">
+                                <span class="headerIconSpan header_cart_prict "><i
+                                        class="fa-solid fa-cart-shopping"></i> <small
+                                        class="header_cart_count">55</small>
+                                    <!--20.00$ -->
+                                </span>
+                                <span class="heade_text_naem">Cart</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header_bottom">
+            <div class="container header_bottom_container">
+                <!-- header browes category -->
+                <div class="header_category headercatButtonWrapper">
+                    <div class=""><i class="fa-solid fa-bars categoryBarsIcon"></i> <span class="browesCategory">Browes
+                            Category</span></div> <i class="fa-solid fa-angle-down browesCategory"></i>
+                    <ul class="header_category_group ">
+                        <li class="header_category_item">
+                            <a class="category_link" href="#">Electronics <i
+                                    class="fa-solid fa-angle-right nextCateIcon"></i></a>
+                            <ul class="next_cat_group">
+                                <li class="next_cat_item"><a href="#" class="next_cat_link ">Mobile</a></li>
+                                <li class="next_cat_item">
+                                    <a href="#" class="next_cat_link ">Laptop <i
+                                            class="fa-solid fa-angle-right nextCateIcon"></i> </a>
+                                    <ul class="sub_sub_cat_group">
+                                        <li class="next_cat_item"><a href="#" class="next_cat_link">Lenovo </a></li>
+                                        <li class="next_cat_item"><a href="#" class="next_cat_link">Samsung</a></li>
+                                        <li class="next_cat_item"><a href="#" class="next_cat_link">Walton</a></li>
+                                        <li class="next_cat_item"><a href="#" class="next_cat_link">HP Laptopn</a></li>
+                                        <li class="next_cat_item"><a href="#" class="next_cat_link">Dell Laptop</a></li>
+                                    </ul>
+                                    <!--/.sub_sub_cat_group-->
+                                </li>
+                                <li class="next_cat_item">
+                                    <a href="#" class="next_cat_link ">Speekers <i
+                                            class="fa-solid fa-angle-right nextCateIcon"></i> </a>
+                                    <ul class="sub_sub_cat_group">
+                                        <li class="next_cat_item"><a href="#" class="next_cat_link">Speker 1</a></li>
+                                        <li class="next_cat_item"><a href="#" class="next_cat_link">Speker 2</a></li>
+                                        <li class="next_cat_item"><a href="#" class="next_cat_link">Speker 3</a></li>
+                                        <li class="next_cat_item"><a href="#" class="next_cat_link">Speker 4</a></li>
+                                    </ul>
+                                    <!--/.sub_sub_cat_group-->
+                                </li>
+                                <li class="next_cat_item"><a href="#" class="next_cat_link ">T-shart</a></li>
+                                <li class="next_cat_item"><a href="#" class="next_cat_link ">Full Shart</a></li>
+                            </ul>
+                            <!--/.next_cat_group-->
+                        </li>
+                        <li class="header_category_item">
+                            <a class="category_link" href="#">Fashion <i
+                                    class="fa-solid fa-angle-right nextCateIcon"></i></a>
+                            <ul class="next_cat_group">
+                                <li class="next_cat_item"><a href="#" class="next_cat_link ">Mean</a></li>
+                                <li class="next_cat_item">
+                                    <a href="#" class="next_cat_link ">Wemone <i
+                                            class="fa-solid fa-angle-right nextCateIcon"></i></a>
+                                </li>
+                                <li class="next_cat_item"><a href="#" class="next_cat_link ">T-shart</a></li>
+                                <li class="next_cat_item"><a href="#" class="next_cat_link ">Full Shart</a></li>
+                            </ul>
+                        </li>
+                        <li class="header_category_item"><a class="category_link" href="#">Firniture</a></li>
+                        <li class="header_category_item"><a class="category_link" href="#">Kitchin</a></li>
+                        <li class="header_category_item"><a class="category_link" href="#">Shopping</a></li>
+                        <li class="header_category_item"><a class="category_link" href="#">Childrin</a></li>
+                        <li class="header_category_item"><a class="category_link" href="#">Cosmatics</a></li>
+                        <li class="header_category_item"><a class="category_link" href="#">Mobile</a></li>
+
+                    </ul>
+                    <!--/.header_category_group-->
+                </div>
+                <!--/.header_category-->
+
+                <!-- header nav menu start -->
+                <div class="header_menu">
+                    <ul class="nav_gruop">
+                        <li class="nav_item"><a class="nav_link" href="#">Home</a></li>
+                        <li class="nav_item"><a class="nav_link" href="#">Shop</a></li>
+                        <li class="nav_item nav_drop_down">
+                            <a class="nav_link" href="#">Brands
+                                <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                            <ul class="nav_drop_group">
+                                <li class="nav_drop_item"><a href="#" class="nav_drop_link">Samsung</a></li>
+                                <li class="nav_drop_item"><a href="#" class="nav_drop_link">Oppo </a></li>
+                                <li class="nav_drop_item"><a href="#" class="nav_drop_link">Vivo</a></li>
+                                <li class="nav_drop_item"><a href="#" class="nav_drop_link">Singer</a></li>
+                                <li class="nav_drop_item"><a href="#" class="nav_drop_link">Walton</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav_item nav_drop_down">
+                            <a class="nav_link" href="#">Pages
+                                <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                            <ul class="nav_drop_group">
+                                <li class="nav_drop_item"><a href="#" class="nav_drop_link">Dashboard</a></li>
+                                <li class="nav_drop_item"><a href="#" class="nav_drop_link">Shop </a></li>
+                                <li class="nav_drop_item"><a href="#" class="nav_drop_link">Blog</a></li>
+                                <li class="nav_drop_item"><a href="#" class="nav_drop_link">Login</a></li>
+                                <li class="nav_drop_item"><a href="#" class="nav_drop_link">Register</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav_item"><a class="nav_link" href="#">All Sellers</a></li>
+                        <li class="nav_item"><a class="nav_link" href="#">Seller Zone</a></li>
+                        <li class="nav_item"><a class="nav_link" href="#">Contact US</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- =================================== HEADER PART END ================================== -->
+
+
+
+    <section class="order_traking_section ">
+        <div class="container">
+            <div class="order_tracking_wrapper">
+                <ul class="progtrckrs">
+                    <li class="progtrckr_done">
+                        <h5>Order Processing</h5>
+                        <p>05:43 AM</p>
+                    </li>
+                    <li class="progtrckr_done">
+                        <h5>Pre-Production</h5>
+                        <p>01:21 PM</p>
+                    </li>
+                    <li class="progtrckr_done">
+                        <h5>In Production</h5>
+                        <p>Processing</p>
+                    </li>
+                    <li class="progtrckr_todo">
+                        <h5>Shipped</h5>
+                        <p>Pending</p>
+                    </li>
+                    <li class="progtrckr_todo">
+                        <h5>Delivered  </h5>
+                        <p>Pending</p>
+                    </li>
+                </ul>
+                <div class="order_details_items">
+                    <div class="order_details_item_box">
+                        <div class="order_tracking_icon">
+                            <i class="fa-solid fa-box"></i>
+                        </div>
+                        <div class="order_tracking_names">
+                            <h5>Tracking Code</h5>
+                            <p class="Tracking_id_number">MH4285UY</p>
+                        </div>
+                    </div>
+                    <div class="order_details_item_box">
+                        <div class="order_tracking_icon">
+                            <i class="fa-solid fa-truck-moving"></i>
+                        </div>
+                        <div class="order_tracking_names">
+                            <h5>Service</h5>
+                            <p class="">Home Delivered</p>
+                        </div>
+                    </div>
+                    <div class="order_details_item_box">
+                        <div class="order_tracking_icon">
+                            <i class="fa-solid fa-circle-info"></i>
+                        </div>
+                        <div class="order_tracking_names">
+                            <h5>Package Info</h5>
+                            <p class="">Letter</p>
+                        </div>
+                    </div>
+                    <div class="order_details_item_box">
+                        <div class="order_tracking_icon">
+                            <i class="fa-solid fa-code-compare"></i>
+                        </div>
+                        <div class="order_tracking_names">
+                            <h5>From</h5>
+                            <p class="">
+                                STR. Smardan 9, Bucuresti,
+                            </p>
+                        </div>
+                    </div>
+                    <div class="order_details_item_box">
+                        <div class="order_tracking_icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="order_tracking_names">
+                            <h5>Destination</h5>
+                            <p >
+                                Flokagata 24, 105 Reykjavik, Iceland
+                            </p>
+                        </div>
+                    </div>
+                    <div class="order_details_item_box">
+                        <div class="order_tracking_icon">
+                            <i class="fa-solid fa-calendar-days"></i>
+                        </div>
+                        <div class="order_tracking_names">
+                            <h5>Estimated Time</h5>
+                            <p >7 Frb, 05:05pm</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order_tracking_table">
+                    <div class="responsive_table">
+                        <table class="tracking_table">
+                            <thead>
+                                <tr>
+                                    <th scope="col" >Description</th>
+                                    <th scope="col" >Date</th>
+                                    <th scope="col" >Time</th>
+                                    <th scope="col" >Location</th>
+                                </tr>
+                            </thead>
+                            <tbody class="cart_items">
+                                <tr class="cart_item">
+                                    <td data-label="description">Order Placed</td>
+                                    <td data-label="date">26 Sep 2020</td>
+                                    <td data-label="time">12:00 AM</td>
+                                    <td data-label="location">Canada</td>
+                                </tr>
+                                <tr>
+                                    <td data-label="description">Preparing to Ship</td>
+                                    <td data-label="date">30 Sep 2020</td>
+                                    <td data-label="time">01:00 AM</td>
+                                    <td data-label="location">India</td>
+                                </tr>
+                                <tr>
+                                    <td data-label="description">Shipped</td>
+                                    <td data-label="date">03 Jan 2021</td>
+                                    <td data-label="time">6:00 PM</td>
+                                    <td data-label="location">Germany</td>
+                                </tr>
+                                <tr>
+                                    <td data-label="description">Delivered</td>
+                                    <td data-label="date">10 Jan 2021</td>
+                                    <td data-label="time">11:00 AM</td>
+                                    <td data-label="location">America</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+
+
+
+
+    <footer class="footer footerTheme1">
+        <div class="container footerContainer">
+            <div class="footer1">
+                <div class="footer_logo"><img src="./assets/image/logo/logo.png" alt=""></div>
+                <p class="footerText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed obcaecati laborum
+                    eius?</p>
+                <h6 class="appInstallTitle">Install App</h6>
+                <div class="downloadApp">
+                    <a href="javascript:void(0)">
+                        <img class="appleStore" src="./assets/image/app-store.jpg" alt="">
+                    </a>
+                    <a href="javascript:void(0)">
+                        <img class="googlePly" src="./assets/image/google-play.jpg" alt="">
+                    </a>
+
+                </div>
+            </div>
+            <div class="footer2">
+                <h4 class="footer_title">Company</h4>
+                <ul class="footerLinkGroup">
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">About Us</a></li>
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">Privacy</a></li>
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">Policy</a></li>
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">Terms </a></li>
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">Contact Us</a></li>
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">Support Center</a></li>
+                </ul>
+            </div>
+            <div class="footer3">
+                <h4 class="footer_title">Corporate</h4>
+                <ul class="footerLinkGroup">
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">About Us</a></li>
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">Privacy</a></li>
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">Policy</a></li>
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">Terms & Conditions</a>
+                    </li>
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">Contact Us</a></li>
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">Support Center</a></li>
+                </ul>
+            </div>
+            <div class="footer4">
+                <h4 class="footer_title">Account</h4>
+                <ul class="footerLinkGroup">
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">About Us</a></li>
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">Privacy</a></li>
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">Policy</a></li>
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">Terms & Conditions</a>
+                    </li>
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">Contact Us</a></li>
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">Support Center</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footerBottom">
+            <div class="footerBottomLeft">
+                <p>X-DORA <i class="fa fa-copyright"></i> 2022 Created By <a href="javascript:void(0)">MOHINRANA</a></p>
+            </div>
+            <div class="footerBottomRight">
+                <div class="paymentImg"><img src="./assets/image/payments.png" alt=""></div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Window Overlay -->
+    <div class="overly"></div>
+    <!-- SHOPPING CART START  -->
+    <div class="shoppingCartWrapper">
+        <div class="shoppingCartHeader">
+            <div><strong>Shopping Cart</strong> <span class="closeCartWrapper"><i class="fa-solid fa-xmark"></i></span>
+            </div>
+        </div>
+        <div class="shoppingCartBody">
+            <ul class="shoppingCartGroup">
+                <li class="shoppingCartItem">
+                    <a class="shoppingCartLink" href="javascript:void(0)">
+                        <img src="./assets/image/product/product-8-2.jpg" alt="">
+                        <div>
+                            <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit..</p>
+                            <div class="price">
+                                <span class="sell_price">9990$</span>
+                                <span class="shoppingCartQty">(2)</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" class="shoppingCartItemRemove"><i class="fa-solid fa-xmark"></i></a>
+                </li>
+                <li class="shoppingCartItem">
+                    <a class="shoppingCartLink" href="javascript:void(0)">
+                        <img src="./assets/image/product/product-8-2.jpg" alt="">
+                        <div>
+                            <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit..</p>
+                            <div class="price">
+                                <span class="sell_price">9990$</span>
+                                <span class="shoppingCartQty">(2)</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" class="shoppingCartItemRemove"><i class="fa-solid fa-xmark"></i></a>
+                </li>
+                <li class="shoppingCartItem">
+                    <a class="shoppingCartLink" href="javascript:void(0)">
+                        <img src="./assets/image/product/product-8-2.jpg" alt="">
+                        <div>
+                            <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit..</p>
+                            <div class="price">
+                                <span class="sell_price">9990$</span>
+                                <span class="shoppingCartQty">(2)</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" class="shoppingCartItemRemove"><i class="fa-solid fa-xmark"></i></a>
+                </li>
+                <li class="shoppingCartItem">
+                    <a class="shoppingCartLink" href="javascript:void(0)">
+                        <img src="./assets/image/product/product-8-2.jpg" alt="">
+                        <div>
+                            <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit..</p>
+                            <div class="price">
+                                <span class="sell_price">9990$</span>
+                                <span class="shoppingCartQty">(2)</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" class="shoppingCartItemRemove"><i class="fa-solid fa-xmark"></i></a>
+                </li>
+                <li class="shoppingCartItem">
+                    <a class="shoppingCartLink" href="javascript:void(0)">
+                        <img src="./assets/image/product/product-8-2.jpg" alt="">
+                        <div>
+                            <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit..</p>
+                            <div class="price">
+                                <span class="sell_price">9990$</span>
+                                <span class="shoppingCartQty">(2)</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" class="shoppingCartItemRemove"><i class="fa-solid fa-xmark"></i></a>
+                </li>
+                <li class="shoppingCartItem">
+                    <a class="shoppingCartLink" href="javascript:void(0)">
+                        <img src="./assets/image/product/product-8-2.jpg" alt="">
+                        <div>
+                            <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit..</p>
+                            <div class="price">
+                                <span class="sell_price">9990$</span>
+                                <span class="shoppingCartQty">(2)</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" class="shoppingCartItemRemove"><i class="fa-solid fa-xmark"></i></a>
+                </li>
+                <li class="shoppingCartItem">
+                    <a class="shoppingCartLink" href="javascript:void(0)">
+                        <img src="./assets/image/product/product-8-2.jpg" alt="">
+                        <div>
+                            <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit..</p>
+                            <div class="price">
+                                <span class="sell_price">9990$</span>
+                                <span class="shoppingCartQty">(2)</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" class="shoppingCartItemRemove"><i class="fa-solid fa-xmark"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div class="shoppingCartFooter">
+            <div class="shoppingCartFooterPrice">
+                <div>Total Price </div>
+                <div>100 $</div>
+            </div>
+            <div class="shoppingCartBtnWrapper">
+                <a href="javascript:void(0)" class="cartBtn">Cart</a>
+                <a href="javascript:void(0)" class="checkoutBtn">Checkout</a>
+            </div>
+        </div>
+    </div>
+    <!-- SHOPPING CART END  -->
+
+
+    <!-- MOBILE BOTTOM FIXED MENU START -->
+    <div class="mobileMenuWrapper">
+        <a href="javascript:void(0)" class="appIcon appSearchIcon searchDisplay ">
+            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+            <span class="appText">Search</span>
+        </a>
+
+        <a href="javascript:void(0)" class="appIcon appCategoryIcon ">
+            <i class="fa fa-bars"></i>
+            <span class="appText">Category</span>
+        </a>
+        <a href="javascript:void(0)" class="appIcon appHomeIcon ">
+            <i class="fa-sharp fa-solid fa-house"></i>
+            <span class="appText">Home</span>
+        </a>
+        <a href="javascript:void(0)" class="appIcon appCartIcon ">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="appText">Cart</span>
+        </a>
+        <a href="javascript:void(0)" class="appIcon appAccountIcon ">
+            <i class="fa-solid fa-user"></i>
+            <span class="appText">Account</span>
+        </a>
+    </div>
+    <!-- MOBILE BOTTOM FIXED MENU END -->
+
+
+
+    <script src="./assets/js/app.js"></script>
+
+</body>
+
+</html>
