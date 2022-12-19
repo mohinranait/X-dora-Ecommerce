@@ -130,7 +130,7 @@ $("#imageUpload").change(function() {
 
 
 /*====================================================================================================
-                                SINGLE PRODUCT PAGE  END
+                                SINGLE PRODUCT PAGE  START
 =======================================================================================================*/
 $('.tab-link').click( function() {
     var tabID = $(this).attr('data-tab');
@@ -139,5 +139,32 @@ $('.tab-link').click( function() {
 });
 /*====================================================================================================
                                 SINGLE PRODUCT PAGE  END
+=======================================================================================================*/
+
+
+/*====================================================================================================
+                                CHECKOUT PAGE  START
+=======================================================================================================*/
+
+    $('#showProductCheckout').click(function(){
+        $(".checkout_product_cart").slideToggle('first');
+    })
+
+    $('.checkout_login_btn').click(function(){
+        $("#loginCollops").slideToggle('first');
+    })
+
+    $('.checkout_discount_btn').click(function(){
+        $("#couponCollops").slideToggle('first');
+    })
+
+    function differentShippingChecked() {
+        if($('.different_shipping_checked').is(":checked"))   
+            $(".different_address_wrapper").slideDown('first');
+        else
+            $(".different_address_wrapper").slideUp('first');
+    };
+/*====================================================================================================
+                                CHECKOUT PAGE  END
 =======================================================================================================*/
 

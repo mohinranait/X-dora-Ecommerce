@@ -176,6 +176,9 @@ a{
     max-width: 1800px;
     margin: 0 auto;
 }
+.m-auto{
+    margin: 0 auto;
+}
 .card{
     width: 100%;
     height: auto;
@@ -184,6 +187,7 @@ a{
     border-radius: 5px;
     padding: 13px;
 }
+
 
 
 
@@ -1371,7 +1375,7 @@ input[type="checkbox"]:checked + span:before {
     margin-bottom: 2.3rem;
 }
 .authenticate_header h1{
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 600;
     margin-bottom: 0.6rem;
 }
@@ -1621,6 +1625,32 @@ ul#tabs-nav li.active::before{
 .social_media_item a.social_media_link i {
     margin-right: 10px;
     font-size: 25px;
+}
+/* resetn password */
+.required_password{
+    margin-top: 115px;
+}
+.required_password h6{
+    font-size: 15px;
+}
+.required_password p,.required_password .required_passwords .required_password_item{
+    position: relative;
+    font-size: 13px;
+    color: var(--color-dark-light);
+    margin-left: 10px;
+}
+.required_password p{
+    margin-left: 0;
+}
+.required_passwords .required_password_item::before{
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    position: absolute;
+    left: -11px;
+    top: 8px;
+    background-color: var(--color-dark-light);    
 }
 
 
@@ -3503,6 +3533,7 @@ footer{
     }
     .authenticate_login .authenticate_left{
         order: 2;
+        display: none;
     }
     /* ==================================== SINGLE PRODUCT PAGE ============= */
     .product_area_left {
@@ -3550,6 +3581,9 @@ footer{
     }
     table.cart_table td {
         padding: 10px 3px;
+    }
+    .authenticate_buton {
+        padding: 0.5rem 1rem;
     }
 
  }
