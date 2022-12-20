@@ -3046,9 +3046,88 @@ table.tracking_table th {
     letter-spacing: .1em;
     text-transform: uppercase;
 }
-  
+/* ============================================ COMPARE TABLE ====================================== */
 
+.compare_section{
+    margin-bottom: 100px;
+}
 
+table.products-4 {
+    border: 1px solid var(--color-light);
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+}
+table.products-4 th,
+table.products-4 td {
+    width: 25%;
+    padding: 10px;
+    min-width: 200px; 
+    text-align: center;
+    border-right: 1px solid var(--color-dark-muted);
+}
+table.products-4 th {
+    /* position: sticky;  */
+    z-index: 1;
+    top: 4rem !important;
+}
+table.products-4 tbody tr{
+    border: 1px solid var(--color-dark-muted);
+}
+
+table.products-4 thead th {
+    top: -2px; /* We need this to attach the "stuck" attribute */
+}
+
+table.products-4 thead th img {
+    transition: height 200ms ease-in-out;
+}
+
+table.products-4 tbody td.label,.products-4 thead th.label {
+    font-weight: bold;
+    min-width: 150px; 
+    width: 150px; 
+    background: var(--color-light);
+    font-size: 14px;
+    text-align: left;
+    font-weight: 500;
+    color: var(--color-dark);
+}
+
+table.products-4 tr{
+    border: 1px solid var(--color-dark-muted) !important;
+    padding: .35em;
+}
+table.products-4 thead th.compare_product_img img{
+    width: 90px;
+    height: 90px;
+}
+table.products-4 tbody td .spec a{
+    color: var(--color-dark) !important;
+    font-size: 15px;
+    font-weight: 500;
+
+}
+.compare_container{
+    overflow-x: scroll;
+}
+.compare_container::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px var(--color-dark-muted) ;
+	border-radius: 10px;
+}
+.compare_container::-webkit-scrollbar
+{
+	width: 2px;
+    height: 3px;
+}
+.compare_container::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: var(--color-primary);
+}
 
 
 
@@ -3748,7 +3827,16 @@ footer{
         grid-template-columns: repeat(1,1fr);
         gap: 1.5rem;
     }
-
+    /* ================================================== COMPARE PAGE ===================================== */
+    table.products-4 {
+        border: 1px solid var(--color-light);
+        border-collapse: collapse;
+        margin: 0;
+        padding: 0;
+        width: auto;
+        table-layout: fixed;
+    }
+  
  }
 @media screen and (max-width: 576px) { 
     body{
@@ -3964,6 +4052,12 @@ footer{
     table.tracking_table td:last-child {
         border-bottom: 0;
     }
+
+
+   
+
+
+   
 
  }
 
