@@ -4,6 +4,7 @@ let headerMenuIcon  = document.querySelectorAll('.headerIconSpan');
 let header_bottom = document.querySelector('.header_bottom');
 let overly = document.querySelector('.overly');
 
+
 // STICKI HEADER 
 document.addEventListener('scroll', () =>{
     let headerMiddle = document.getElementById("header-middle")
@@ -11,7 +12,7 @@ document.addEventListener('scroll', () =>{
         headerMiddle.classList.toggle("fixedHeader" , window.scrollY > 200);
     }
     let hiddenText = document.querySelectorAll('.heade_text_naem');
-    let menuIconWindow= document.querySelector('.menuIconWindow');
+    let menuIconWindow = document.querySelector('.menuIconWindow');
     // When window scroll then add header icon style
     for (let i = 0; i < headerMenuIcon.length; i++) {
         const addStyleElement = headerMenuIcon[i];
@@ -39,54 +40,45 @@ document.addEventListener('scroll', () =>{
 
 
 // HOME PAGE LEFT CATEGORY SHOW / HIDE
-let headercatButtonWrapper = document.querySelector(".headercatButtonWrapper");
-headercatButtonWrapper.addEventListener('click', function(){
-    let headerCategoryGroup = document.querySelector('.header_category_group');
-    headerCategoryGroup.classList.toggle('categoryActive');
+$(".headercatButtonWrapper").click(function(){
+    $(".header_category_group").toggleClass("categoryActive");
 })
 
-
-// Window menu sticky
-let menuIconWindow = document.querySelector('.menuIconWindow');
-menuIconWindow.addEventListener('click', () => {
-    header_bottom.classList.toggle('headerBottomSticky');
+// Window Navbar menu sticky
+$(".menuIconWindow").click(()=>{
+    $(header_bottom).toggleClass("headerBottomSticky");
 })
-
-
 
 // MOBILE SEARCH 
-let searchDisplay = document.querySelector('.searchDisplay');
-searchDisplay.addEventListener('click', () => {
-    let header_search  = document.querySelector('.header_search');
-    header_search.classList.toggle('active')
+$(".searchDisplay").click(()=>{
+    $(".header_search").toggleClass("active")
 })
-
-
-
 
 // SHOPPING CARD SHOW & HIDE
-let headerCart = document.querySelector('.headerCart');
-let shoppingCartWrapper = document.querySelector('.shoppingCartWrapper');
-headerCart.addEventListener('click', function(){
-    shoppingCartWrapper.classList.add('shoppingCartBlock');
-    overly.classList.add('active');
-})
-let closeCartWrapper  = document.querySelector('.closeCartWrapper');
-closeCartWrapper.addEventListener('click', () => {
-    shoppingCartWrapper.classList.remove('shoppingCartBlock')
-    overly.classList.remove('active');
-})
-overly.addEventListener('click', () => {
-    shoppingCartWrapper.classList.remove('shoppingCartBlock')
-    overly.classList.remove('active');
+let shoppingCartWrapper = $('.shoppingCartWrapper');
+$(".headerCart").click(()=>{
+    $(shoppingCartWrapper).addClass("shoppingCartBlock");
+    $(overly).addClass('active');
 })
 
+let closeCartWrapper  = $('.closeCartWrapper');
+$(closeCartWrapper).click(()=>{
+    $(shoppingCartWrapper).removeClass("shoppingCartBlock");
+    $(overly).removeClass('active');
+})
 
+$(overly).click(function(){
+    $(shoppingCartWrapper).removeClass("shoppingCartBlock");
+    $(overly).removeClass('active');
+})
 
-let appCartIcon = document.querySelector('.appCartIcon');
-appCartIcon.addEventListener('click', () => {
-    shoppingCartWrapper.classList.add('shoppingCartBlock');
-    overly.classList.add('active');
+$('.shoppingCartFooter .couponshow').click(function(){
+    $(".shoppingCartBody .cuponform_wrapper").slideToggle('first')
+})
+
+$(".appCartIcon").click(function(){
+    $(shoppingCartWrapper).addClass("shoppingCartBlock");
+    $(overly).addClass('active');
 })
 
 
@@ -132,11 +124,41 @@ $("#imageUpload").change(function() {
 /*====================================================================================================
                                 SINGLE PRODUCT PAGE  START
 =======================================================================================================*/
-$('.tab-link').click( function() {
-    var tabID = $(this).attr('data-tab');
-    $(this).addClass('active').siblings().removeClass('active');
-    $('#tab-'+tabID).addClass('active').siblings().removeClass('active');
-});
+$(document).ready(function(){
+    $('.tab-link').click( function() {
+        var tabID = $(this).attr('data-tab');
+        $(this).addClass('active').siblings().removeClass('active');
+        $('#tab-'+tabID).addClass('active').siblings().removeClass('active');
+    });
+
+    // Single Product Variant js code
+    $(".product_attr_label").click(function(e){
+        var parentElement = $(this).parents('li')
+        if( $(".size_item input[type='radio'],.color_item input[type='radio']").is(":checked") ){
+            $(parentElement).addClass('active').siblings().removeClass('active');
+        }
+    })
+
+    // Single Product Increment and Decrement js code
+    var quintityMinusBtn = $(".quintity_minus");
+    var maximumPlusBtn = $(".maximum_plus");
+
+    // Increment
+    maximumPlusBtn.click(function(){
+        var quintity = $(this).parent(".single_quintity_group").find(".single_quintity");
+        quintity.val(Number(quintity.val())+1);
+    })
+    // Decrement
+    quintityMinusBtn.click(function(){
+        var quintity = $(this).parent('.single_quintity_group').find(".single_quintity");
+        var quintityValue = Number(quintity.val());
+        if( quintityValue > 1){
+            quintity.val(quintityValue - 1);
+        }
+    })
+
+
+})
 /*====================================================================================================
                                 SINGLE PRODUCT PAGE  END
 =======================================================================================================*/
@@ -167,4 +189,37 @@ $('.tab-link').click( function() {
 /*====================================================================================================
                                 CHECKOUT PAGE  END
 =======================================================================================================*/
+
+
+
+/* ============================================ GLOBAL JS CODE START ============================= */
+// Show the first tab and hide the rest
+$('#tabs-nav li:first-child').addClass('active');
+$('.tab-content').hide();
+$('.tab-content:first').show();
+// Click function
+$('#tabs-nav li').click(function(){
+    $('#tabs-nav li').removeClass('active');
+    $(this).addClass('active');
+    $('.tab-content').hide();
+    
+    var activeTab = $(this).find('a').attr('href');
+    $(activeTab).fadeIn();
+    return false;
+});
+// Mobile navmenu js code start 
+$('.appCategoryIcon,.closeNav').click( function() {
+    $('.mobile_navbar').toggleClass('mobileMenuShow');
+    $(".overly").toggleClass("active");
+});
+$(".overly").click(function(){
+    $('.mobile_navbar').removeClass('mobileMenuShow');
+})
+$('.mobile_nav_item a i').click(function(){
+    var parentElement = $(this).parents('a')
+    let mobileSubLinkNavs = parentElement.next();
+    $(mobileSubLinkNavs).slideToggle('first');
+})
+  // Mobile navmenu js code end
+
 

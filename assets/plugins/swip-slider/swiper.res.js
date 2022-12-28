@@ -57,6 +57,7 @@ var swiper = new Swiper(".fitureCategory", {
 // Slider Proudct js code
 var swiper = new Swiper(".productSlider", {
     slidesPerView: 5,
+    spaceBetween: 0,
     autoplay: {
       delay: 2500,
     },
@@ -84,7 +85,7 @@ var swiper = new Swiper(".productSlider", {
           spaceBetween: 0,
         },
         1024: {
-          slidesPerView: 5,
+          slidesPerView: 6,
           spaceBetween: 0,
         },
       },
