@@ -1,4 +1,4 @@
-.select-hidden {
+/* .select-hidden {
   display: none;
   visibility: hidden;
   padding-right: 10px;
@@ -29,10 +29,7 @@
     font-weight: 900;
     width: 0;
     height: 0;
-    /* border: 7px solid transparent;
-    border-color: var(--color-dark-light) transparent transparent transparent; */
     position: absolute;
-    /* top: 16px; */
     right: 17px;
 }
 .select-styled:hover {
@@ -82,4 +79,4 @@
 
 
 
-
+ */

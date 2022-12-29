@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="X-DORA | xDora Online Ecommerce shop">
+    <meta name="keywords" content="HTML E-commerce template, xDora HTML Template, Ecommerce Theme">
+    <meta name="author" content="X-DORA">
+    <link rel="icon" type="image/x-icon" href="./assets/image/logo/favicon.png">
+    <!-- POPPINS FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- FONT AWASOME CDN JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="./assets/plugins/swip-slider/swip.css" />
+    <!-- SELECT1 -->
+    <link rel="stylesheet" href="./assets/plugins/select1/select1.css">
+
+    <!-- STYLEING CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>X-dora Blogs list</title>
+</head>
+
+<body>
+
+    <!-- Loader  Start -->
+    <div class="loader">
+        <div class="loader_wrapper">
+            <img src="./assets/image/Loader/Loading_icon.gif" alt="">
+        </div>
+    </div>
+    <!-- Loader  end -->
+
+    <!-- =================================== HEADER PART START ================================ -->
+    <header class="header">
+        <div class="header-middle header-middle-1" id="header-middle">
+            <div class="container header_middle_container theme1Container">
+                <!-- MOBILE ICON  -->
+                <div class="humberIcon mobileNone">
+                    <i class="fa fa-bars mobileNone"></i>
+                </div>
+                <div class="logo_left mobileNone">
+                    <a href="#" class="brand_logo">
+                        <figure><img src="./assets/image/logo/logo.png" alt=""></figure>
+                    </a>
+                </div>
+
+                <div class="header_search searchDisplayBlock">
+                    <form action="">
+                        <div class="header_search_group">
+                            <div class="productFilter">
+                                <select name="" class="header_search_select custome-select" id="">
+                                    <option value="">Select Category</option>
+                                    <option value="">Furniture</option>
+                                    <option value="">Electronics</option>
+                                    <option value="">Mototr Car</option>
+                                    <option value="">Fashion</option>
+                                    <option value="">Baby Products</option>
+                                    <option value="">Motorcycle</option>
+                                    <option value="">Mobile</option>
+                                    <option value="">Digital</option>
+                                </select>
+                            </div>
+                            <input type="text" class="header_search_fild" placeholder="Search...">
+                            <button class="header_search_btn"><i  class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="header_icons mobileNone">
+                    <ul class="header_icon_group">
+                        <li class="header_icon_item menuIconHum">
+                            <a class="header_icon_links menuIconWindow" href="javascript:void(0)">
+                                <span class="headerIconSpan"><i class="fa fa-bars"></i></span>
+                            </a>
+                        </li>
+                        <li class="header_icon_item account">
+                            <a class="header_icon_links" href="user-dashboard.html">
+                                <span class="headerIconSpan"><i class="fa-regular fa-user"></i></span>
+                                <span class="heade_text_naem">Account</span>
+                            </a>
+                        </li>
+                        <li class="header_icon_item wishlist">
+                            <a class="header_icon_links" href="wishlist.html">
+                                <span class="headerIconSpan"><i class="fa-regular fa-heart"></i> <small>5</small></span>
+                                <span class="heade_text_naem">Wishlist</span>
+                            </a>
+                        </li>
+                        <li class="header_icon_item headerCart">
+                            <a class="header_icon_links" href="javascript:void(0)">
+                                <span class="headerIconSpan header_cart_price ">
+                                    <i class="fa-solid fa-basket-shopping"></i>
+                                    <small class="header_cart_count">55</small>
+                                    <!--20.00$ -->
+                                </span>
+                                <span class="heade_text_naem">Cart</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header_bottom">
+            <div class="container header_bottom_container">
+                <!-- header browes category -->
+                <div class="header_category headercatButtonWrapper">
+                    <div class="">
+                        <i class="fa-solid fa-bars categoryBarsIcon"></i> 
+                        <span class="browesCategory">Browes  Category</span>
+                    </div> 
+                    <i class="fa-solid fa-angle-down browesCategory"></i>
+                    <ul class="header_category_group " >
+                        <li class="header_category_item">
+                            <a class="category_link" href="#">Electronics <i
+                                    class="fa-solid fa-angle-right nextCateIcon"></i></a>
+                            <ul class="next_cat_group">
+                                <li class="next_cat_item">
+                                    <a href="#" class="next_cat_link ">Mobile <i class="fa-solid fa-angle-right nextCateIcon"></i> </a>
+                                    <ul class="sub_sub_cat_group">
+                                        <li class="next_cat_item"><a href="#" class="next_cat_link">Walton </a></li>
+                                        <li class="next_cat_item"><a href="#" class="next_cat_link">Oppo</a></li>
+                                        <li class="next_cat_item"><a href="#" class="next_cat_link">Vivo</a></li>
+                                        <li class="next_cat_item"><a href="#" class="next_cat_link">Realme</a></li>
+                                        <li class="next_cat_item"><a href="#" class="next_cat_link">Samsung</a></li>
+                                        <li class="next_cat_item"><a href="#" class="next_cat_link">Apple</a></li>
+                                        <li class="next_cat_item"><a href="#" class="next_cat_link">Lenovo</a></li>
+                                    </ul>
+                                    <!--/.sub_sub_cat_group-->
+                                </li>
+                                <li class="next_cat_item">
+                                    <a href="#" class="next_cat_link ">Laptop <i
+                                            class="fa-solid fa-angle-right nextCateIcon"></i> </a>
+                                    <ul class="sub_sub_cat_group">
+                                        <li class="next_cat_item"><a href="#" class="next_cat_link">Lenovo </a></li>
+                                        <li class="next_cat_item"><a href="#" class="next_cat_link">Samsung</a></li>
+                                        <li class="next_cat_item"><a href="#" class="next_cat_link">Walton</a></li>
+                                        <li class="next_cat_item"><a href="#" class="next_cat_link">HP Laptopn</a></li>
+                                        <li class="next_cat_item"><a href="#" class="next_cat_link">Dell Laptop</a></li>
+                                    </ul>
+                                    <!--/.sub_sub_cat_group-->
+                                </li>
+                                <li class="next_cat_item">
+                                    <a href="#" class="next_cat_link ">Speekers  </a>
+                                    <!--/.sub_sub_cat_group-->
+                                </li>
+                                <li class="next_cat_item"><a href="#" class="next_cat_link ">Computer</a></li>
+                                <li class="next_cat_item"><a href="#" class="next_cat_link ">Mickrophone</a></li>
+                            </ul>
+                            <!--/.next_cat_group-->
+                        </li>
+                        <li class="header_category_item">
+                            <a class="category_link" href="#">Fashion <i
+                                    class="fa-solid fa-angle-right nextCateIcon"></i></a>
+                            <ul class="next_cat_group">
+                                <li class="next_cat_item"><a href="#" class="next_cat_link ">Mean</a></li>
+                                <li class="next_cat_item">
+                                    <a href="#" class="next_cat_link ">Wemone </a>
+                                </li>
+                                <li class="next_cat_item"><a href="#" class="next_cat_link ">T-shart</a></li>
+                                <li class="next_cat_item"><a href="#" class="next_cat_link ">Full Shart</a></li>
+                            </ul>
+                        </li>
+                        <li class="header_category_item"><a class="category_link" href="#">Furniture</a></li>
+                        <li class="header_category_item"><a class="category_link" href="#">Kitchin</a></li>
+                        <li class="header_category_item"><a class="category_link" href="#">Shopping</a></li>
+                        <li class="header_category_item"><a class="category_link" href="#">Childrin</a></li>
+                        <li class="header_category_item"><a class="category_link" href="#">Cosmatics</a></li>
+                        <li class="header_category_item"><a class="category_link" href="#">Baby</a></li>
+                        <li class="header_category_item"><a class="category_link" href="#">Cart</a></li>
+                        <li class="header_category_item"><a class="category_link" href="#">City</a></li>
+                        <li class="header_category_item"><a class="category_link" href="#">Degital</a></li>
+                        <li class="header_category_item"><a class="category_link" href="#">Demo</a></li>
+
+                    </ul>
+                    <!--/.header_category_group-->
+                </div>
+                <!--/.header_category-->
+
+                <!-- header nav menu start -->
+                <div class="header_menu">
+                    <ul class="nav_gruop">
+                        <li class="nav_item nav_drop_down">
+                            <a class="nav_link" href="#">Home
+                                <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                            <ul class="nav_drop_group">
+                                <li class="nav_drop_item"><a href="index1.html" class="nav_drop_link">Home One (Mobile)</a></li>
+                                <li class="nav_drop_item"><a href="index2.html" class="nav_drop_link">Home Two (Mobile) </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav_item"><a class="nav_link" href="category.html">Shop</a></li>
+                        <li class="nav_item nav_drop_down">
+                            <a class="nav_link" href="#">Brands
+                                <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                            <ul class="nav_drop_group">
+                                <li class="nav_drop_item"><a href="#" class="nav_drop_link">Samsung</a></li>
+                                <li class="nav_drop_item"><a href="#" class="nav_drop_link">Oppo </a></li>
+                                <li class="nav_drop_item"><a href="#" class="nav_drop_link">Vivo</a></li>
+                                <li class="nav_drop_item"><a href="#" class="nav_drop_link">Singer</a></li>
+                                <li class="nav_drop_item"><a href="#" class="nav_drop_link">Walton</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav_item nav_drop_down">
+                            <a class="nav_link" href="#">Pages
+                                <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                            <ul class="nav_drop_group">
+                                <li class="nav_drop_item"><a href="user-dashboard.html" class="nav_drop_link">Dashboard</a></li>
+                                <li class="nav_drop_item"><a href="products.html" class="nav_drop_link">Product Details </a></li>
+                                <li class="nav_drop_item"><a href="all-sellers.html" class="nav_drop_link">Vendor List </a></li>
+                                <li class="nav_drop_item"><a href="vendor-details.html" class="nav_drop_link">Vendor Details </a></li>
+                                <li class="nav_drop_item"><a href="compare.html" class="nav_drop_link">Compare </a></li>
+                                <li class="nav_drop_item"><a href="login.html" class="nav_drop_link">Login</a></li>
+                                <li class="nav_drop_item"><a href="register.html" class="nav_drop_link">Register</a></li>
+                                <li class="nav_drop_item"><a href="reset-password.html" class="nav_drop_link">Reset Password</a></li>
+                                <li class="nav_drop_item"><a href="forgot-password.html" class="nav_drop_link">Forgot Password</a></li>
+                                <li class="nav_drop_item"><a href="order-tracking.html" class="nav_drop_link">Order Tracking</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav_item"><a class="nav_link" href="blogs.html">Blogs</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- =================================== HEADER PART END ================================== -->
+
+
+    <section class=" page_header ">
+        <div class="container  ">
+            <div class="page_header_left d-flex justify-content-between align-items-center">
+                <h1 class="page_title">Blogs Grid</h1>
+                <ul class="page_header_link_group">
+                    <li class="page_header_link_item"> <a href="javascript:void(0)" class="page_header_link"><i
+                                class="fa-solid fa-house"></i> Home</a></li>
+                    <li class="page_header_link_item"><a href="javascript:void(0)" class="page_header_link">Blogs</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="blogs_section">
+        <div class="container">
+        
+            <div class="blogs_grid_wrapper">
+                <div class="blog_grid_item">
+                    <div class="blog_grid_img">
+                        <a href="single-blog.html"><img src="./assets/image/blogs/blogs4.jpg" alt=""></a>
+                        <span class="category_title">Online Sell</span>
+                    </div>
+                    <div class="blog_grid_body">
+                        <h2 class="blog_grid_title"><a href="single-blog.html">How to Start an Online Store</a></h2>
+                        <p class="blog_grid_short_des">In this article, well take all the guesswork out of starting your own business. We’ll also provide you with all the tips and information.</p>
+                        <div class="blog_btn_div">
+                            <a href="single-blog.html" class="btn btn-primary-muted">View More...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog_grid_item">
+                    <div class="blog_grid_img">
+                        <a href="single-blog.html"><img src="./assets/image/blogs/blogs1.jpg" alt=""></a>
+                        <span class="category_title">Marketing and Promotion</span>
+                    </div>
+                    <div class="blog_grid_body">
+                       
+                        <h2 class="blog_grid_title"><a href="single-blog.html">YouTube for E-Commerce </a></h2>
+                      
+                        <p class="blog_grid_short_des">YouTube is an excellent platform for promoting your e-commerce business, but many stores haven’t capitalized on what it has to offer.</p>
+                        <div class="blog_btn_div">
+                            <a href="single-blog.html" class="btn  btn-primary-muted">View More...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog_grid_item">
+                    <div class="blog_grid_img">
+                        <a href="single-blog.html"><img src="./assets/image/blogs/blogs2.jpg" alt=""></a>
+                        <span class="category_title">Man Fashion</span>
+                    </div>
+                    <div class="blog_grid_body">
+                        <h2 class="blog_grid_title"><a href="single-blog.html">T-Shirts Every Man Needs</a></h2>
+                        <p class="blog_grid_short_des">Fashion is for men just as much as it is for women. And whoever says that men can get away with just about any shirt with jeans – ah,they couldn’t be more wrong!</p>
+                        <div class="blog_btn_div">
+                            <a href="single-blog.html" class="btn  btn-primary-muted">View More...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog_grid_item">
+                    <div class="blog_grid_img">
+                        <a href="single-blog.html"><img src="./assets/image/blogs/blogs3.jpg" alt=""></a>
+                        <span class="category_title">Home</span>
+                    </div>
+                    <div class="blog_grid_body">
+                        <h2 class="blog_grid_title"><a href="single-blog.html">8 smart home devices for a cooler, more intelligent living space</a></h2>
+                        <p class="blog_grid_short_des">Celebrate our birthday with deals over 50% off, money-saving games, and a trip down memory lane to relive your journey.</p>
+                        <div class="blog_btn_div">
+                            <a href="single-blog.html" class="btn  btn-primary-muted">View More...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog_grid_item">
+                    <div class="blog_grid_img">
+                        <a href="single-blog.html"><img src="./assets/image/blogs/blogs5.jpg" alt=""></a>
+                        <span class="category_title">One Trend</span>
+                    </div>
+                    <div class="blog_grid_body">
+                        <h2 class="blog_grid_title"><a href="single-blog.html">Get more with our 10th Anniversary sale guide!</a></h2>
+                        <p class="blog_grid_short_des">Celebrate our birthday with deals over 50% off, money-saving games, and a trip down memory lane to relive your journey</p>
+                        <div class="blog_btn_div">
+                            <a href="single-blog.html" class="btn  btn-primary-muted">View More...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+
+  
+
+
+
+
+
+
+
+
+    <section class="section newsletterSection">
+        <div class="container newsletterContainer">
+
+            <h5 class="text-center">Join Your Newsletter Now</h5>
+            <form action="" class="text-center ">
+                <div class="form-group newsLetterForm">
+                    <input type="text" class="form-control newsLetterInput" placeholder="Your Email Address...">
+                    <button type="submit" class="newsletterBtn">SIGN UP</button>
+                </div>
+            </form>
+            <p class="text-center">Will be used in accordance with our <a href="#">Privacy Policy</a></p>
+
+        </div>
+    </section>
+
+
+    <footer class="footer footerTheme1">
+        <div class="container footerContainer">
+            <div class="footer1">
+                <div class="footer_logo"><img src="./assets/image/logo/logo.png" alt=""></div>
+                <p class="footerText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed obcaecati laborum
+                    eius?</p>
+                <h6 class="appInstallTitle">Install App</h6>
+                <div class="downloadApp">
+                    <a href="javascript:void(0)">
+                        <img class="appleStore" src="./assets/image/app-store.jpg" alt="">
+                    </a>
+                    <a href="javascript:void(0)">
+                        <img class="googlePly" src="./assets/image/google-play.jpg" alt="">
+                    </a>
+
+                </div>
+            </div>
+            <div class="footer2">
+                <h4 class="footer_title">Company</h4>
+                <ul class="footerLinkGroup">
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">About Us</a></li>
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">Privacy</a></li>
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">Policy</a></li>
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">Terms </a></li>
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">Contact Us</a></li>
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">Support Center</a></li>
+                </ul>
+            </div>
+            <div class="footer3">
+                <h4 class="footer_title">Corporate</h4>
+                <ul class="footerLinkGroup">
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">About Us</a></li>
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">Privacy</a></li>
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">Policy</a></li>
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">Terms & Conditions</a>
+                    </li>
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">Contact Us</a></li>
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">Support Center</a></li>
+                </ul>
+            </div>
+            <div class="footer4">
+                <h4 class="footer_title">Account</h4>
+                <ul class="footerLinkGroup">
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">About Us</a></li>
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">Privacy</a></li>
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">Policy</a></li>
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">Terms & Conditions</a>
+                    </li>
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">Contact Us</a></li>
+                    <li class="footerLinkItem"><a class="footerLink" href="javascript:void(0)">Support Center</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footerBottom">
+            <div class="footerBottomLeft">
+                <p>X-DORA <i class="fa fa-copyright"></i> 2022 Created By <a href="javascript:void(0)">MOHINRANA</a></p>
+            </div>
+            <div class="footerBottomRight">
+                <div class="paymentImg"><img src="./assets/image/payments.png" alt=""></div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Window Overlay -->
+    <div class="overly"></div>
+    <!-- SHOPPING CART START  -->
+    <div class="shoppingCartWrapper">
+        <div class="shoppingCartHeader">
+            <div><strong>Shopping Cart</strong> <span class="closeCartWrapper"><i class="fa-solid fa-xmark"></i></span>
+            </div>
+        </div>
+        <div class="shoppingCartBody">
+            <ul class="shoppingCartGroup">
+                <li class="shoppingCartItem">
+                    <a class="shoppingCartLink" href="javascript:void(0)">
+                        <img src="./assets/image/product/product1.jpg" alt="">
+                        <div>
+                            <p>Canon HD Camera</p>
+                            <div class="price">
+                                <span class="sell_price">90$</span>
+                                <span class="shoppingCartQty">(1)</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" class="shoppingCartItemRemove"><i class="fa-solid fa-xmark"></i></a>
+                </li>
+                <li class="shoppingCartItem">
+                    <a class="shoppingCartLink" href="javascript:void(0)">
+                        <img src="./assets/image/product/product12.jpg" alt="">
+                        <div>
+                            <p>Digital Headphone</p>
+                            <div class="price">
+                                <span class="sell_price">999$</span>
+                                <span class="shoppingCartQty">(2)</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" class="shoppingCartItemRemove"><i class="fa-solid fa-xmark"></i></a>
+                </li>
+                <li class="shoppingCartItem">
+                    <a class="shoppingCartLink" href="javascript:void(0)">
+                        <img src="./assets/image/product/product7.jpg" alt="">
+                        <div>
+                            <p>Oppo Reno3 Pro</p>
+                            <div class="price">
+                                <span class="sell_price">90$</span>
+                                <span class="shoppingCartQty">(3)</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" class="shoppingCartItemRemove"><i class="fa-solid fa-xmark"></i></a>
+                </li>
+                <li class="shoppingCartItem">
+                    <a class="shoppingCartLink" href="javascript:void(0)">
+                        <img src="./assets/image/product/product16.png" alt="">
+                        <div>
+                            <p>wireless</p>
+                            <div class="price">
+                                <span class="sell_price">190$</span>
+                                <span class="shoppingCartQty">(1)</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" class="shoppingCartItemRemove"><i class="fa-solid fa-xmark"></i></a>
+                </li>
+                <li class="shoppingCartItem">
+                    <a class="shoppingCartLink" href="javascript:void(0)">
+                        <img src="./assets/image/product/product11.jpg" alt="">
+                        <div>
+                            <p>Smart Television</p>
+                            <div class="price">
+                                <span class="sell_price">100$</span>
+                                <span class="shoppingCartQty">(2)</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" class="shoppingCartItemRemove"><i class="fa-solid fa-xmark"></i></a>
+                </li>
+              
+               
+            </ul>
+            <div class="cuponform_wrapper">
+                <form action="" class="">
+                    <div class="form-group d-flex justify-content-between">
+                        <input type="text" class="form-control" placeholder="Coupon Code">
+                        <button class="btn btn-primary">Apply</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="shoppingCartFooter">
+            <a class="couponshow">Have a coupon?</a>
+            <div class="shoppingCartFooterPrice">
+                <div>Total Price </div>
+                <div>2740 $</div>
+            </div>
+            <div class="shoppingCartBtnWrapper">
+                <a href="cart.html" class="cartBtn">Cart</a>
+                <a href="checkout.html" class="checkoutBtn">Checkout</a>
+            </div>
+        </div>
+    </div>
+    <!-- SHOPPING CART END  -->
+
+
+    <!-- MOBILE BOTTOM FIXED MENU START -->
+    <div class="mobileMenuWrapper">
+        <a href="javascript:void(0)" class="appIcon appSearchIcon searchDisplay ">
+            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+            <span class="appText">Search</span>
+        </a>
+
+        <a href="javascript:void(0)" class="appIcon appCategoryIcon ">
+            <i class="fa fa-bars"></i>
+            <span class="appText">Category</span>
+        </a>
+        <a href="javascript:void(0)" class="appIcon appHomeIcon ">
+            <i class="fa-sharp fa-solid fa-house"></i>
+            <span class="appText">Home</span>
+        </a>
+        <a href="javascript:void(0)" class="appIcon appCartIcon ">
+            <i class="fa-solid fa-basket-shopping"></i>
+            <span class="appText">Cart</span>
+            <span class="cartCount">10</span>
+        </a>
+        <a href="javascript:void(0)" class="appIcon appAccountIcon ">
+            <i class="fa-regular fa-user"></i>
+            <span class="appText">Account</span>
+        </a>
+    </div>
+    <!-- MOBILE BOTTOM FIXED MENU END -->
+
+    <!-- MOBILE MENU START -->
+    <div class="mobile_navbar">
+        <div class="header_navbar">
+            <a href="#" class="mobile_side_logo">
+                <img src="./assets/image/logo/logo.png" alt="">
+            </a>
+            <i class="fa-solid fa-xmark closeNav"></i>
+        </div>
+        <div class="body_mobile_navbar">
+            <div>
+                <div class="tabs">
+                    <ul id="tabs-nav">
+                        <li>
+                            <a href="#tab1">
+                                <span>Category</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tab2">
+                                <span>Menu</span>
+                            </a>
+                        </li>
+                    </ul> <!-- END tabs-nav -->
+                    <div id="tabs-content">
+                        <div id="tab1" class="tab-content">
+                            <ul class="mobile_navs">
+                                <li class="mobile_nav_item">
+                                    <a href="#">Furniture</a>
+                                </li>
+                                <li class="mobile_nav_item">
+                                    <a href="#"><span>Electronics</span> <i class="fa-solid fa-angle-down"></i></a> 
+                                    <ul class="mobile_sub_link_nabs">
+                                        <li class="mobile_sub_link_item"><a href="#">CLOCKS</a></li>
+                                        <li class="mobile_sub_link_item">
+                                            <a href="#"> <span>LAPTOP</span> <i class="fa-solid fa-angle-down"></i> </a>
+                                            <ul class="sub_sub_navs">
+                                                <li><a href="#">HP</a></li>
+                                                <li><a href="#">Dell</a></li>
+                                                <li><a href="#">Lenovo</a></li>
+                                                <li><a href="#">Samsung</a></li>
+                                                <li><a href="#">Apple</a></li>
+                                                <li><a href="#">Walton</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="mobile_sub_link_item"><a href="#">KITCHEN</a></li>
+                                        <li class="mobile_sub_link_item"><a href="#">Lighting</a></li>
+                                    </ul>
+                                </li>
+                                <li class="mobile_nav_item">
+                                    <a href="#">
+                                        <span>Accessories</span> 
+                                        <i class="fa-solid fa-angle-down "></i>
+                                    </a> 
+                                    <ul class="mobile_sub_link_nabs">
+                                        <li class="mobile_sub_link_item"><a href="#">Mobile</a></li>
+                                        <li class="mobile_sub_link_item">
+                                            <a href="#"><span>Laptop</span> <i class="fa-solid fa-angle-down"></i> </a>
+
+                                            <ul class="sub_sub_navs">
+                                                <li><a href="#">Mouse</a></li>
+                                                <li><a href="#">Keyboard</a></li>
+                                                <li><a href="#">Battery</a></li>
+                                                <li><a href="#">Display</a></li>
+                                                <li><a href="#">Cable</a></li>
+                                                <li><a href="#">Mouse Pad</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="mobile_sub_link_item"><a href="#">Computer</a></li>
+                                        <li class="mobile_sub_link_item"><a href="#">Speeker</a></li>
+                                        <li class="mobile_sub_link_item"><a href="#">Car</a></li>
+                                        <li class="mobile_sub_link_item"><a href="#">Electricity</a></li>
+                                    </ul>
+                                </li>
+                                <li class="mobile_nav_item">
+                                    <a href="#">Fashion</a>
+                                </li>
+                                <li class="mobile_nav_item">
+                                    <a href="#">Lighting</a>
+                                </li>
+                                <li class="mobile_nav_item">
+                                    <a href="#">Toys</a>
+                                </li>
+                                <li class="mobile_nav_item">
+                                    <a href="#">Hand Made</a>
+                                </li>
+                                <li class="mobile_nav_item">
+                                    <a href="#">Minimalism</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="tab2" class="tab-content">
+                            <ul class="mobile_navs">
+                                <li class="mobile_nav_item">
+                                    <a href="#">Home</a>
+                                </li>
+                                <li class="mobile_nav_item">
+                                    <a href="#">Shop</a>
+                                </li>
+                                <li class="mobile_nav_item">
+                                    <a href="#">
+                                        <span>Pages</span> 
+                                        <i class="fa-solid fa-angle-down "></i>
+                                    </a> 
+                                    <ul class="mobile_sub_link_nabs">
+                                        <li class="mobile_sub_link_item"><a href="#">Dashboard</a></li>
+                                        <li class="mobile_sub_link_item"><a href="#">Shop</a></li>
+                                        <li class="mobile_sub_link_item"><a href="#">Products</a></li>
+                                        <li class="mobile_sub_link_item"><a href="#">vendor</a></li>
+                                        <li class="mobile_sub_link_item"><a href="#">Vendor Details</a></li>
+                                        <li class="mobile_sub_link_item"><a href="#">Search</a></li>
+                                        <li class="mobile_sub_link_item"><a href="#">Login</a></li>
+                                        <li class="mobile_sub_link_item"><a href="#">Register</a></li>
+                                        <li class="mobile_sub_link_item"><a href="#">Wishlist</a></li>
+                                        <li class="mobile_sub_link_item"><a href="#">Account</a></li>
+                                        <li class="mobile_sub_link_item"><a href="#">Compare</a></li>
+                                        <li class="mobile_sub_link_item"><a href="#">Cart</a></li>
+                                        <li class="mobile_sub_link_item"><a href="#">Checkout</a></li>
+                                    </ul>
+                                </li>
+                                <li class="mobile_nav_item">
+                                    <a href="#">Contact</a>
+                                </li>
+                                <li class="mobile_nav_item">
+                                    <a href="#">Fashon</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div> <!-- END tabs-content -->
+                </div> <!-- END tabs -->
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="./assets/js/app.js"></script>
+
+
+</body>
+
+</html>

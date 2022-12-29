@@ -13,6 +13,8 @@
     <!-- FONT AWASOME CDN JS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="./assets/plugins/swip-slider/swip.css" />
+    <!-- Select1 -->
+    <link rel="stylesheet" href="./assets/plugins/select1/select1.css">
 
     <!-- STYLEING CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -20,6 +22,14 @@
 </head>
 
 <body>
+
+    <!-- Loader  Start -->
+    <div class="loader">
+        <div class="loader_wrapper">
+            <img src="./assets/image/Loader/Loading_icon.gif" alt="">
+        </div>
+    </div>
+    <!-- Loader  end -->
 
     <!-- =================================== HEADER PART START ================================ -->
     <header class="header">
@@ -86,12 +96,24 @@
                 <!-- header browes category -->
                 <div class="header_category headercatButtonWrapper">
                     <div class=""><i class="fa-solid fa-bars categoryBarsIcon"></i> <span class="browesCategory">Browes Category</span></div> <i class="fa-solid fa-angle-down browesCategory"></i>
-                    <ul class="header_category_group ">
+                    <ul class="header_category_group " style="display: block;">
                         <li class="header_category_item">
                             <a class="category_link" href="#">Electronics <i
                                     class="fa-solid fa-angle-right nextCateIcon"></i></a>
                             <ul class="next_cat_group">
-                                <li class="next_cat_item"><a href="#" class="next_cat_link ">Mobile</a></li>
+                                <li class="next_cat_item">
+                                    <a href="#" class="next_cat_link ">Mobile <i class="fa-solid fa-angle-right nextCateIcon"></i> </a>
+                                    <ul class="sub_sub_cat_group">
+                                        <li class="next_cat_item"><a href="#" class="next_cat_link">Walton </a></li>
+                                        <li class="next_cat_item"><a href="#" class="next_cat_link">Oppo</a></li>
+                                        <li class="next_cat_item"><a href="#" class="next_cat_link">Vivo</a></li>
+                                        <li class="next_cat_item"><a href="#" class="next_cat_link">Realme</a></li>
+                                        <li class="next_cat_item"><a href="#" class="next_cat_link">Samsung</a></li>
+                                        <li class="next_cat_item"><a href="#" class="next_cat_link">Apple</a></li>
+                                        <li class="next_cat_item"><a href="#" class="next_cat_link">Lenovo</a></li>
+                                    </ul>
+                                    <!--/.sub_sub_cat_group-->
+                                </li>
                                 <li class="next_cat_item">
                                     <a href="#" class="next_cat_link ">Laptop <i
                                             class="fa-solid fa-angle-right nextCateIcon"></i> </a>
@@ -105,18 +127,11 @@
                                     <!--/.sub_sub_cat_group-->
                                 </li>
                                 <li class="next_cat_item">
-                                    <a href="#" class="next_cat_link ">Speekers <i
-                                            class="fa-solid fa-angle-right nextCateIcon"></i> </a>
-                                    <ul class="sub_sub_cat_group">
-                                        <li class="next_cat_item"><a href="#" class="next_cat_link">Speker 1</a></li>
-                                        <li class="next_cat_item"><a href="#" class="next_cat_link">Speker 2</a></li>
-                                        <li class="next_cat_item"><a href="#" class="next_cat_link">Speker 3</a></li>
-                                        <li class="next_cat_item"><a href="#" class="next_cat_link">Speker 4</a></li>
-                                    </ul>
+                                    <a href="#" class="next_cat_link ">Speekers  </a>
                                     <!--/.sub_sub_cat_group-->
                                 </li>
-                                <li class="next_cat_item"><a href="#" class="next_cat_link ">T-shart</a></li>
-                                <li class="next_cat_item"><a href="#" class="next_cat_link ">Full Shart</a></li>
+                                <li class="next_cat_item"><a href="#" class="next_cat_link ">Computer</a></li>
+                                <li class="next_cat_item"><a href="#" class="next_cat_link ">Mickrophone</a></li>
                             </ul>
                             <!--/.next_cat_group-->
                         </li>
@@ -126,8 +141,7 @@
                             <ul class="next_cat_group">
                                 <li class="next_cat_item"><a href="#" class="next_cat_link ">Mean</a></li>
                                 <li class="next_cat_item">
-                                    <a href="#" class="next_cat_link ">Wemone <i
-                                            class="fa-solid fa-angle-right nextCateIcon"></i></a>
+                                    <a href="#" class="next_cat_link ">Wemone </a>
                                 </li>
                                 <li class="next_cat_item"><a href="#" class="next_cat_link ">T-shart</a></li>
                                 <li class="next_cat_item"><a href="#" class="next_cat_link ">Full Shart</a></li>
@@ -138,7 +152,10 @@
                         <li class="header_category_item"><a class="category_link" href="#">Shopping</a></li>
                         <li class="header_category_item"><a class="category_link" href="#">Childrin</a></li>
                         <li class="header_category_item"><a class="category_link" href="#">Cosmatics</a></li>
-                        <li class="header_category_item"><a class="category_link" href="#">Mobile</a></li>
+                        <li class="header_category_item"><a class="category_link" href="#">Baby</a></li>
+                        <li class="header_category_item"><a class="category_link" href="#">Cart</a></li>
+                        <li class="header_category_item"><a class="category_link" href="#">City</a></li>
+                        <li class="header_category_item"><a class="category_link" href="#">Degital</a></li>
 
                     </ul>
                     <!--/.header_category_group-->
@@ -1908,6 +1925,7 @@
     <script src="./assets/js/jquery.js"></script>
     <script src="./assets/plugins/swip-slider/swip.js"></script>
     <script src="./assets/plugins/swip-slider/swiper.res.js"></script>
+    <script src="./assets/plugins/select1/select1.js"></script>
     <script src="./assets/js/app.js"></script>
 
 </body>

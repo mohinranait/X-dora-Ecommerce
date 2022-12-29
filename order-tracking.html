@@ -20,6 +20,13 @@
 
 <body>
 
+    <div class="loader">
+        <div class="loader_wrapper">
+            <img src="./assets/image/Loader/Loading_icon.gif" alt="">
+        </div>
+    </div>
+    <!-- Loader  end -->
+
     <!-- =================================== HEADER PART START ================================ -->
     <header class="header">
         <div class="header-middle header-middle-1" id="header-middle">
@@ -37,9 +44,21 @@
                 <div class="header_search searchDisplayBlock">
                     <form action="">
                         <div class="header_search_group">
+                            <div class="productFilter">
+                                <select name="" class="header_search_select custome-select" id="">
+                                    <option value="">Select Category</option>
+                                    <option value="">Furniture</option>
+                                    <option value="">Electronics</option>
+                                    <option value="">Mototr Car</option>
+                                    <option value="">Fashion</option>
+                                    <option value="">Baby Products</option>
+                                    <option value="">Motorcycle</option>
+                                    <option value="">Mobile</option>
+                                    <option value="">Digital</option>
+                                </select>
+                            </div>
                             <input type="text" class="header_search_fild" placeholder="Search...">
-                            <button class="header_search_btn"><i
-                                    class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+                            <button class="header_search_btn"><i  class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
                         </div>
                     </form>
                 </div>
@@ -65,7 +84,7 @@
                         </li>
                         <li class="header_icon_item headerCart">
                             <a class="header_icon_links" href="javascript:void(0)">
-                                <span class="headerIconSpan header_cart_prict ">
+                                <span class="headerIconSpan header_cart_price ">
                                     <i class="fa-solid fa-basket-shopping"></i>
                                     <small class="header_cart_count">55</small>
                                     <!--20.00$ -->
@@ -137,7 +156,7 @@
                                 <li class="next_cat_item"><a href="#" class="next_cat_link ">Full Shart</a></li>
                             </ul>
                         </li>
-                        <li class="header_category_item"><a class="category_link" href="#">Firniture</a></li>
+                        <li class="header_category_item"><a class="category_link" href="#">Furniture</a></li>
                         <li class="header_category_item"><a class="category_link" href="#">Kitchin</a></li>
                         <li class="header_category_item"><a class="category_link" href="#">Shopping</a></li>
                         <li class="header_category_item"><a class="category_link" href="#">Childrin</a></li>
@@ -146,6 +165,7 @@
                         <li class="header_category_item"><a class="category_link" href="#">Cart</a></li>
                         <li class="header_category_item"><a class="category_link" href="#">City</a></li>
                         <li class="header_category_item"><a class="category_link" href="#">Degital</a></li>
+                        <li class="header_category_item"><a class="category_link" href="#">Demo</a></li>
 
                     </ul>
                     <!--/.header_category_group-->
@@ -155,7 +175,15 @@
                 <!-- header nav menu start -->
                 <div class="header_menu">
                     <ul class="nav_gruop">
-                        <li class="nav_item"><a class="nav_link" href="index1.html">Home</a></li>
+                        <li class="nav_item nav_drop_down">
+                            <a class="nav_link" href="#">Home
+                                <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                            <ul class="nav_drop_group">
+                                <li class="nav_drop_item"><a href="index1.html" class="nav_drop_link">Home One (Mobile)</a></li>
+                                <li class="nav_drop_item"><a href="index2.html" class="nav_drop_link">Home Two (Mobile) </a></li>
+                            </ul>
+                        </li>
                         <li class="nav_item"><a class="nav_link" href="category.html">Shop</a></li>
                         <li class="nav_item nav_drop_down">
                             <a class="nav_link" href="#">Brands
@@ -186,14 +214,13 @@
                                 <li class="nav_drop_item"><a href="order-tracking.html" class="nav_drop_link">Order Tracking</a></li>
                             </ul>
                         </li>
-                        <li class="nav_item"><a class="nav_link" href="#">Blogs</a></li>
+                        <li class="nav_item"><a class="nav_link" href="blogs.html">Blogs</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </header>
     <!-- =================================== HEADER PART END ================================== -->
-
 
 
     <section class="order_traking_section ">
@@ -658,6 +685,7 @@
 
 
 
+    <script src="./assets/js/jquery.js"></script>
     <script src="./assets/js/app.js"></script>
 
 </body>
