@@ -5,13 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="X-DORA | xDora Online Ecommerce shop">
+    <meta name="keywords" content="HTML E-commerce template, xDora HTML Template, Ecommerce Theme">
+    <meta name="author" content="X-DORA">
+    <link rel="icon" type="image/x-icon" href="./assets/image/logo/favicon.png">
     <!-- POPPINS FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <!-- FONT AWASOME CDN JS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="./assets/font/font-awasome/all.min.css">
+    <link rel="stylesheet" href="./assets/font/font-awasome/fontawesome.min.css">
 
     <!-- STYLEING CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -232,31 +237,35 @@
     <section>
         <div class="container ">
             <div class="register_page">
-                <div class="tabs">
-                    <ul id="tabs-nav">
-                        <li>
-                            <a href="#tab1">
-                                <span class="userTabIcon"><i class="fa-regular fa-user"></i></span>
-                                <span class="userTabTitle">User</span>
-                            </a>
-                        </li>
-                        <li><a href="#tab2">
-                                <span class="userTabIcon"><i class="fa-solid fa-briefcase"></i></span>
-                                <span class="userTabTitle">Seller</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#tab3">
-                                <span class="userTabIcon"><i class="fa-solid fa-user-tie"></i></span>
-                                <span class="userTabTitle">Buyer</span>
-                            </a>
-                        </li>
-
-                    </ul> <!-- END tabs-nav -->
-                    <div id="tabs-content">
-                        <div id="tab1" class="tab-content">
-                            <!-- User Tab content start -->
-                            <div class="authenticate_page authenticate_register">
+               
+                <!-- Register Tabs -->
+                <div class="auth_tabs_wrapper">
+                    <div class="auth_tab_nav_wrapper">
+                        <ul class="tabs-auth">
+                            <li class="tab-link-auth active" data-tab="1">
+                                <div class="auth-tab-button">
+                                    <span class="userTabIcon"><i class="fa-regular fa-user"></i></span>
+                                    <span class="userTabTitle">Login</span>
+                                </div>
+                            </li>
+                            <li class="tab-link-auth" data-tab="2">
+                                <div class="auth-tab-button">
+                                    <span class="userTabIcon"><i class="fa-solid fa-briefcase"></i></span>
+                                    <span class="userTabTitle">Seller</span>
+                                </div>
+                            </li>
+                            <li class="tab-link-auth" data-tab="3">
+                                <div class="auth-tab-button">
+                                    <span class="userTabIcon"><i class="fa-solid fa-user-tie"></i></span>
+                                    <span class="userTabTitle">Buyer</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="content-wrapper-auth">
+                        <div id="tab-1" class="tab-content-auth active">
+                             <!-- User Tab content start -->
+                             <div class="authenticate_page authenticate_register">
                                 <div class="authenticate_left">
                                     <div class="authenticate_header">
                                         <h1>Create an Account</h1>
@@ -281,8 +290,8 @@
                                             <div class="custome-checkbox">
                                                 <input type="checkbox" class="custom_checkbox"
                                                     id="custom_checkbox_id_1">
-                                                <label for="custom_checkbox_id_1" class="custom_checkbox_label"><a
-                                                        href="javascript:void(0)">I agree to terms & Policy.</a></label>
+                                                <label for="custom_checkbox_id_1" class="custom_checkbox_label">I agree to <a
+                                                        href="javascript:void(0)" class="termsCondi"> terms & Policy.</a></label>
                                             </div>
                                         </div>
                                         <div class="form-group ">
@@ -319,8 +328,8 @@
                             </div>
                             <!-- User Tab content end -->
                         </div>
-                        <div id="tab2" class="tab-content">
-                            <!-- User Tab content start -->
+                        <div id="tab-2" class="tab-content-auth">
+                            <!-- Seller Tab content start -->
                             <div class="authenticate_page authenticate_register">
                                 <div class="authenticate_left">
                                     <div class="authenticate_header">
@@ -388,11 +397,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- User Tab content end -->
+                            <!-- Seller Tab content end -->
                         </div>
-                        <div id="tab3" class="tab-content">
-                            <!-- User Tab content start -->
-                            <div class="authenticate_page authenticate_register">
+                        <div id="tab-3" class="tab-content-auth">
+                           <!-- Buyer Tab content start -->
+                           <div class="authenticate_page authenticate_register">
                                 <div class="authenticate_left">
                                     <div class="authenticate_header">
                                         <h1>Buyer Account</h1>
@@ -449,10 +458,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- User Tab content end -->
+                            <!-- Buyer Tab content end -->
                         </div>
-                    </div> <!-- END tabs-content -->
-                </div> <!-- END tabs -->
+                    </div>
+                </div>
+
+
             </div>
         </div>
     </section>

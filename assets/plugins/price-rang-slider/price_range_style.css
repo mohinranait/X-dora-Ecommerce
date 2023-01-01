@@ -37,11 +37,10 @@
     width:100%; 
     min-width: 16%;
     background-color:#f9f9f9; 
-    border: 1px solid #6e6666; 
+    border: 1px solid var(--theme-color); 
     color: black; 
     font-family: myFont; 
     font: normal 14px Arial, Helvetica, sans-serif; 
-    border-radius: 5px; 
     height:26px; 
     padding:5px;
 }
@@ -63,4 +62,7 @@
 .ui-slider-horizontal .ui-slider-handle {
     top: -9px;
 }
-
+.widget_price_slider.shop_sidebar_widget input:focus-visible {
+    border-radius: 0px !important;
+    outline-color: var(--theme-color);
+}

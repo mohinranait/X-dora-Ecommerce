@@ -93,6 +93,14 @@ $('.custome-select').each(function(){
 // HOME PAGE LEFT CATEGORY SHOW / HIDE
 $(".headercatButtonWrapper").click(function(){
     $(".header_category_group").slideToggle('slow');
+    var icon = $(".headercatButtonWrapper i.browesCategory");
+    
+    if($(icon).hasClass("fa-angle-down")){
+        $(icon).addClass("fa-angle-up").removeClass("fa-angle-down");
+    }else{
+        $(icon).addClass("fa-angle-down").removeClass("fa-angle-up");
+    }
+   
 })
 
 // Window Navbar menu sticky
@@ -215,6 +223,15 @@ $(document).ready(function(){
 =======================================================================================================*/
 
 
+
+//======================== Register Page start ===================================
+$('.tab-link-auth').click( function() {
+	var tabID = $(this).attr('data-tab');
+	$(this).addClass('active').siblings().removeClass('active');
+	$('#tab-'+tabID).addClass('active').siblings().removeClass('active');
+});
+// ================================= Register Page end ===========================
+
 /*====================================================================================================
                                 CHECKOUT PAGE  START
 =======================================================================================================*/
@@ -258,6 +275,9 @@ $('#tabs-nav li').click(function(){
     $(activeTab).fadeIn();
     return false;
 });
+
+
+
 // Mobile navmenu js code start 
 $('.appCategoryIcon,.closeNav').click( function() {
     $('.mobile_navbar').toggleClass('mobileMenuShow');

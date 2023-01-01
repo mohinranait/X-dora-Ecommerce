@@ -10,7 +10,6 @@
     --color-red : #eb5e28 ;
     --color-red-muted : #FEEFEA ;
 
-
     --color-secondary : #fff;
     --color-light : #f3f4f7;
 
@@ -387,9 +386,9 @@ a{
 .mobile_navbar{
     position: fixed;
     top: 0;
-    left: -350px;
+    left: -250px;
     bottom: 0;
-    max-width: 300px !important;
+    width: 220px !important;
     height: 100vh;
     background-color: var(--color-secondary);
     z-index: 9999;
@@ -429,7 +428,7 @@ a{
     font-weight: 600;
     font-size: 14px;
     width: 100%;
-    justify-content: center;
+    text-align: center;
 }
 .mobile_navbar .body_mobile_navbar .tabs #tabs-nav li a:hover{
     color: var(--color-dark);
@@ -704,13 +703,16 @@ a{
 .menuIconWindow,.headerSearchIcon,.humberIcon{
     display: none;
 }
-
-
-
 /*  ---------------- HEADER BOTTOM ------------------- */
 .header_bottom{
     height: 3.2rem;
     background-color: var(--theme-color);
+}
+.headercatButtonWrapper i.browesCategory,
+.header_category_item .category_link i,
+.nav_item.nav_drop_down .nav_link i,
+.next_cat_item .next_cat_link i {
+    font-size: 14px;
 }
 .header_bottom_container{
     height: 100%;
@@ -719,7 +721,6 @@ a{
     align-items: center;
     gap: 3rem;
 }
-
 .header_category{
     display: flex;
     justify-content: space-between;
@@ -739,7 +740,7 @@ a{
     background-color: var(--color-secondary);
     width: 100%;
     border-radius: 5px;
-    padding: 10px;
+    padding: 0px;
     margin-top: 20px;
     border: 1px solid var(--color-light);
     border-top: 4px solid var(--theme-color);
@@ -747,7 +748,7 @@ a{
     z-index: 5;
 }
 .header_category_group .header_category_item{
-    padding: 6px 0 6px 10px;
+    padding: 6px 0 6px 0px;
     border-bottom: 1px dashed var(--color-dark-muted);
 }
 .header_category_group .header_category_item:last-child{
@@ -764,6 +765,7 @@ a{
     transition: all 300ms ease;
     position: relative;
     height: 100%;
+    padding: 0 20px;
 }
 .header_category_group .header_category_item .category_link::before{
     content: "";
@@ -771,7 +773,7 @@ a{
     height: 3px;
     background-color: var(--theme-color);
     position: absolute;
-    left: -25px;
+    left: -2px;
     top: 50%;
     display: none;
     animation: beforeIcon 500ms ease;
@@ -782,13 +784,13 @@ a{
 }
 @keyframes beforeIcon {
     0%{
-        left: -22px;
+        left: -2px;
     }100%{
-        left: -15px;
+        left: 5px;
     }
 }
 .header_category_group .header_category_item:hover .category_link::before {
-    left: -15px;
+    left: 5px;
     display: block;
     color: var(--color-red);
 }
@@ -797,7 +799,7 @@ a{
 }
 /* header next1 category css */
 .next_cat_group{
-    padding: 10px;
+    padding: 0px;
     position: absolute;
     top: 0;
     left: 98%;
@@ -819,7 +821,7 @@ a{
     }
 }
 .next_cat_group .next_cat_item{
-    padding: 5px;
+    padding: 6px 0;
     border-bottom: 1px dashed var(--color-dark);
     color: var(--theme-color);
 }
@@ -833,6 +835,7 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 20px;
 }
 .next_cat_group .next_cat_item .next_cat_link:hover{
     color: var(--theme-color);
@@ -842,7 +845,7 @@ a{
 }
 .sub_sub_cat_group{
     background-color: var(--color-secondary);
-    padding: 10px;
+    padding: 0px;
     position: absolute;
     top: 0;
     left: 189px;
@@ -931,30 +934,71 @@ a{
     height: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
+    gap: 0rem !important;
 }
 .banner_left{
+    background-color: var(--color-secondary);
     width: 20%;
+    box-shadow: 0px 0px #000 , 0px 0px #000, 0px 0px 2px 0 rgba(0,0,0,.05);
+}
+.banner-left-card{
+    padding: 10px;
+}
+
+.banner-left-card .market-header{
+    padding: 5px 0;
+    border-bottom: 1px solid var(--color-dark-muted);
+    margin-bottom: 7px;
+}
+.banner-left-card .market-header h4{
+    columns: var(--color-dark);
+    font-size: 15px;
+    font-weight: 500;
+}
+.markets_dov .market_item{
+    padding: 3px 0;
+    transition: all 400ms ease;
+}
+.market_item .market_link img{
+    width: 40px;
+    margin-right: 7px;
+}
+.market_item .market_link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.market_item .market_link div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.market_link div span{
+    font-size: 13px;
+    font-weight: 500;
+}
+.market_item:hover .market_link div span{
+    color: var(--theme-color);
 }
 .banner_right{
     height: 100%;
-    width: 78%;
+    width: 79%;
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    background-color: var(--color-secondary);
+    box-shadow: 0px 0px #000 , 0px 0px #000, 0px 0px 2px 0 rgba(0,0,0,.05);
 }
 .banner_slider{
     border-radius: 5px;
     height: 400px;
     overflow: hidden;
-    box-shadow: 0px 0px #000 , 0px 0px #000, 0px 0px 2px 0 rgba(0,0,0,.05);
 }
 .swiper_height{
     height: 100%;
 }
 .bannerSwiperSlider,.productSwiperSlider{
-    padding: 15px;
+    padding: 35px;
     height: 100%;
     display: flex;
     align-items: center;
@@ -965,12 +1009,11 @@ a{
 .productSwiperSlider{
     padding: 6px;
 }
-
 .slider_part_left{
-    width: 55%;
+    width: 60%;
 }
 .slider_part_right{
-    width: 45%;
+    width: 40%;
 }
 .slider_part_left .slider_sub_title{
     font-size: 1.4rem;
@@ -985,11 +1028,11 @@ a{
     display: grid;
     grid-template-columns: repeat(5,1fr);
     gap: 0.5rem;
-    height: 80px;
+    height: 90px;
     /* background-color: var(--color-secondary); */
+    padding: 7px;
 }
 .banner_right .banner_fiture div{
-    border-radius: 5px;
     overflow: hidden;
     background-color: var(--color-secondary);
     border: 1px solid var(--color-light);
@@ -1026,7 +1069,6 @@ a{
     margin-bottom: 1.2rem;
 }
 .category_item{
-    border: 1px solid var(--color-light);
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -1035,6 +1077,7 @@ a{
     background-color: var(--color-secondary);
     box-shadow: 0px 0px #000 , 0px 0px #000, 0px 0px 2px 0 rgba(0,0,0,.05);
 }
+
 
 .category_item div{
     text-align: center;
@@ -1372,9 +1415,9 @@ a{
     gap: 0.7rem;
     border-radius: 10px;
 }
-
 .page_header .page_title{
-    font-size: 2rem;
+    font-size: 1.7rem;
+    font-weight: 500;
 }
 .page_header_link_group{
     display: flex;
@@ -1827,97 +1870,125 @@ input[type="checkbox"]:checked + span:before {
 .register_page{
     margin: 100px 0;
 }
-/* Tabs */
-.tabs {
-    width: 100%;
-    border-radius: 5px 5px 5px 5px;
+
+/* Register new page css start */
+
+
+
+.tab-wrapper{
+	text-align: center;
+	display: block;
+	margin: auto;
 }
-ul#tabs-nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+.tabs-auth{
+    margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
 }
-ul#tabs-nav li {
+
+.tabs-auth .tab-link-auth{
+    position: relative;
     padding: 7px 20px;
     cursor: pointer;
     border: 1px solid var(--color-light);
     border-radius: 5px;
     margin: 0 1rem;
     transition: all 500ms ease;
+    background-color: var(--color-secondary);
 }
-ul#tabs-nav li a{
-    width: 110px;
+.tabs-auth .tab-link-auth .auth-tab-button {
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     color: var(--color-dark);
-    text-decoration: none;   
+    text-decoration: none;
+    
 }
-ul#tabs-nav li a .userTabTitle,ul#tabs-nav li a .userTabIcon{
-    font-size: 23px;
-    font-weight: 500;
+
+.tabs-auth .tab-link-auth:hover{
+    border-color: transparent;
+    background-color: var(--theme-color);    
 }
-ul#tabs-nav li a .userTabIcon{
-    width: 40px;
-    height: 40px;
-    background-color: var(--color-light);
-    color: var(--color-dark);
-    text-align: center;
-    line-height: 27px;
-    border-radius: 50%;
-    border: 7px solid var(--color-light);
-    color: var(--theme-color);
+.tabs-auth .tab-link-auth:hover .auth-tab-button .userTabTitle{
+    color: var(--color-secondary); 
 }
-ul#tabs-nav li:hover,
-ul#tabs-nav li.active {
+.tabs-auth .tab-link-auth.active{
+    border-color: transparent;
     background-color: var(--theme-color);
-    border: 1px solid var(--theme-color);
-    position: relative;
 }
-ul#tabs-nav li:hover a{
-    color: var(--color-secondary);
-}
-ul#tabs-nav li:hover a .userTabIcon{
-    background-color:var(--color-secondary);
-    color: var(--color-dark);
-    border: 7px solid var(--color-secondary);
-    color: var(--theme-color);
-}
-ul#tabs-nav li.active a{
-    color: var(--color-secondary);
-}
-ul#tabs-nav li.active a .userTabIcon{
-    background-color: var(--color-secondary);
-    color: var(--color-dark);
-    border: 7px solid var(--color-secondary);
-    color: var(--theme-color);
-}
-ul#tabs-nav li.active::after{
+.tabs-auth .tab-link-auth.active::after{
     content: "";
     position: absolute;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    border: 2px solid var(--color-secondary);
+    width: 30px;
+    height: 30px;
     background-color: var(--theme-color);
-    top: -12px;
-    right: -12px;
-    font-weight: 900;
+    border: 2px solid var(--color-secondary);
+    border-radius: 50%;
+    top: -15px;
+    right: -15px;
 }
-ul#tabs-nav li.active::before{
+.tabs-auth .tab-link-auth.active::before{
     content: "";
     position: absolute;
     width: 12px;
-    height: 7px;
-    top: -4px;
-    right: -4px;
-    z-index: 1;
-    transform: rotate(-45deg);
+    height: 6px;
     border-left: 2px solid var(--color-secondary);
     border-bottom: 2px solid var(--color-secondary);
+    top: -4px;
+    right: -6px;
+    z-index: 9;
+    transform: rotate(-45deg);
 }
-.tab-content {
-    padding: 10px;
+.tabs-auth .tab-link-auth.active span{
+    color: var(--color-secondary);
 }
+.tabs-auth .tab-link-auth .auth-tab-button .userTabTitle{
+    font-weight: 500;
+    font-size: 18px;
+}
+.tabs-auth .tab-link-auth .auth-tab-button .userTabIcon{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    line-height: 35px;
+    text-align: center;
+    background-color: var(--color-secondary);
+    color: var(--theme-color);
+    margin-right: 7px;
+    background-color: var(--color-light);
+}
+
+.tab-content-auth{
+    display: none;
+	font-weight: 300;
+	font-size: 15px;
+	opacity: 0;
+	transform: translateY(15px);
+	animation: fadeIn 0.5s ease 1 forwards;
+}
+.custom_checkbox_label .termsCondi{
+    color: var(--theme-color);
+}
+
+.tab-content.active{
+
+	display: block;
+}
+
+@keyframes fadeIn{
+
+    100%{
+        opacity: 1;
+        transform: none;
+    }
+    
+}
+/* Register new page css end */
+
+
 .authenticate_register {
     margin: 100px 0 0 0;
 }
@@ -1997,6 +2068,7 @@ ul#tabs-nav li.active::before{
     padding: 1.5rem 0;
 }
 .product_details_container{
+    
     display: flex;
     gap: 1.5rem;
     margin-bottom: 2rem;
@@ -2429,7 +2501,7 @@ input.single_quintity{
 }
 	
 
-.content-wrapper .tab-content{
+.content-wrapper .tab-content-box{
     display: none;
 	color: var(--color-dark-light);
 	font-weight: 300;
@@ -2438,14 +2510,14 @@ input.single_quintity{
 	transform: translateY(15px);
 	animation: fadeIn 0.5s ease 1 forwards;
 }
-.tab-content .desctiption {
+.tab-content-box .desctiption {
     font-size: 13px;
     color: var(--color-dark);
     word-spacing: 2px;
     text-transform: capitalize;
     line-height: 20px;
 }
-.content-wrapper .tab-content.active{
+.content-wrapper .tab-content-box.active{
     display: block !important;
 }
 @keyframes fadeIn {
@@ -2601,6 +2673,7 @@ h5.title_review {
 .star-rating label {
     color:#ccc;
     cursor:pointer;
+    font-size: 30px;
 }
 .star-rating :checked ~ label {
     color:#f90;
@@ -3820,9 +3893,63 @@ table.wishlist_table tbody tr td .btn-dark{
     font-size: 17px;
     color: var(--color-dark);
     font-weight: 400;
-    
 }
+/* ====================================== CONTACT US PAGE ================================ */
+.contact_info_wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+.contact_info_wrapper .contact_box {
+    text-align: center;
+    border: 1px solid var(--color-light);
+    border-radius: 5px;
+    padding: 20px;
+    background-color: var(--color-secondary);
 
+}
+.contact_info_wrapper .contact_box h5 {
+   font-size: 18px;
+   font-weight: 600;
+   padding: 10px 0;
+   color: var(--color-dark);
+}
+.contact_info_wrapper .contact_box{
+    color: var(--color-dark-light);
+}
+.contact_info_wrapper .contact_box span i {
+   font-size: 25px;
+   color: var(--theme-color);
+}
+.contact_info_wrapper .contact_box a {
+   margin-right: 2px;
+   color: var(--theme-color);
+}
+.contact_form_smoth{
+    background-color: var(--color-secondary);
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    gap: 2rem;
+    margin: 30px  0 0;
+    padding: 2rem !important;
+}
+.contact_left img{
+    width: 79%;
+}
+.contact_right{
+    padding: 2rem;
+}
+.contact_right h3{
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--color-dark);
+}
+.contact_right p{
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: var(--color-dark-light);
+}
 
 
 
@@ -3898,7 +4025,7 @@ table.wishlist_table tbody tr td .btn-dark{
 }
 /* ================================== FOOTER SECTION CSS START ================================== */
 footer{
-    background-color: var(--color-light);
+    background-color: var(--theme-color-muted);
 }
 .footerContainer{
     padding: 3rem 0;
@@ -4072,13 +4199,20 @@ footer{
 
     /* ============================== HOME PAGE MAIN SLIDER CSS ========================== */
     .hero_section {
-        margin-top: 0px;
+        margin-top: 20px;
     }
     .hero_section_container {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .banner_right {
         width: 100%;
+    }
+    .banner_left {
+        width: 100%;
+    }
+    .markets_dov{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);    
     }
 
     /* ============================== HOME VERTICAL PRODUCTCSS ========================== */
@@ -4141,6 +4275,13 @@ footer{
         background-color: var(--color-secondary);
     }
   
+    .authenticate_page {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-content: center;
+        margin: 150px 0;
+        gap: 3rem;
+    }
    
    
  }
@@ -4163,7 +4304,7 @@ footer{
         width: 140px;
     }
     .banner_slider{
-        height: 250px;
+        height: 280px;
     }
     .banner_right .banner_fiture div {
         height: 100px !important;
@@ -4329,11 +4470,27 @@ footer{
     .blogs_grid_wrapper .blog_grid_item .blog_grid_body .blog_btn_div .btn-primary-muted{
         padding: 5px 9px;
     }
+    /* ================================= CONTACT US PAGE ================================ */
+    .contact_form_smoth{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .contact_form_smoth .contact_right{
+        order: 1;
+    }
+    .contact_form_smoth .contact_left{
+        order: 2;
+    }
   
  }
 @media screen and (max-width: 768px) { 
     body{
         background-color: white;
+    }
+    .page_header {
+        padding: 2rem 0;
+    }
+    .section{
+        padding: 0.5rem;
     }
     .form-control {
         padding: 0.5rem 0.8rem;
@@ -4341,6 +4498,10 @@ footer{
     .btn {
         padding: 0.5rem 1rem;
         font-size: .9rem;
+    }
+    .markets_dov{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);    
     }
     .slider_part_left {
         width: 90%;
@@ -4415,7 +4576,7 @@ footer{
         position: fixed;
         width: 100%;
         background-color: var(--color-secondary);
-        box-shadow: 0px 0px 10px var(--color-dark-muted);
+        box-shadow: 0px 0px 5px var(--color-dark-muted);
         z-index: 999999;
         top: 0;
     }
@@ -4496,10 +4657,10 @@ footer{
         font-size: 1rem;
     }
     .hero_section {
-        margin-top: 4rem;
+        margin-top: 5rem;
     }
     .heroSectionThemeone {
-        margin-top: 0rem;
+        margin-top: 1rem;
     }
     .product_container {
         display: grid;
@@ -4546,6 +4707,12 @@ footer{
         gap: 0.5rem;
     }
 
+    /* ============================ CONTACT US PAGE =================================== */
+    .contact_info_wrapper {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 2rem;
+    }
 
     
 
@@ -4672,11 +4839,22 @@ footer{
     .brand_logo figure img {
         width: 100px;
     }
+    .markets_dov{
+        grid-template-columns: repeat(2,1fr);    
+    }
     .slider_part_left {
         width: 100%;
     }
     .slider_part_right {
         width: 0%;
+    }
+    .slider_part_left .slider_sub_title {
+        font-size: 1rem;
+    }
+    .bannerSwiperSlider .slider_part_left .btn {
+        padding: 0.2rem 0.5rem;
+        font-size: .9rem;
+        font-size: 13px;
     }
     .slider_part_left .slider_title{
         font-size: 1rem;
@@ -4721,26 +4899,26 @@ footer{
     .authenticate_header h1 {
         font-size: 1.5rem;
     }
-    ul#tabs-nav li {
-        padding: 0px 7px;
-        margin: 0 0.2rem;
+    .tabs-auth .tab-link-auth {
+        padding: 5px 12px;
+        margin: 0;
     }
-    ul#tabs-nav li a .userTabIcon {
-        font-size: 15px;
-        font-weight: 500;
-        width: 30px;
-        height: 30px;
-        line-height: 16px;
-        border-radius: 50%;
+    .tabs-auth .tab-link-auth.active::after {
+        width: 24px;
+        height: 24px;
+        top: -12px;
+        right: -12px;
     }
-    ul#tabs-nav li a .userTabTitle{
-        font-size: 15px;
+    .tabs-auth .tab-link-auth.active::before {
+        width: 10px;
+        height: 5px;
+        top: -3px;
+        right: -4px;
     }
-    ul#tabs-nav li a {
-        width: 80px;
-        display: flex;
-        align-items: center;
-        padding: 5px ;
+    .tabs-auth {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 1rem;
     }
 
     /* user dashboard order table responsive */
@@ -4955,6 +5133,21 @@ footer{
         width: 100%;
         margin: 0 auto;
     }
+    /* ================================= CONTACT US PAGE ======================== */
+    .contact_form_smoth {
+        padding: 0.5rem !important;
+    }
+    .contact_right h3 {
+        font-size: 20px;
+        font-weight: 500;
+        color: var(--color-dark);
+        line-height: 27px;
+        margin-bottom: 10px;
+    }
+    .contact_right form .grup_item_2{
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 0rem;
+    }
 
    
 
@@ -4967,6 +5160,9 @@ footer{
     body{
         background-color: #29A56C;
     }
+   .banner_left{
+    display: none;
+   }
     .shop_container {
         grid-template-columns: repeat(1, auto);
     }
@@ -5024,6 +5220,9 @@ footer{
     .category_body .sub_categorys {
         width: 100%;
         margin-bottom: 20px;
+    }
+    .contact_right {
+        padding: 1rem;
     }
    
 }
@@ -5132,7 +5331,7 @@ footer{
     position: fixed;
     width: 100%;
     background-color: var(--color-secondary) !important;
-    box-shadow: 0px 0px 3px var(--color-dark-muted);
+    box-shadow: 0px 0px 1px var(--color-dark-muted);
     z-index: 999999;
     top: 0;
     height: 4rem;
